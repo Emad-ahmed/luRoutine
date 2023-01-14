@@ -33,6 +33,10 @@ class FacultyDean(AbstractTimestampModel):
         verbose_name_plural = _('Faculty Deans')
 
 
+    def __str__(self):
+        return self.dean
+    
+
 class Department(AbstractTimestampModel):
     department_id = models.CharField(verbose_name=_(
         'Short Code'), max_length=32, unique=True)
@@ -89,6 +93,9 @@ class Program(AbstractTimestampModel):
         verbose_name = _('Program')
         verbose_name_plural = _('Programs')
 
+
+    def __str__(self) -> str:
+        return self.title
 
 class Curriculum(AbstractTimestampModel):
     program = models.ForeignKey(

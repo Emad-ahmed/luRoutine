@@ -51,9 +51,8 @@
                             <td>{{ dist.teacher.first_name }} {{ dist.teacher.last_name }}</td>
                             <td>{{ dist.offered.course.course_code }} {{ dist.offered.course.title }}</td>
                             <td>
-                                {% for sec in dist.section.all %}
-                                    <p>{{sec.batch.batch}}-{{sec.section}}</p>
-                                {% endfor %}
+                                {{ dist.offered.batch.batch }}   {{ dist.section.section }}
+                                
                             </td>
 {#                            <td>{{ dist.section.batch.program.department.department_id }}-{{ dist.section.batch.batch }} {{ dist.section.section }}</td>#}
                             <td class="text-center">

@@ -43,3 +43,7 @@ class Section(AbstractTimestampModel):
     class Meta:
         verbose_name = _('Section')
         verbose_name_plural = _('Sections')
+
+
+    def __str__(self) -> str:
+        return self.section

@@ -5056,3 +5056,228 @@ django.template.exceptions.TemplateDoesNotExist: admin/import_export/change_list
 [13/Jan/2023 20:34:25] Watching for file changes with StatReloader
 [13/Jan/2023 20:34:28] "GET /admin/faculty/faculty/ HTTP/1.1" 200 22607
 [13/Jan/2023 20:34:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:33:38] Watching for file changes with StatReloader
+[13/Jan/2023 22:35:41] - Broken pipe from ('127.0.0.1', 57414)
+
+[13/Jan/2023 22:35:43] "GET /admin/ HTTP/1.1" 200 25612
+[13/Jan/2023 22:35:43] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[13/Jan/2023 22:35:43] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[13/Jan/2023 22:35:43] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[13/Jan/2023 22:35:43] "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+[13/Jan/2023 22:35:43] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[13/Jan/2023 22:35:43] "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+[13/Jan/2023 22:35:43] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[13/Jan/2023 22:35:43] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[13/Jan/2023 22:35:43] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[13/Jan/2023 22:35:43] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[13/Jan/2023 22:35:43] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+[13/Jan/2023 22:35:44] "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+[13/Jan/2023 22:35:44] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[13/Jan/2023 22:35:44] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[13/Jan/2023 22:35:44] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[13/Jan/2023 22:35:44] "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+[13/Jan/2023 22:35:46] "GET /admin/faculty/course/ HTTP/1.1" 200 37974
+[13/Jan/2023 22:35:47] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[13/Jan/2023 22:35:47] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[13/Jan/2023 22:35:47] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[13/Jan/2023 22:35:47] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[13/Jan/2023 22:35:47] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[13/Jan/2023 22:35:47] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[13/Jan/2023 22:35:47] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[13/Jan/2023 22:35:47] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[13/Jan/2023 22:35:47] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[13/Jan/2023 22:35:47] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:35:47] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[13/Jan/2023 22:35:49] "GET /admin/faculty/curriculum/ HTTP/1.1" 200 22905
+[13/Jan/2023 22:35:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:35:51] "GET /admin/faculty/departmenthead/ HTTP/1.1" 200 22676
+[13/Jan/2023 22:35:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:35:53] "GET /admin/faculty/curriculum/ HTTP/1.1" 200 22905
+[13/Jan/2023 22:35:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:35:56] "GET /admin/faculty/department/ HTTP/1.1" 200 22825
+[13/Jan/2023 22:35:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:36:23] "GET /admin/faculty/faculty/ HTTP/1.1" 200 22607
+[13/Jan/2023 22:36:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:36:25] "GET /admin/faculty/teacher/ HTTP/1.1" 200 29931
+[13/Jan/2023 22:36:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:36:28] "GET /admin/routine/slotmaster/ HTTP/1.1" 200 22627
+[13/Jan/2023 22:36:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:37:18] "GET /admin/semester/coursedistribution/ HTTP/1.1" 200 28135
+[13/Jan/2023 22:37:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:37:22] "GET /admin/semester/coursedistribution/ HTTP/1.1" 200 28135
+[13/Jan/2023 22:37:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:39:16] "GET /admin/semester/coursedistribution/ HTTP/1.1" 200 28135
+[13/Jan/2023 22:39:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:40:42] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\models.py changed, reloading.
+[13/Jan/2023 22:40:44] Watching for file changes with StatReloader
+[13/Jan/2023 22:41:31] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[13/Jan/2023 22:41:32] Watching for file changes with StatReloader
+[13/Jan/2023 22:41:39] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[13/Jan/2023 22:41:40] Watching for file changes with StatReloader
+[13/Jan/2023 22:42:31] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[13/Jan/2023 22:42:32] Watching for file changes with StatReloader
+[13/Jan/2023 22:42:43] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[13/Jan/2023 22:42:44] Watching for file changes with StatReloader
+[13/Jan/2023 22:42:48] "GET /admin/semester/coursedistribution/ HTTP/1.1" 200 27881
+[13/Jan/2023 22:42:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:42:55] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[13/Jan/2023 22:42:56] Watching for file changes with StatReloader
+[13/Jan/2023 22:43:00] "GET /admin/semester/coursedistribution/ HTTP/1.1" 200 27479
+[13/Jan/2023 22:43:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:43:21] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[13/Jan/2023 22:43:22] Watching for file changes with StatReloader
+[13/Jan/2023 22:43:51] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[13/Jan/2023 22:43:52] Watching for file changes with StatReloader
+[13/Jan/2023 22:43:55] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[13/Jan/2023 22:43:56] Watching for file changes with StatReloader
+[13/Jan/2023 22:44:01] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[13/Jan/2023 22:44:02] Watching for file changes with StatReloader
+[13/Jan/2023 22:44:06] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[13/Jan/2023 22:44:07] Watching for file changes with StatReloader
+[13/Jan/2023 22:44:19] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[13/Jan/2023 22:44:20] Watching for file changes with StatReloader
+[13/Jan/2023 22:44:23] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[13/Jan/2023 22:44:25] Watching for file changes with StatReloader
+[13/Jan/2023 22:44:29] "GET /admin/semester/coursedistribution/ HTTP/1.1" 200 27549
+[13/Jan/2023 22:44:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:44:36] "GET /admin/semester/coursedistribution/23/change/ HTTP/1.1" 200 30624
+[13/Jan/2023 22:44:36] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[13/Jan/2023 22:44:36] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[13/Jan/2023 22:44:36] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[13/Jan/2023 22:44:36] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[13/Jan/2023 22:44:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:44:59] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\models.py changed, reloading.
+[13/Jan/2023 22:45:01] Watching for file changes with StatReloader
+[13/Jan/2023 22:45:09] "GET /admin/semester/coursedistribution/23/change/ HTTP/1.1" 200 30624
+[13/Jan/2023 22:45:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:45:32] "GET /admin/semester/coursedistribution/23/change/ HTTP/1.1" 200 30624
+[13/Jan/2023 22:45:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:45:35] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\models.py changed, reloading.
+[13/Jan/2023 22:45:37] Watching for file changes with StatReloader
+[13/Jan/2023 22:45:46] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\models.py changed, reloading.
+[13/Jan/2023 22:45:47] Watching for file changes with StatReloader
+[13/Jan/2023 22:46:11] "GET /admin/student/section/ HTTP/1.1" 200 25439
+[13/Jan/2023 22:46:11] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:46:16] "GET /admin/faculty/curriculum/ HTTP/1.1" 200 22905
+[13/Jan/2023 22:46:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:46:31] "GET /admin/faculty/faculty/ HTTP/1.1" 200 22607
+[13/Jan/2023 22:46:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:46:33] "GET /admin/faculty/teacher/ HTTP/1.1" 200 29931
+[13/Jan/2023 22:46:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:46:36] "GET /admin/faculty/departmenthead/ HTTP/1.1" 200 22676
+[13/Jan/2023 22:46:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:46:38] "GET /admin/faculty/faculty/ HTTP/1.1" 200 22607
+[13/Jan/2023 22:46:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:46:40] "GET /admin/faculty/facultydean/ HTTP/1.1" 200 22653
+[13/Jan/2023 22:46:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:46:42] "GET /admin/faculty/program/ HTTP/1.1" 200 22598
+[13/Jan/2023 22:46:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:46:44] "GET /admin/faculty/facultydean/ HTTP/1.1" 200 22653
+[13/Jan/2023 22:46:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:47:03] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\models.py changed, reloading.
+[13/Jan/2023 22:47:04] Watching for file changes with StatReloader
+[13/Jan/2023 22:47:06] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\models.py changed, reloading.
+[13/Jan/2023 22:47:07] Watching for file changes with StatReloader
+[13/Jan/2023 22:47:09] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\models.py changed, reloading.
+[13/Jan/2023 22:47:10] Watching for file changes with StatReloader
+[13/Jan/2023 22:47:11] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\models.py changed, reloading.
+[13/Jan/2023 22:47:13] Watching for file changes with StatReloader
+[13/Jan/2023 22:47:15] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\models.py changed, reloading.
+[13/Jan/2023 22:47:16] Watching for file changes with StatReloader
+[13/Jan/2023 22:47:18] "GET /admin/faculty/facultydean/ HTTP/1.1" 200 22657
+[13/Jan/2023 22:47:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:47:28] "GET /admin/faculty/program/ HTTP/1.1" 200 22598
+[13/Jan/2023 22:47:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:47:47] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\models.py changed, reloading.
+[13/Jan/2023 22:47:48] Watching for file changes with StatReloader
+[13/Jan/2023 22:47:51] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\models.py changed, reloading.
+[13/Jan/2023 22:47:52] Watching for file changes with StatReloader
+[13/Jan/2023 22:47:54] "GET /admin/faculty/program/ HTTP/1.1" 200 22619
+[13/Jan/2023 22:47:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:48:07] "GET /admin/faculty/program/1/change/ HTTP/1.1" 200 24509
+[13/Jan/2023 22:48:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:48:10] "GET /admin/faculty/program/ HTTP/1.1" 200 22619
+[13/Jan/2023 22:48:12] "GET /admin/faculty/teacher/ HTTP/1.1" 200 29931
+[13/Jan/2023 22:48:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:48:14] "GET /admin/routine/building/ HTTP/1.1" 200 23040
+[13/Jan/2023 22:48:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:48:17] "GET /admin/routine/room/ HTTP/1.1" 200 26866
+[13/Jan/2023 22:48:17] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:48:20] "GET /admin/routine/routine/ HTTP/1.1" 200 21434
+[13/Jan/2023 22:48:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:48:23] "GET /admin/routine/slotdetail/ HTTP/1.1" 200 21463
+[13/Jan/2023 22:48:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:49:30] "GET /admin/routine/slotdetail/add/ HTTP/1.1" 200 23894
+[13/Jan/2023 22:49:30] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[13/Jan/2023 22:49:30] "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[13/Jan/2023 22:49:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:49:30] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+[13/Jan/2023 22:54:10] "POST /admin/routine/slotdetail/add/ HTTP/1.1" 302 0
+[13/Jan/2023 22:54:11] "GET /admin/routine/slotdetail/ HTTP/1.1" 200 22879
+[13/Jan/2023 22:54:11] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:54:11] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[13/Jan/2023 22:54:15] "GET /admin/routine/slotdetail/add/ HTTP/1.1" 200 23894
+[13/Jan/2023 22:54:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:54:40] "POST /admin/routine/slotdetail/add/ HTTP/1.1" 302 0
+[13/Jan/2023 22:54:40] "GET /admin/routine/slotdetail/ HTTP/1.1" 200 23114
+[13/Jan/2023 22:54:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:54:48] "GET /admin/routine/slotdetail/add/ HTTP/1.1" 200 23894
+[13/Jan/2023 22:54:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:55:54] "POST /admin/routine/slotdetail/add/ HTTP/1.1" 302 0
+[13/Jan/2023 22:55:55] "GET /admin/routine/slotdetail/ HTTP/1.1" 200 23348
+[13/Jan/2023 22:55:55] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:55:56] "GET /admin/routine/slotdetail/add/ HTTP/1.1" 200 23894
+[13/Jan/2023 22:55:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:57:16] "POST /admin/routine/slotdetail/add/ HTTP/1.1" 302 0
+[13/Jan/2023 22:57:16] "GET /admin/routine/slotdetail/ HTTP/1.1" 200 23582
+[13/Jan/2023 22:57:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:57:33] "GET /admin/routine/slotdetail/add/ HTTP/1.1" 200 23894
+[13/Jan/2023 22:57:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 22:58:31] "POST /admin/routine/slotdetail/add/ HTTP/1.1" 302 0
+[13/Jan/2023 22:58:32] "GET /admin/routine/slotdetail/ HTTP/1.1" 200 23816
+[13/Jan/2023 22:58:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 23:00:13] "GET /admin/routine/slotdetail/add/ HTTP/1.1" 200 23894
+[13/Jan/2023 23:00:13] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 23:01:40] "POST /admin/routine/slotdetail/add/ HTTP/1.1" 302 0
+[13/Jan/2023 23:01:41] "GET /admin/routine/slotdetail/ HTTP/1.1" 200 24050
+[13/Jan/2023 23:01:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 23:04:15] "GET /admin/routine/slotdetail/ HTTP/1.1" 200 23820
+[13/Jan/2023 23:04:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 23:04:57] "GET /admin/routine/slotdetail/add/ HTTP/1.1" 200 23894
+[13/Jan/2023 23:04:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 23:08:04] "POST /admin/routine/slotdetail/add/ HTTP/1.1" 302 0
+[13/Jan/2023 23:08:04] "GET /admin/routine/slotdetail/ HTTP/1.1" 200 24284
+[13/Jan/2023 23:08:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 23:09:38] "GET /admin/routine/slotdetail/add/ HTTP/1.1" 200 23894
+[13/Jan/2023 23:09:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 23:10:22] "POST /admin/routine/slotdetail/add/ HTTP/1.1" 302 0
+[13/Jan/2023 23:10:22] "GET /admin/routine/slotdetail/ HTTP/1.1" 200 24518
+[13/Jan/2023 23:10:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 23:11:31] "GET /admin/routine/slotdetail/add/ HTTP/1.1" 200 23894
+[13/Jan/2023 23:11:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Jan/2023 23:11:33] "GET /admin/routine/slotdetail/ HTTP/1.1" 200 24288
+[13/Jan/2023 23:12:04] "GET / HTTP/1.1" 200 22108
+[13/Jan/2023 23:12:04] "GET /static/css/styles.css HTTP/1.1" 304 0
+[13/Jan/2023 23:12:07] "GET /routines/ HTTP/1.1" 200 24269
+[13/Jan/2023 23:14:24] "GET /routines/?day=monday HTTP/1.1" 200 24280
+[13/Jan/2023 23:17:32] "GET /faculties/ HTTP/1.1" 200 21245
+[13/Jan/2023 23:17:32] "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+[13/Jan/2023 23:17:32] "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+[13/Jan/2023 23:17:32] "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+[13/Jan/2023 23:17:32] "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+[13/Jan/2023 23:17:35] "GET /departments/ HTTP/1.1" 200 22161
+[13/Jan/2023 23:17:37] "GET /programs/ HTTP/1.1" 200 21359
+[13/Jan/2023 23:17:39] "GET /curriculums/ HTTP/1.1" 200 22664
+[13/Jan/2023 23:17:43] "GET /teachers/ HTTP/1.1" 200 54817
+[13/Jan/2023 23:21:54] "GET /distributions/ HTTP/1.1" 200 35877
+[13/Jan/2023 23:24:43] E:\All Web Designing\My All Project\lu_routineMaker-dev\routine\models.py changed, reloading.
+[13/Jan/2023 23:24:45] Watching for file changes with StatReloader
+[13/Jan/2023 23:26:43] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\models.py changed, reloading.
+[13/Jan/2023 23:26:44] Watching for file changes with StatReloader
+[13/Jan/2023 23:27:54] "GET /distributions/ HTTP/1.1" 200 35877
+[13/Jan/2023 23:29:37] "GET /distributions/ HTTP/1.1" 200 35877
+[13/Jan/2023 23:35:08] "GET /distributions/ HTTP/1.1" 200 35877
+[13/Jan/2023 23:35:23] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\views.py changed, reloading.
+[13/Jan/2023 23:35:24] Watching for file changes with StatReloader
+[13/Jan/2023 23:36:19] "GET /distributions/ HTTP/1.1" 200 36659
+[13/Jan/2023 23:37:01] "GET /distributions/ HTTP/1.1" 200 36775

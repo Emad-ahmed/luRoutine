@@ -94,6 +94,9 @@ class CourseDistribution(AbstractTimestampModel):
         # ]
 
 
+    def __str__(self) -> str:
+        return f"{self.offered.batch.batch}-{self.section.section}"
+
 class DistributedSectionDetail(AbstractTimestampModel):
     distribution = models.OneToOneField(
         verbose_name=_('Distributed Course'),
