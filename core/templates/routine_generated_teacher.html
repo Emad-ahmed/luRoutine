@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>User</title>
+    <style>
+      .myh1 {
+        font-size: 2.3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="text-center myh1">{{first_name}} {{last_name}}</h1>
+
+    {% for day, data in routine.items %} {% if data%}
+    <h1>{{ day }}</h1>
+
+    <table style="border: 1px solid black">
+      <thead>
+        <tr>
+          <th>Batch</th>
+
+          {% for slot in slots %}
+          <th align="center" style="padding: 8px">
+            {{ slot.start_time }} - {{ slot.end_time }}
+          </th>
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for batch, dt in data.items %}
+        <tr>
+          <td style="padding: 8px" align="center">{{ batch }}</td>
+          {% for rt in dt %} {% if rt %}
+          <td align="center" style="padding: 4px">
+            {{ rt.course_dist.offered.course.course_code }}
+            <p class="text-muted m-0">
+              {{ rt.room.room_number }} |
+              {{rt.course_dist.teacher.name_initials}}
+            </p>
+          </td>
+          {% else %}
+          <td align="center" style="padding: 4px">---</td>
+          {% endif %} {% endfor %}
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% endif %} {% endfor %}
+  </body>
+</html>

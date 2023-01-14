@@ -1,0 +1,364 @@
+{% extends 'base.html' %} {% block css_here %}
+<style>
+  .errorlist {
+    list-style-type: none;
+    padding: 5px 0 0 10px;
+  }
+
+  .errorlist > li {
+    font-size: small;
+    color: #f4365c;
+  }
+  #suggestionPanel
+  {
+    color:red;
+  }
+</style>
+
+{% endblock css_here %} {% block body_header %}
+<header
+  class="page-header page-header-dark bg-gradient-primary-to-secondary pb-10"
+>
+  <div class="container-xl px-4">
+    <div class="page-header-content pt-4">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-auto mt-4">
+          <h1 class="page-header-title">
+            <div class="page-header-icon"><i data-feather="plus"></i></div>
+            {% if routine %} Update Entry {% else %} New Entry {% endif %}
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+{% endblock body_header %} {% block body %}
+<div class="container-xl px-4 mt-n10">
+ 
+  <div id="default">
+    <div class="card mb-4">
+      
+      <div class="card-body">
+        
+        <!-- Component Preview-->
+        <div class="sbp-preview">
+          <div
+      class="justify-content-start"
+        id="suggestionPanel"
+      ></div>
+          <div class="sbp-preview-content">
+            <form method="POST" id="courseForm">
+              {% csrf_token %} <br />
+              {% for key, value in form.errors.items %} <br />
+              {% if key == '__all__' %} {{ value }} <br />
+
+              {% endif %} <br />
+              {% endfor %}
+              <div class="row mb-3">
+                <div class="col-12" id="crs-section">
+                  <label for="program">Course</label>
+                  <select
+                    class="form-control form-control-solid"
+                    id="course_dist"
+                    name="course_dist"
+                  >
+                    {% if routine %}
+                    <option value="{{rouine.id}}">{{rouine.id}}</option>
+                    {% else %}
+                    <option value="">Choose One</option>
+                    {% endif %} {% for dist in dists %}
+                    <option value="{{ dist.id }}">
+                      {{ dist.offered.course.course_code }} -
+                      {{dist.teacher.name_initials }} -
+                      {{dist.section.batch.batch }}{{ dist.section.section }}
+                    </option>
+                    {% endfor %}
+                  </select>
+                </div>
+                <div class="col-12" id="dummy-section" hidden disabled="">
+                  <div class="mb-3">
+                    <label for="batch">Dummy Department</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      id="dummy_department"
+                      name="dummy_department"
+                      placeholder="Dummy Department"
+                      {%
+                      if
+                      batch
+                      %}
+                      value="{{ batch.batch }}"
+                      {%
+                      endif
+                      %}
+                      required
+                      disabled
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-12">
+                  <label for="program">Day of Week</label>
+                  <select
+                    class="form-control form-control-solid"
+                    id="day_of_week"
+                    name="day_of_week"
+                  >
+                    {% if routine %}
+                    <option value="{{rouine.id}}">{{rouine.id}}</option>
+                    {% else %}
+                    <option value="">Chose One</option>
+                    <option value="sunday">Sunday</option>
+                    <option value="monday">Monday</option>
+                    <option value="tuesday">Tuesday</option>
+                    <option value="wednesday">Wednesday</option>
+                    <option value="thursday">Thursday</option>
+                    <option value="friday">Friday</option>
+                    <option value="saturday">Saturday</option>
+                    {% endif %}
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-12">
+                  <label for="program">Slot</label>
+                  <select
+                    class="form-control form-control-solid"
+                    id="slot"
+                    name="slot"
+                  >
+                    <option value="">Chose One</option>
+                    {% for slot in slots %}
+                    <option value="{{ slot.id }}">
+                      {{ slot.start_time }} - {{ slot.end_time }}
+                    </option>
+                    {% endfor %}
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-12">
+                  <label for="program">Room</label>
+                  <select
+                    class="form-control form-control-solid"
+                    id="room"
+                    name="room"
+                  >
+                    <option value="">Chose One</option>
+                    {% for room in rooms %}
+                    <option value="{{ room.id }}">
+                      {{ room.room_number }}
+                    </option>
+                    {% endfor %}
+                  </select>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div
+                  class="col-md-6 d-flex justify-content-start"
+                  id="suggestionPanel"
+                ></div>
+                
+                <div class="col-md-6 d-flex justify-content-end">
+                  <button
+                    type="button"
+                    onClick="getSuggestion();"
+                    class="btn btn-light me-3"
+                  >
+                    Suggestions
+                  </button>
+                  <button type="submit" class="btn btn-primary">
+                    {% if routine %} Update {% else %} Submit {% endif %}
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="suggestionModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="suggestionModalLabe;"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Routine Suggestion</h5>
+        <button
+          class="btn-close"
+          type="button"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-center text-danger" id="blankModal">Invalid Inputs.</p>
+        <p id="contactHour" hidden></p>
+        <p id="availableDays" hidden></p>
+        <p id="availableSlots" hidden></p>
+        <p id="availableRooms" hidden></p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" type="button" data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock body %} {% block js_here %}
+
+<script>
+
+  $(document).ready(function () {
+      const urlParams = new URLSearchParams(window.location.search);
+      const dummy = urlParams.get('dummy');
+      if (dummy == 'true') {
+          $("#crs-section").attr("hidden", "hidden")
+          $("#course_dist").attr("disabled", "disabled")
+
+          $("#dummy_department").removeAttr("disabled")
+          $("#dummy-section").removeAttr("hidden")
+      }
+  });
+
+  function getSuggestion() {
+      request = $.ajax({
+          url: "/routine/check",
+          type: "get",
+          data: {
+              'slot': $("#slot").val(),
+              'course_dist': $("#course_dist").val(),
+              'day_of_week': $("#day_of_week").val(),
+              'room': $("#room").val(),
+              {#'csrfmiddlewaretoken': $("[name='csrfmiddlewaretoken']").val()#}
+          },
+          success: function (response) {
+              console.log(response);
+              if (response.err != -1) {
+                  $("#blankModal").attr('hidden', 'true');
+              } else {
+                  $("#blankModal").removeAttr('hidden');
+              }
+
+              if (response.dist_class_per_week) {
+                  $("#contactHour").removeAttr('hidden');
+                  $("#contactHour").html("<b>Total Contact Hour of the Course: </b>" + response.dist_class_per_week * 16 + " / " + response.dist_contact_hour * 14)
+              } else {
+                  $("#contactHour").attr('hidden', 'true');
+              }
+
+              if (response.available_days) {
+                  $("#availableDays").removeAttr('hidden');
+                  str = "<b>Available Days for Selected Slot and Room: </b><br>";
+                  for (let day of response.available_days) {
+                      str += ("<span style='text-transform: capitalize;'>" + day + "</span> ");
+                  }
+                  $("#availableDays").html(str)
+              } else {
+                  $("#availableDays").attr('hidden', 'true');
+              }
+
+              if (response.available_slots) {
+                  $("#availableSlots").removeAttr('hidden');
+                  str = "<b>Available Slots for Selected Day and Room: </b><br>";
+                  for (let slot of response.available_slots) {
+                      str += (slot + " ");
+                  }
+                  $("#availableSlots").html(str)
+              } else {
+                  $("#availableSlots").attr('hidden', 'true');
+              }
+
+              if (response.available_rooms) {
+                  $("#availableRooms").removeAttr('hidden');
+                  str = "<b>Available Rooms for Selected Slot and Day: </b><br>";
+                  for (let room of response.available_rooms) {
+                      str += (room + " ");
+                  }
+                  $("#availableRooms").html(str)
+              } else {
+                  $("#availableRooms").attr('hidden', 'true');
+              }
+              $('#suggestionModal').modal('show');
+          }
+      });
+  }
+
+
+  $("#course_dist").change(() => changesHappened());
+  $("#day_of_week").change(() => changesHappened());
+  $("#slot").change(() => changesHappened());
+  $("#room").change(() => changesHappened());
+
+  var day = "";
+  var slot = "";
+  var course = "";
+
+  function changesHappened() {
+      console.log($("#day_of_week").val())
+      console.log(day)
+      console.log($("#slot").val())
+      console.log(slot)
+
+      if ($("#day_of_week").val() && $("#slot").val() && ($("#slot").val() != slot || $("#day_of_week").val() != day)) {
+          request = $.ajax({
+              url: '/routine/getRoom',
+              type: "get",
+              data: {
+                  'course_dist': $("#course_dist").val(),
+                  'day': $("#day_of_week").val(),
+                  'slot': $("#slot").val()
+              },
+              success: function (resp) {
+                  console.log(resp)
+                  cnt = 0;
+                  $("#room").empty();
+                  $("#room").append(`<option value="">Chose One</option>`);
+                  for (let room of resp.rooms) {
+                      $("#room").append(`<option value="` + room[0] + `">` + room[1] + `</option>`);
+                      cnt++;
+                  }
+                  if (cnt == 0) {
+                      $("#room").empty();
+                      $("#room").append(`<option value="" selected>No Room Available</option>`);
+                  }
+                  day = $("#day_of_week").val();
+                  slot = $("#slot").val();
+              }
+          });
+
+      }
+
+      if ($("#course_dist").val() && $("#course_dist").val() != course) {
+          request = $.ajax({
+              url: "/routine/checkCourse",
+              type: "get",
+              data: {
+                  'course': $("#course_dist").val()
+              },
+              success: function (response) {
+                if(response.weekly < response.contactHour)
+                {
+                  $("#suggestionPanel").html("<b>Total Contact Hour of the Course: </b>" + response.weekly * 16 + "/" + response.contactHour * 14)
+                } else{
+                  $("#suggestionPanel").html("<b>Total Contact Hour of the Course Out Of The Range: </b>" + response.weekly * 16 + "/" + response.contactHour * 14);
+                  location.reload(true);
+                }
+              }
+          });
+      }
+  }
+</script>
+{% endblock %}

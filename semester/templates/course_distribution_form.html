@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+{% block css_here %}
+    {{ form.media }}
+{% endblock css_here %}
+
+{% block body_header %}
+    <header class="page-header page-header-dark bg-gradient-primary-to-secondary pb-10">
+        <div class="container-xl px-4">
+            <div class="page-header-content pt-4">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-auto mt-4">
+                        <h1 class="page-header-title">
+                            <div class="page-header-icon"><i data-feather="plus"></i></div>
+                            New Course Distribution
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+{% endblock body_header %}
+
+{% block body %}
+    <div class="container-xl px-4 mt-n10">
+        <div id="default">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <!-- Component Preview-->
+                    <div class="sbp-preview">
+                        <div class="sbp-preview-content">
+                            <form method="POST">
+                                {% csrf_token %}
+                                <div class="row mb-3">
+                                    <label for="Offered Course">Offered Course</label>
+                                    <select class="form-control form-control-solid" id="offered" name="offered">
+                                        <option>Chose One</option>
+                                        {% for offer in offers %}
+                                            <option value="{{ offer.id }}"
+                                                    {% if dist.offered.id == offer.id %}
+                                                    selected
+                                                    {% endif %}
+                                            >{{ offer.course.course_code }} - {{ offer.course.title }}
+                                                - {{ offer.batch.batch }} Batch
+                                            </option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                                <div class="row mb-3 p-0">
+                                    <div class="col-5">
+                                        <label for="Offered Course">Section</label>
+                                        <select class="form-control form-control-solid" id="section" name="section">
+                                            <option>Choose Offered Course</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-3">
+                                        <label for="starting_at">Starting At</label>
+                                        <input class="form-control" type="text" id="starting_at"
+                                               value="*"
+                                               disabled
+                                               required
+                                               name="starting_id"
+                                        />
+                                    </div>
+                                    <div class="col-3">
+                                        <label for="ending_at">Ending At</label>
+                                        <input class="form-control" type="text" id="ending_at"
+                                               value="*"
+                                               disabled
+                                               required
+                                               name="ending_id"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="section">Parent</label>
+                                    <select class="form-control form-control-solid" id="parent"
+                                            name="parent_dist">
+                                        <option value="">Select an offered course first</option>
+                                    </select>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="teacher">Teacher</label>
+                                    <select class="form-control form-control-solid" id="teacher" name="teacher">
+                                        <option>Chose One</option>
+                                        {% for teacher in teachers %}
+                                            <option value="{{ teacher.id }}"
+                                                    {% if dist.teacher.id == teacher.id %}
+                                                    selected
+                                                    {% endif %}
+                                            >{{ teacher.first_name }} {{ teacher.last_name }}
+                                            </option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                                <div class="mb-3 d-flex justify-content-end">
+                                    <button class="btn btn-primary">
+                                        {% if dist %}
+                                            Update
+                                        {% else %}
+                                            Submit
+                                        {% endif %}
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock body %}
+
+{% block js_here %}
+    <script>
+        let flag = 0;
+        $("#offered").change(function () {
+            request = $.ajax({
+                url: '/getOfferedSections/',
+                type: "get",
+                data: {
+                    'offered': $("#offered").val(),
+                },
+                success: function (resp) {
+                    cnt = 0;
+                    $("#section").empty();
+                    for (let sec of resp.sections) {
+                        $("#section").append(`<option value="` + sec[0] + `">` + sec[1] + `</option>`);
+                    }
+                    $("#starting_at").removeAttr("disabled");
+                    $("#ending_at").removeAttr("disabled");
+                }
+            });
+
+            request = $.ajax({
+                url: '/getOfferedParents/',
+                type: "get",
+                data: {
+                    'offered': $("#offered").val(),
+                },
+                success: function (resp) {
+                    cnt = 0;
+                    $("#parent").empty();
+                    $("#parent").append(`<option value="">Choose a Parent</option>`);
+                    for (let parent of resp.parents) {
+                        $("#parent").append(`<option value="` + parent[0] + `">` + parent[1] + parent[2] + ` - ` + parent[3] + `</option>`
+                        )
+                        ;
+                        cnt++;
+                    }
+                    if (cnt == 0) {
+                        $("#parent").empty();
+                        $("#parent").append(`<option value="">Nothing Found</option>`);
+                    }
+                }
+            });
+        });
+    </script>
+{% endblock %}

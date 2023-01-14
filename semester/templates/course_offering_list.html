@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% block body_header %}
+    <header class="page-header page-header-dark bg-gradient-primary-to-secondary pb-10">
+        <div class="container-xl px-4">
+            <div class="page-header-content pt-4">
+                <div class="d-flex justify-content-between">
+                    <div class="col-auto mt-4">
+                        <h1 class="page-header-title">
+                            <div class="page-header-icon"><i data-feather="filter"></i></div>
+                            Offered Course List
+                        </h1>
+                    </div>
+                    <div class="mt-4">
+                        <a href="{% url 'semester:offer_create' %}" class="btn btn-light">Offer New Course&nbsp;<i class="fas fa-plus"></i> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+{% endblock body_header %}
+
+{% block body %}
+    <div class="container-xl px-4 mt-n10">
+        <div class="card mb-4">
+            <div class="card-body">
+                <table id="datatablesSimple">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Semester</th>
+                        <th width="50%">Course</th>
+                        <th>Batch</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tfoot>
+                    <tr>
+                        <th>#</th>
+                        <th>Semester</th>
+                        <th>Course</th>
+                        <th>Batch</th>
+                        <th>Actions</th>
+                    </tr>
+                    </tfoot>
+                    <tbody>
+                    {% for offer in offers %}
+                        <tr>
+                            <td>{{ offer.id }}</td>
+                            <td>{{ offer.semester.name | title }} - {{ offer.semester.year }}</td>
+                            <td>{{ offer.course.title }}</td>
+                            <td>{{ offer.batch.program.department.department_id }}-{{ offer.batch.batch }}</td>
+                            <td class="text-center">
+                                <a href="#?id={{ offer.id }}" class="btn btn-datatable btn-icon btn-transparent-dark me-2"><i
+                                        data-feather="edit"></i></a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js_here %}
+    <script>
+        window.addEventListener('DOMContentLoaded', event => {
+            // Simple-DataTables
+            // https://github.com/fiduswriter/Simple-DataTables/wiki
+
+            const datatablesSimple = document.getElementById('datatablesSimple');
+            if (datatablesSimple) {
+                new simpleDatatables.DataTable(datatablesSimple);
+            }
+        });
+
+    </script>
+{% endblock js_here %}

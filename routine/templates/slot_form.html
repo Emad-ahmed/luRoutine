@@ -1,0 +1,194 @@
+{% extends 'base.html' %}
+{% block css_here %}
+    {{ form.media }}
+{% endblock css_here %}
+{% block body_header %}
+    <header class="page-header page-header-dark bg-gradient-primary-to-secondary pb-10">
+        <div class="container-xl px-4">
+            <div class="page-header-content pt-4">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-auto mt-4">
+                        <h1 class="page-header-title">
+                            <div class="page-header-icon"><i data-feather="plus"></i></div>
+                            Add Slot
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+{% endblock body_header %}
+
+{% block body %}
+    <div class="container-xl px-4 mt-n10">
+        <div id="default">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <!-- Component Preview-->
+                    <div class="sbp-preview">
+                        <div class="sbp-preview-content">
+                            <form method="POST">
+                                {% csrf_token %}
+                                <div class="mb-3">
+                                    <label for="start_time">Slot Type</label>
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <select class="form-control form-control-solid" id="type" name="slot">
+                                                <option>Chose One</option>
+                                                {% for slot in slots %}
+                                                    <option value="{{ slot.id }}">{{ slot.type }}</option>
+                                                {% endfor %}
+                                            </select>
+                                        </div>
+                                        <div class="col-1 d-flex justify-content-center">
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#createSlot" id="editSlot" disabled><i
+                                                    data-feather="edit-2"></i></button>
+                                        </div>
+                                        <div class="col-1 d-flex justify-content-center">
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#createSlot"><i
+                                                    data-feather="plus-square"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="start_effect_date">Start Effect Date</label>
+                                            <input class="form-control" type="text" id="start_effect_date"
+                                                   placeholder="Choose Slot Type" disabled
+                                            />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="end_effect_date">End Effect Date</label>
+                                            <input class="form-control" type="text" id="end_effect_date"
+                                                   placeholder="Choose Slot Type" disabled
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="status">Start Time</label>
+                                        {{ form.start_time }}
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="status">End Time</label>
+                                        {{ form.end_time }}
+                                    </div>
+                                </div>
+                                <div class="mb-3 d-flex justify-content-end">
+                                    <button class="btn btn-primary">
+                                        {% if slot %}
+                                            Update
+                                        {% else %}
+                                            Submit
+                                        {% endif %}
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal-->
+    <div class="modal fade" id="createSlot" tabindex="-1" aria-labelledby="createBuildingModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create New Slot Type</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form method="POST" id="slotForm" action="{% url 'routine:slot_master_create' %}">
+                        {% csrf_token %}
+                        <div class="mb-3">
+                            <label for="type_m">Type</label>
+                            <input class="form-control" type="text" id="type_m" name="type"
+                                   placeholder="Type"
+                                   required
+                            />
+                        </div>
+                        <div class="mb-3">
+                            <label for="title">Start Effect Date</label>
+                            {{ form.start_effect_date }}
+                        </div>
+                        <div class="mb-3">
+                            <label for="title">End Effect Date</label>
+                            {{ form.end_effect_date }}
+                        </div>
+                        <div class="mb-3">
+                            <label for="status">Status</label>
+                            <select class="form-control form-control-solid" id="status" name="status">
+                                <option value="active">Active</option>
+                                <option value="inactive">Inactive</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="short_description">Short Description</label>
+                            <textarea class="form-control" id="short_description" name="short_description"
+                                      rows="3">{% if slot %}{{ slot.short_description }}{% endif %}</textarea>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" id="slotSubmit" class="btn btn-primary">Submit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock body %}
+
+{% block js_here %}
+    <script>
+        const init = $("#type").val();
+        let slots = [];
+        let i = 0;
+        {% for slot in slots %}
+            slots[i] = {};
+            slots[i]['type'] = "{{ slot.type }}";
+            slots[i]['start_effect_date'] = "{{ slot.start_effect_date|date:'m/d/y' }}";
+            slots[i]['end_effect_date'] = "{{ slot.end_effect_date|date:'m/d/y' }}";
+            slots[i]['status'] = "{{ slot.status }}";
+            slots[i]['short_description'] = "{{ slot.short_description }}";
+            i++;
+        {% endfor %}
+        console.log(slots)
+        $("#type").change(function () {
+            if ($("#type").val() != init) {
+                $("#editSlot").removeAttr("disabled");
+                $("#start_effect_date").val(slots[$("#type").val() - 1]['start_effect_date']);
+                $("#end_effect_date").val(slots[$("#type").val() - 1]['end_effect_date']);
+            } else {
+                $("#editSlot").attr("disabled", "true");
+                $("#start_effect_date").val("");
+                $("#end_effect_date").val("");
+            }
+        });
+
+        $("#editSlot").click(function () {
+            var i = $("#type").val() - 1;
+            $("#type_m").val(slots[i]['type']);
+            $("#id_start_effect_date").val(slots[i]['start_effect_date']);
+            $("#id_end_effect_date").val(slots[i]['end_effect_date']);
+            $("#status").val(slots[i]['status']);
+            $("#short_description").val(slots[i]['short_description']);
+        });
+
+        $("#slotSubmit").click(function () {
+            if ($("#type").val() != init) {
+                $("#slotForm").attr("action", "{% url 'routine:slot_master_update' %}?id=" + $("#type").val());
+            } else {
+                $("#slotForm").attr("action", "{% url 'routine:slot_master_create' %}");
+            }
+            $("#slotForm").submit();
+        })
+    </script>
+{% endblock js_here %}

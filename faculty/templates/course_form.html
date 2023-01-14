@@ -1,0 +1,187 @@
+{% extends 'base.html' %}
+
+{% block body_header %}
+    <header class="page-header page-header-dark bg-gradient-primary-to-secondary pb-10">
+        <div class="container-xl px-4">
+            <div class="page-header-content pt-4">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-auto mt-4">
+                        <h1 class="page-header-title">
+                            <div class="page-header-icon"><i data-feather="plus"></i></div>
+                            Add Course
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+{% endblock body_header %}
+
+{% block body %}
+    <div class="container-xl px-4 mt-n10">
+        <div id="default">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <!-- Component Preview-->
+                    <div class="sbp-preview">
+                        <div class="sbp-preview-content">
+                            <form method="POST" id="courseForm">
+                                {% csrf_token %}
+                                <div class="row mb-3">
+{#                                    <div class="col-md-6">#}
+{#                                        <label for="program">Program</label>#}
+{#                                        <select class="form-control form-control-solid" id="program"#}
+{#                                                name="program">#}
+{#                                            <option>Chose One</option>#}
+{#                                            {% for program in programs %}#}
+{#                                                <option value="{{ program.id }}"#}
+{#                                                        {% if course.program.id == program.id %}#}
+{#                                                        selected#}
+{#                                                        {% endif %}#}
+{#                                                >{{ program.program_id }}#}
+{#                                                    in {{ program.department.department_id }}</option>#}
+{#                                            {% endfor %}#}
+{#                                        </select>#}
+{#                                    </div>#}
+                                    <div class="col-md-12">
+                                        <label for="course_code">Curriculums</label>
+                                        <select class="form-control form-control-solid" multiple id="curriculum"
+                                                name="curriculum">
+                                            {% for cur in curriculums %}
+                                                <option value="{{ cur.id }}"
+                                                        {% if course.curriculum.id == cur.id %}
+                                                        selected
+                                                        {% endif %}
+                                                >{{ cur.program.program_id }}
+                                                    in {{ cur.program.department.department_id }}
+                                                    ({{ cur.start_effect_date|date:"Y" }} - {{ cur.end_effect_date|date:"Y" }})
+                                                </option>
+                                            {% endfor %}
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-4">
+                                        <label for="course_code">Course Code</label>
+                                        <input class="form-control" type="text" id="course_code" name="course_code"
+                                               placeholder="Course Code"
+                                                {% if course %}
+                                               value="{{ course.course_code }}"
+                                                {% endif %}
+                                               required
+                                        />
+                                    </div>
+                                    <div class="col-md-8">
+                                        <label for="title">Course Title</label>
+                                        <input class="form-control" type="text" id="title" name="title"
+                                               placeholder="Course Title"
+                                                {% if course %}
+                                               value="{{ course.title }}"
+                                                {% endif %}
+                                               required
+                                        />
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-4">
+                                        <label for="head">Type</label>
+                                        <select class="form-control form-control-solid" id="type"
+                                                name="type">
+                                            <option value="">Chose One</option>
+                                            <option value="theory"
+                                                    {% if course.type == "theory" %}
+                                                    selected
+                                                    {% endif %}> Theory
+                                            </option>
+                                            <option value="lab"
+                                                    {% if course.type == "lab" %}
+                                                    selected
+                                                    {% endif %}> Lab
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="credit">Credit</label>
+                                        <input class="form-control" type="text" id="credit" name="credit"
+                                               placeholder="Credit"
+                                                {% if course %}
+                                               value="{{ course.credit }}"
+                                                {% endif %}
+                                               required
+                                        />
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="head">Contact Hour</label>
+                                        <input class="form-control" type="number" id="contact_hour" name="contact_hour"
+                                               placeholder="Contact Hour"
+                                                {% if course %}
+                                               value="{{ course.contact_hour }}"
+                                                {% endif %}
+                                               required
+                                        />
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-12">
+                                        <label for="program">Pre-req Course</label>
+                                        <select class="form-control form-control-solid" id="pre_req"
+                                                name="pre_req">
+                                            <option>Chose One</option>
+                                            {% for crs in courses %}
+                                                <option value="{{ crs.id }}"
+                                                        {% if course.pre_req.id == crs.id %}
+                                                        selected
+                                                        {% endif %}
+                                                >{{ crs.course_code }}
+                                                    - {{ crs.title }}</option>
+                                            {% endfor %}
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mb-3 d-flex justify-content-end">
+                                    <button type="button" onclick="submitForm()" class="btn btn-primary">
+                                        {% if course %}
+                                            Update
+                                        {% else %}
+                                            Submit
+                                        {% endif %}
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock body %}
+
+{% block js_here %}
+    <script>
+        function submitForm() {
+            if ($("#pre_req").val() == "Chose One") {
+                $("#pre_req").remove();
+            }
+            $("#courseForm").submit();
+        };
+
+        $("#type").change(function () {
+            if ($("#type").val() == 'theory') {
+                $("#credit").val(3);
+                $("#contact_hour").val(3);
+            } else if ($("#type").val() == 'lab') {
+                $("#credit").val(1);
+                $("#contact_hour").val(2);
+            }
+        });
+
+        $("#credit").change(function () {
+            if ($("#type").val() == 'theory') {
+                $("#contact_hour").val($("#credit").val());
+            } else if ($("#type").val() == 'lab') {
+                $("#contact_hour").val($("#credit").val() * 2);
+            }
+        });
+
+    </script>
+{% endblock js_here %}

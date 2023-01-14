@@ -1,0 +1,124 @@
+<div id="layoutSidenav_nav">
+    <nav class="sidenav shadow-right sidenav-light">
+        <div class="sidenav-menu">
+            <div class="nav accordion" id="accordionSidenav">
+                <!-- Sidenav Menu Heading (Account)-->
+                <!-- * * Note: * * Visible only on and above the sm breakpoint-->
+                <div class="sidenav-menu-heading d-sm-none">Account</div>
+                <!-- Sidenav Link (Alerts)-->
+                <!-- * * Note: * * Visible only on and above the sm breakpoint-->
+                <a class="nav-link d-sm-none" href="#!">
+                    <div class="nav-link-icon"><i data-feather="bell"></i></div>
+                    Alerts
+                    <span class="badge bg-warning-soft text-warning ms-auto">4 New!</span>
+                </a>
+                <!-- Sidenav Link (Messages)-->
+                <!-- * * Note: * * Visible only on and above the sm breakpoint-->
+                <a class="nav-link d-sm-none" href="#!">
+                    <div class="nav-link-icon"><i data-feather="mail"></i></div>
+                    Messages
+                    <span class="badge bg-success-soft text-success ms-auto">2 New!</span>
+                </a>
+                <!-- Sidenav Menu Heading (Dashboard)-->
+                <div class="sidenav-menu-heading">Dashboard</div>
+                <!-- Sidenav Accordion (Dashboard)-->
+                <a class="nav-link" href="{% url 'core:home' %}">
+                    <div class="nav-link-icon"><i data-feather="bar-chart"></i></div>
+                    Dashboard
+                </a>
+
+                <!-- Sidenav Heading (Faculty)-->
+                <div class="sidenav-menu-heading">Faculty</div>
+                <!-- Sidenav Accordion (Faculty)-->
+                <a class="nav-link" href="{% url 'faculty:faculty_list' %}">
+                    <div class="nav-link-icon"><i data-feather="bar-chart"></i></div>
+                    Faculty
+                </a>
+                <!-- Sidenav Accordion (Department)-->
+                <a class="nav-link" href="{% url 'faculty:department_list' %}">
+                    <div class="nav-link-icon"><i data-feather="bar-chart"></i></div>
+                    Department
+                </a>
+                <!-- Sidenav Accordion (Program)-->
+                <a class="nav-link" href="{% url 'faculty:program_list' %}">
+                    <div class="nav-link-icon"><i data-feather="bar-chart"></i></div>
+                    Program
+                </a>
+                <!-- Sidenav Accordion (Curriculum)-->
+                <a class="nav-link" href="{% url 'faculty:curriculum_list' %}">
+                    <div class="nav-link-icon"><i data-feather="bar-chart"></i></div>
+                    Curriculum
+                </a>
+                <!-- Sidenav Accordion (Teacher)-->
+                <a class="nav-link" href="{% url 'faculty:teacher_list' %}">
+                    <div class="nav-link-icon"><i data-feather="bar-chart"></i></div>
+                    Teacher
+                </a>
+                <!-- Sidenav Accordion (Course)-->
+                <a class="nav-link" href="{% url 'faculty:course_list' %}">
+                    <div class="nav-link-icon"><i data-feather="bar-chart"></i></div>
+                    Course
+                </a>
+
+                <!-- Sidenav Heading (Student)-->
+                <div class="sidenav-menu-heading">Student</div>
+                <!-- Sidenav Accordion (Batch)-->
+                <a class="nav-link" href="{% url 'student:batch_list' %}">
+                    <div class="nav-link-icon"><i data-feather="bar-chart"></i></div>
+                    Batch
+                </a>
+                <!-- Sidenav Accordion (Section)-->
+                <a class="nav-link" href="{% url 'student:section_list' %}">
+                    <div class="nav-link-icon"><i data-feather="bar-chart"></i></div>
+                    Section
+                </a>
+
+                <!-- Sidenav Heading (Semester)-->
+                <div class="sidenav-menu-heading">Semester</div>
+                <!-- Sidenav Accordion (Semester)-->
+                <a class="nav-link" href="{% url 'semester:semester_list' %}">
+                    <div class="nav-link-icon"><i data-feather="bar-chart"></i></div>
+                    Semester
+                </a>
+                <!-- Sidenav Accordion (Course Offering)-->
+                <a class="nav-link" href="{% url 'semester:offer_list' %}">
+                    <div class="nav-link-icon"><i data-feather="bar-chart"></i></div>
+                    Course Offering
+                </a>
+
+                <!-- Sidenav Accordion (Course Distribution)-->
+                <a class="nav-link" href="{% url 'semester:dist_list' %}">
+                    <div class="nav-link-icon"><i data-feather="bar-chart"></i></div>
+                    Course Distribution
+                </a>
+
+
+                <!-- Sidenav Heading (Routine)-->
+                <div class="sidenav-menu-heading">Routine</div>
+                <!-- Sidenav Accordion (Room)-->
+                <a class="nav-link" href="{% url 'routine:room_list' %}">
+                    <div class="nav-link-icon"><i data-feather="bar-chart"></i></div>
+                    Room
+                </a>
+                <!-- Sidenav Accordion (Slot)-->
+                <a class="nav-link" href="{% url 'routine:slot_list' %}">
+                    <div class="nav-link-icon"><i data-feather="bar-chart"></i></div>
+                    Slot
+                </a>
+                <!-- Sidenav Accordion (Routine)-->
+                <a class="nav-link" href="{% url 'routine:routine_list' %}">
+                    <div class="nav-link-icon"><i data-feather="bar-chart"></i></div>
+                    Routine
+                </a>
+
+            </div>
+        </div>
+        <!-- Sidenav Footer-->
+        <div class="sidenav-footer">
+            <div class="sidenav-footer-content">
+                <div class="sidenav-footer-subtitle">Logged in as:</div>
+                <div class="sidenav-footer-title">admin</div>
+            </div>
+        </div>
+    </nav>
+</div>

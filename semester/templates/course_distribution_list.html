@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% block body_header %}
+    <header class="page-header page-header-dark bg-gradient-primary-to-secondary pb-10">
+        <div class="container-xl px-4">
+            <div class="page-header-content pt-4">
+                <div class="d-flex justify-content-between">
+                    <div class="col-auto mt-4">
+                        <h1 class="page-header-title">
+                            <div class="page-header-icon"><i data-feather="filter"></i></div>
+                            Course Distribution List
+                        </h1>
+                    </div>
+                    <div class="mt-4">
+                        <a href="{% url 'semester:dist_create' %}" class="btn btn-light">New Course Distribution&nbsp;<i
+                                class="fas fa-plus"></i> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+{% endblock body_header %}
+
+{% block body %}
+    <div class="container-xl px-4 mt-n10">
+        <div class="card mb-4">
+            <div class="card-body">
+                <table id="datatablesSimple">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Teacher</th>
+                        <th width="45%">Offered Course</th>
+                        <th>Batch</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tfoot>
+                    <tr>
+                        <th>#</th>
+                        <th>Teacher</th>
+                        <th>Offered Course</th>
+                        <th>Batch</th>
+                        <th>Actions</th>
+                    </tr>
+                    </tfoot>
+                    <tbody>
+                    {% for dist in dists %}
+                        <tr>
+                            <td>{{ dist.id }}</td>
+                            <td>{{ dist.teacher.first_name }} {{ dist.teacher.last_name }}</td>
+                            <td>{{ dist.offered.course.course_code }} {{ dist.offered.course.title }}</td>
+                            <td>
+                                {% for sec in dist.section.all %}
+                                    <p>{{sec.batch.batch}}-{{sec.section}}</p>
+                                {% endfor %}
+                            </td>
+{#                            <td>{{ dist.section.batch.program.department.department_id }}-{{ dist.section.batch.batch }} {{ dist.section.section }}</td>#}
+                            <td class="text-center">
+                                <a href="#?id={{ dist.id }}"
+                                   class="btn btn-datatable btn-icon btn-transparent-dark me-2"><i
+                                        data-feather="edit"></i></a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js_here %}
+    <script>
+        window.addEventListener('DOMContentLoaded', event => {
+            // Simple-DataTables
+            // https://github.com/fiduswriter/Simple-DataTables/wiki
+
+            const datatablesSimple = document.getElementById('datatablesSimple');
+            if (datatablesSimple) {
+                new simpleDatatables.DataTable(datatablesSimple);
+            }
+        });
+
+    </script>
+{% endblock js_here %}

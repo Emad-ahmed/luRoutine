@@ -1,0 +1,154 @@
+{% extends 'base.html' %}
+{% block css_here %}
+    {{ form.media }}
+{% endblock css_here %}
+
+{% block body_header %}
+    <header class="page-header page-header-dark bg-gradient-primary-to-secondary pb-10">
+        <div class="container-xl px-4">
+            <div class="page-header-content pt-4">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-auto mt-4">
+                        <h1 class="page-header-title">
+                            <div class="page-header-icon"><i data-feather="plus"></i></div>
+                            Add Room
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+{% endblock body_header %}
+
+{% block body %}
+    <div class="container-xl px-4 mt-n10">
+        <div id="default">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <!-- Component Preview-->
+                    <div class="sbp-preview">
+                        <div class="sbp-preview-content">
+                            <form method="POST">
+                                {% csrf_token %}
+                                <div class="mb-3">
+                                    <label for="building">Building</label>
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <select class="form-control form-control-solid" id="building"
+                                                    name="building">
+                                                <option>Chose One</option>
+                                                {% for building in buildings %}
+                                                    <option value="{{ building.id }}"
+                                                            {% if room.building.id ==  building.id %}
+                                                            selected
+                                                            {% endif %}
+                                                    >{{ building.title }}
+                                                    </option>
+                                                {% endfor %}
+                                            </select>
+                                        </div>
+                                        <div class="col-2 d-flex justify-content-center">
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#createBuilding"><i
+                                                    data-feather="plus-square"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="room_number">Room Number</label>
+                                    <input class="form-control" type="text" id="room_number" name="room_number"
+                                           placeholder="Room Number"
+                                            {% if room %}
+                                           value="{{ room.room_number }}"
+                                            {% endif %}
+                                           required
+                                    />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="capacity">Capacity</label>
+                                    <input class="form-control" type="text" id="capacity" name="capacity"
+                                           placeholder="Capacity"
+                                            {% if room %}
+                                           value="{{ room.capacity }}"
+                                            {% endif %}
+                                           required
+                                    />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="type">Room Type</label>
+                                    <select class="form-control form-control-solid" id="type" name="type">
+                                        <option>Chose One</option>
+                                        <option value="regular"
+                                                {% if room.type == "regular" %}
+                                                selected
+                                                {% endif %}
+                                        >Regular
+                                        </option>
+                                        <option value="lab"
+                                                {% if room.type == "lab" %}
+                                                selected
+                                                {% endif %}
+                                        >Lab
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="faculty">Department</label>
+                                    <select class="form-control form-control-solid" id="faculty" name="department">
+                                        <option>Chose One</option>
+                                        {% for department in departments %}
+                                            <option value="{{ department.id }}"
+                                                    {% if room.department.id == department.id %}
+                                                    selected
+                                                    {% endif %}
+                                            >{{ department.department_id }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                                <div class="mb-3 d-flex justify-content-end">
+                                    <button class="btn btn-primary">
+                                        {% if room %}
+                                            Update
+                                        {% else %}
+                                            Submit
+                                        {% endif %}
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="createBuilding" tabindex="-1" aria-labelledby="createBuildingModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create New Building</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form method="POST" id="buildingForm" action="{% url 'routine:building_create' %}">
+                        {% csrf_token %}
+                        <div class="mb-3">
+                            <label for="title">Building Title</label>
+                            <input class="form-control" type="text" id="title" name="title"
+                                   placeholder="Building Title"
+                                   required
+                            />
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary"
+                            onclick="document.getElementById('buildingForm').submit();">Submit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock body %}

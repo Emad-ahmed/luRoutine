@@ -1,0 +1,196 @@
+{% extends 'base.html' %}
+
+{% block body_header %}
+    <header class="page-header page-header-dark bg-gradient-primary-to-secondary pb-10">
+        <div class="container-xl px-4">
+            <div class="page-header-content pt-4">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-auto mt-4">
+                        <h1 class="page-header-title">
+                            <div class="page-header-icon"><i data-feather="plus"></i></div>
+                            Add Teacher
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+{% endblock body_header %}
+
+{% block body %}
+    <div class="container-xl px-4 mt-n10">
+        <div id="default">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <!-- Component Preview-->
+                    <div class="sbp-preview">
+                        <div class="sbp-preview-content">
+                            <form method="POST">
+                                {% csrf_token %}
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="department">Department</label>
+                                        <select class="form-control form-control-solid" id="department"
+                                                name="department">
+                                            <option>Chose One</option>
+                                            {% for department in departments %}
+                                                <option value="{{ department.id }}"
+                                                        {% if teacher.department.department_id == department.department_id %}
+                                                        selected
+                                                        {% endif %}
+                                                >{{ department.department_id | upper }}</option>
+                                            {% endfor %}
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="department_id">Teacher ID</label>
+                                        <input class="form-control" type="text" id="teahcer_id" name="teacher_id"
+                                               placeholder="Teacher ID"
+                                                {% if teacher %}
+                                               value="{{ teacher.teacher_id }}"
+                                                {% endif %}
+                                               required
+                                        />
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-4">
+                                        <label for="title">First Name</label>
+                                        <input class="form-control" type="text" id="first_name" name="first_name"
+                                               placeholder="First Name"
+                                                {% if teacher %}
+                                               value="{{ teacher.first_name }}"
+                                                {% endif %}
+                                               required
+                                        />
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="title">Last Name</label>
+                                        <input class="form-control" type="text" id="last_name" name="last_name"
+                                               placeholder="Last Name"
+                                                {% if teacher %}
+                                               value="{{ teacher.last_name }}"
+                                                {% endif %}
+                                               required
+                                        />
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="title">Initials</label>
+                                        <input class="form-control" type="text" id="name_initials" name="name_initials"
+                                               placeholder="Initials"
+                                                {% if teacher %}
+                                               value="{{ teacher.name_initials }}"
+                                                {% endif %}
+                                               required
+                                        />
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="head">Designation</label>
+                                        <input class="form-control" type="text" id="designation" name="designation"
+                                               placeholder="Designation"
+                                                {% if teacher %}
+                                               value="{{ teacher.designation }}"
+                                                {% endif %}
+                                               required
+                                        />
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <label for="head">Type</label>
+                                        <select class="form-control form-control-solid" id="type"
+                                                name="type">
+                                            <option>Chose One</option>
+                                            <option value="permanent"
+                                                    {% if teacher.type == "permananent" %}
+                                                    selected
+                                                    {% endif %}> Permanent
+                                            </option>
+                                            <option value="other"
+                                                    {% if teacher.type == "other" %}
+                                                    selected
+                                                    {% endif %}> Other
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <label for="head">Contact Hour</label>
+                                        <input class="form-control" type="number" id="contact_hour" name="contact_hour"
+                                               placeholder="Contact Hour"
+                                                {% if teacher %}
+                                               value="{{ teacher.contact_hour }}"
+                                                {% endif %}
+                                               required
+                                        />
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="head">Email</label>
+                                        <input class="form-control" type="email" id="email" name="email"
+                                               placeholder="Email"
+                                                {% if teacher %}
+                                               value="{{ teacher.email }}"
+                                                {% endif %}
+                                               required
+                                        />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="head">Contact Number</label>
+                                        <input class="form-control" type="text" id="contact_number"
+                                               name="contact_number"
+                                               placeholder="Contact Number"
+                                                {% if teacher %}
+                                               value="{{ teacher.contact_number }}"
+                                                {% endif %}
+                                               required
+                                        />
+                                    </div>
+                                </div>
+                                <div class="mb-3 d-flex justify-content-end">
+                                    <button class="btn btn-primary">
+                                        {% if department %}
+                                            Update
+                                        {% else %}
+                                            Submit
+                                        {% endif %}
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock body %}
+
+{% block js_here %}
+    <script>
+        $("#first_name").keyup(function () {
+            if ($("#last_name").val().length > 0 && $("#first_name").val().length > 0) {
+                if ($("#name_initials").val().length == 0 || $("#name_initials").val() == getInitials() || getInitials().slice(0, -1)) {
+                    $("#name_initials").val(getInitials());
+                }
+            }
+        });
+
+        $("#last_name").keyup(function () {
+            if ($("#last_name").val().length > 0 && $("#first_name").val().length > 0) {
+                if ($("#name_initials").val().length == 0 || $("#name_initials").val() == getInitials() || getInitials().slice(0, -1)) {
+                    $("#name_initials").val(getInitials());
+                }
+            }
+        });
+
+        function getInitials() {
+            let name = $("#first_name").val() + " " + $("#last_name").val();
+            let initial = "";
+            let splited = name.split(" ");
+            for (let i = 0; i < splited.length; i++) {
+                initial += splited[i].charAt(0).toUpperCase();
+            }
+            return initial;
+        }
+    </script>
+{% endblock js_here %}
