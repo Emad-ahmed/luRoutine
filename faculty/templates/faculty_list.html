@@ -48,8 +48,7 @@
                             <td>{{ faculty.title }}</td>
                             <td>{{ faculty.deans.all.first.dean }}</td>
                             <td class="text-center">
-                                <a href="{% url 'faculty:faculty_update' %}?id={{ faculty.id }}" class="btn btn-datatable btn-icon btn-transparent-dark me-2"><i
-                                        data-feather="edit"></i></a>
+                                <a href="{% url 'faculty:faculty_update' %}?id={{ faculty.id }}" class="btn btn-datatable btn-icon btn-transparent-dark me-2"><i class="fa fa-list" aria-hidden="true"></i></a>
                             </td>
                         </tr>
                     {% endfor %}

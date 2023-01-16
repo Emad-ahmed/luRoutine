@@ -10,7 +10,7 @@ from django.utils.http import urlsafe_base64_encode
 from django.views.generic import ListView, CreateView, UpdateView
 
 from accounts.models import BindAccount
-from faculty.models import Faculty, Department, Program, Teacher, Course, Curriculum
+from faculty.models import Faculty, Department, Program, Teacher, Course, Curriculum, FacultyDean
 from .forms import FacultyForm, DepartmentForm, ProgramForm, TeacherForm, CourseForm, CurriculumForm
 from django.utils.decorators import method_decorator
 
@@ -48,16 +48,17 @@ class FacultyCreateView(CreateView):
 @method_decorator(login_required, name='dispatch')
 class FacultyUpdateView(UpdateView):
     template_name = 'faculty_form.html'
-    model = Faculty
+    model = FacultyDean
     form_class = FacultyForm
     context_object_name = 'faculty'
 
     def get_object(self):
-        return get_object_or_404(Faculty, id=self.request.GET.get('id'))
+        return get_object_or_404(FacultyDean, id=self.request.GET.get('id'))
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['user'] = self.request.user
+        print(context['faculty'])
         return context
 
     def form_invalid(self, form):

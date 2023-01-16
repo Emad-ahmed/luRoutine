@@ -17,8 +17,11 @@ class FacultyForm(forms.ModelForm):
         cd = self.cleaned_data
         instance = Faculty.objects.create(title=cd.get('title'))
         FacultyDean.objects.create(faculty=instance, dean=cd.get('dean'))
-
+        print(instance)
         return instance
+
+
+
 
 
 class DepartmentForm(forms.ModelForm):

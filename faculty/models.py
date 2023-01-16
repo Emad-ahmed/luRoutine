@@ -32,10 +32,10 @@ class FacultyDean(AbstractTimestampModel):
         verbose_name = _('Faculty Dean')
         verbose_name_plural = _('Faculty Deans')
 
-
     def __str__(self):
         return self.dean
     
+
 
 class Department(AbstractTimestampModel):
     department_id = models.CharField(verbose_name=_(

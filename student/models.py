@@ -24,6 +24,9 @@ class Batch(AbstractTimestampModel):
         verbose_name_plural = _('Batches')
 
 
+    def __str__(self) -> str:
+        return str(self.batch)
+
 class Section(AbstractTimestampModel):
     batch = models.ForeignKey(
         verbose_name=_('Batch'),
