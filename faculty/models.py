@@ -194,4 +194,4 @@ class Course(AbstractTimestampModel):
         verbose_name_plural = _('Courses')
 
     def __str__(self):
-        return self.course_code
+        return f"{self.id} - {self.course_code}"

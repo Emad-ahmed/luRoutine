@@ -25,7 +25,7 @@ class Batch(AbstractTimestampModel):
 
 
     def __str__(self) -> str:
-        return str(self.batch)
+        return f"{self.id}-{self.batch}"
 
 class Section(AbstractTimestampModel):
     batch = models.ForeignKey(

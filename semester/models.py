@@ -25,20 +25,25 @@ class Semester(AbstractTimestampModel):
         verbose_name = _('Semester')
         verbose_name_plural = _('Semesters')
 
+    def __str__(self) -> str:
+        return f"{self.id}- {self.name}"
 
 class CourseOffered(AbstractTimestampModel):
+
     semester = models.ForeignKey(
         verbose_name=_('Semester'),
         to='semester.Semester',
         related_name='offered',
         on_delete=models.CASCADE
     )
+
     batch = models.ForeignKey(
         verbose_name=_('Batch'),
         to='student.Batch',
         related_name='offered',
         on_delete=models.CASCADE
     )
+
     course = models.ForeignKey(
         verbose_name=_('Course'),
         to='faculty.Course',
@@ -46,8 +51,7 @@ class CourseOffered(AbstractTimestampModel):
         on_delete=models.CASCADE
     )
 
-    def __str__(self) -> str:
-        return f"{self.batch.batch}-{self.course.course_code}"
+    
 
     class Meta:
         verbose_name = _('Course Offered')
@@ -56,15 +60,21 @@ class CourseOffered(AbstractTimestampModel):
             models.UniqueConstraint(
                 fields=['semester', 'batch', 'course'], name='unique_offering')
         ]
+    
+
+    def __str__(self):
+        return f"Id: {self.semester.name}[{self.semester.id}],Batch Id:{self.batch.batch}[{self.batch.id}], Course Id: {self.course.course_code}[{self.course.id}]"
 
 
 class CourseDistribution(AbstractTimestampModel):
+
     offered = models.ForeignKey(
         verbose_name=_('Course Offered'),
         to='semester.CourseOffered',
         related_name='distributions',
         on_delete=models.CASCADE
     )
+
     section = models.ForeignKey(
         verbose_name=_('Sections'),
         to='student.Section',

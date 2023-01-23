@@ -6465,3 +6465,1071 @@ TypeError: __str__ returned non-string (type int)
 [15/Jan/2023 18:46:35] "GET /batches/ HTTP/1.1" 200 28816
 [15/Jan/2023 18:46:48] "GET /batches/ HTTP/1.1" 200 28815
 [15/Jan/2023 18:46:52] "GET /semesters/ HTTP/1.1" 200 21491
+[15/Jan/2023 18:49:58] Watching for file changes with StatReloader
+[15/Jan/2023 18:50:02] "GET /semesters/ HTTP/1.1" 200 21491
+[15/Jan/2023 18:50:04] "GET /faculties/ HTTP/1.1" 200 21341
+[15/Jan/2023 18:50:05] "GET /departments/ HTTP/1.1" 200 22279
+[15/Jan/2023 18:50:06] "GET /programs/ HTTP/1.1" 200 21477
+[15/Jan/2023 18:50:07] "GET /curriculums/ HTTP/1.1" 200 22782
+[15/Jan/2023 18:50:10] "GET /teachers/ HTTP/1.1" 200 54934
+[15/Jan/2023 18:50:19] "GET /batches/ HTTP/1.1" 200 28815
+[15/Jan/2023 18:50:25] "GET /sections/ HTTP/1.1" 200 29690
+[15/Jan/2023 18:50:44] "GET /offers/ HTTP/1.1" 200 25244
+[15/Jan/2023 18:50:53] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 24213
+[15/Jan/2023 18:50:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 18:50:59] "POST /admin/semester/courseoffered/ HTTP/1.1" 200 28822
+[15/Jan/2023 18:50:59] "GET /static/admin/js/cancel.js HTTP/1.1" 304 0
+[15/Jan/2023 18:51:05] "POST /admin/semester/courseoffered/ HTTP/1.1" 302 0
+[15/Jan/2023 18:51:05] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 21637
+[15/Jan/2023 18:51:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 18:51:08] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 21492
+[15/Jan/2023 18:51:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 18:51:41] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28324
+[15/Jan/2023 18:51:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 18:52:56] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[15/Jan/2023 18:52:57] Watching for file changes with StatReloader
+[15/Jan/2023 18:53:04] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[15/Jan/2023 18:53:05] Watching for file changes with StatReloader
+[15/Jan/2023 18:53:08] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28311
+[15/Jan/2023 18:53:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 18:53:18] "GET /admin/semester/semester/ HTTP/1.1" 200 22603
+[15/Jan/2023 18:53:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 18:53:28] "GET /admin/semester/semester/ HTTP/1.1" 200 22603
+[15/Jan/2023 18:53:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 18:53:33] "GET /admin/semester/semester/add/ HTTP/1.1" 200 24290
+[15/Jan/2023 18:53:33] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[15/Jan/2023 18:53:33] "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[15/Jan/2023 18:53:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 18:53:34] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+[15/Jan/2023 18:55:08] "POST /admin/semester/semester/add/ HTTP/1.1" 302 0
+[15/Jan/2023 18:55:09] "GET /admin/semester/semester/ HTTP/1.1" 200 23014
+[15/Jan/2023 18:55:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 18:55:19] "GET /offers/ HTTP/1.1" 200 20934
+[15/Jan/2023 18:55:28] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 21492
+[15/Jan/2023 18:55:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 18:55:29] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28346
+[15/Jan/2023 18:55:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 18:55:56] "POST /admin/semester/courseoffered/add/ HTTP/1.1" 302 0
+[15/Jan/2023 18:55:56] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28608
+[15/Jan/2023 18:55:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 18:56:14] "POST /admin/semester/courseoffered/add/ HTTP/1.1" 302 0
+[15/Jan/2023 18:56:14] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 23114
+[15/Jan/2023 18:56:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 18:56:25] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28346
+[15/Jan/2023 18:56:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 18:56:45] "POST /admin/semester/courseoffered/add/ HTTP/1.1" 302 0
+[15/Jan/2023 18:56:46] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 23337
+[15/Jan/2023 18:56:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 18:56:48] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28346
+[15/Jan/2023 18:56:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 18:57:45] "GET /courses/ HTTP/1.1" 200 97143
+[15/Jan/2023 18:59:36] "POST /admin/semester/courseoffered/add/ HTTP/1.1" 302 0
+[15/Jan/2023 18:59:36] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28609
+[15/Jan/2023 18:59:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:04:00] "POST /admin/semester/courseoffered/add/ HTTP/1.1" 302 0
+[15/Jan/2023 19:04:01] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 23781
+[15/Jan/2023 19:04:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:04:03] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28346
+[15/Jan/2023 19:04:03] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:04:13] "POST /admin/semester/courseoffered/add/ HTTP/1.1" 302 0
+[15/Jan/2023 19:04:14] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 24003
+[15/Jan/2023 19:04:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:04:15] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28346
+[15/Jan/2023 19:04:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:04:26] "POST /admin/semester/courseoffered/add/ HTTP/1.1" 302 0
+[15/Jan/2023 19:04:27] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 24225
+[15/Jan/2023 19:04:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:04:29] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28346
+[15/Jan/2023 19:04:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:04:41] "POST /admin/semester/courseoffered/add/ HTTP/1.1" 302 0
+[15/Jan/2023 19:04:41] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28609
+[15/Jan/2023 19:04:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:06:28] "POST /admin/semester/courseoffered/add/ HTTP/1.1" 302 0
+[15/Jan/2023 19:06:28] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28609
+[15/Jan/2023 19:06:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:06:54] "POST /admin/semester/courseoffered/add/ HTTP/1.1" 302 0
+[15/Jan/2023 19:06:54] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28609
+[15/Jan/2023 19:06:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:07:17] "POST /admin/semester/courseoffered/add/ HTTP/1.1" 302 0
+[15/Jan/2023 19:07:17] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28609
+[15/Jan/2023 19:07:17] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:07:35] "POST /admin/semester/courseoffered/add/ HTTP/1.1" 302 0
+[15/Jan/2023 19:07:36] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28609
+[15/Jan/2023 19:07:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:07:57] "POST /admin/semester/courseoffered/add/ HTTP/1.1" 302 0
+[15/Jan/2023 19:07:57] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28609
+[15/Jan/2023 19:07:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:09:34] "POST /admin/semester/courseoffered/add/ HTTP/1.1" 200 28536
+[15/Jan/2023 19:09:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:09:52] "POST /admin/semester/courseoffered/add/ HTTP/1.1" 200 28536
+[15/Jan/2023 19:09:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:10:04] "POST /admin/semester/courseoffered/add/ HTTP/1.1" 200 28536
+[15/Jan/2023 19:10:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:10:20] "POST /admin/semester/courseoffered/add/ HTTP/1.1" 302 0
+[15/Jan/2023 19:10:20] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28609
+[15/Jan/2023 19:10:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:11:10] "POST /admin/semester/courseoffered/add/ HTTP/1.1" 200 28536
+[15/Jan/2023 19:11:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:11:18] "POST /admin/semester/courseoffered/add/ HTTP/1.1" 302 0
+[15/Jan/2023 19:11:18] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28609
+[15/Jan/2023 19:11:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:11:40] "POST /admin/semester/courseoffered/add/ HTTP/1.1" 302 0
+[15/Jan/2023 19:11:40] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28609
+[15/Jan/2023 19:11:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:12:09] "POST /admin/semester/courseoffered/add/ HTTP/1.1" 302 0
+[15/Jan/2023 19:12:09] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28609
+[15/Jan/2023 19:12:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:19:32] "GET /course/create/ HTTP/1.1" 200 49475
+[15/Jan/2023 19:20:05] "POST /course/create/ HTTP/1.1" 302 0
+[15/Jan/2023 19:20:18] "GET /courses/ HTTP/1.1" 200 98169
+[15/Jan/2023 19:20:22] "GET /course/create/ HTTP/1.1" 200 49775
+[15/Jan/2023 19:20:52] "POST /course/create/ HTTP/1.1" 302 0
+[15/Jan/2023 19:21:06] "GET /courses/ HTTP/1.1" 200 99203
+[15/Jan/2023 19:21:16] "GET /course/create/ HTTP/1.1" 200 50086
+[15/Jan/2023 19:21:47] "POST /course/create/ HTTP/1.1" 302 0
+[15/Jan/2023 19:22:01] "GET /courses/ HTTP/1.1" 200 100234
+[15/Jan/2023 19:22:28] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28466
+[15/Jan/2023 19:22:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:23:07] "POST /admin/semester/courseoffered/add/ HTTP/1.1" 302 0
+[15/Jan/2023 19:23:07] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28729
+[15/Jan/2023 19:23:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:23:16] "POST /admin/semester/courseoffered/add/ HTTP/1.1" 302 0
+[15/Jan/2023 19:23:16] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28729
+[15/Jan/2023 19:23:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:23:24] "POST /admin/semester/courseoffered/add/ HTTP/1.1" 302 0
+[15/Jan/2023 19:23:24] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28729
+[15/Jan/2023 19:23:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:23:35] "GET /course/create/ HTTP/1.1" 200 50391
+[15/Jan/2023 19:24:00] "POST /course/create/ HTTP/1.1" 302 0
+[15/Jan/2023 19:24:14] "GET /courses/ HTTP/1.1" 200 101275
+[15/Jan/2023 19:24:18] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28506
+[15/Jan/2023 19:24:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:24:24] "POST /admin/semester/courseoffered/add/ HTTP/1.1" 302 0
+[15/Jan/2023 19:24:24] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28769
+[15/Jan/2023 19:24:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:25:07] "GET /course/create/ HTTP/1.1" 200 50706
+[15/Jan/2023 19:25:23] "POST /course/create/ HTTP/1.1" 302 0
+[15/Jan/2023 19:25:28] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28546
+[15/Jan/2023 19:25:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:25:38] "GET /courses/ HTTP/1.1" 200 102314
+[15/Jan/2023 19:25:43] "POST /admin/semester/courseoffered/add/ HTTP/1.1" 302 0
+[15/Jan/2023 19:25:43] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28809
+[15/Jan/2023 19:25:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:25:54] "GET /course/create/ HTTP/1.1" 200 51018
+[15/Jan/2023 19:26:12] "POST /course/create/ HTTP/1.1" 302 0
+[15/Jan/2023 19:26:26] "GET /courses/ HTTP/1.1" 200 103358
+[15/Jan/2023 19:26:29] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28586
+[15/Jan/2023 19:26:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:26:35] "POST /admin/semester/courseoffered/add/ HTTP/1.1" 302 0
+[15/Jan/2023 19:26:36] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28849
+[15/Jan/2023 19:26:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:26:51] "GET /course/create/ HTTP/1.1" 200 51340
+[15/Jan/2023 19:27:00] "POST /course/create/ HTTP/1.1" 302 0
+[15/Jan/2023 19:27:07] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28627
+[15/Jan/2023 19:27:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:27:15] "GET /courses/ HTTP/1.1" 200 104396
+[15/Jan/2023 19:27:22] "POST /admin/semester/courseoffered/add/ HTTP/1.1" 302 0
+[15/Jan/2023 19:27:22] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28891
+[15/Jan/2023 19:27:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:28:06] "GET /course/create/ HTTP/1.1" 200 51651
+[15/Jan/2023 19:28:30] Internal Server Error: /course/create/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\generic\edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\generic\edit.py", line 141, in post
+    if form.is_valid():
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\forms\forms.py", line 175, in is_valid
+    return self.is_bound and not self.errors
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\forms\forms.py", line 170, in errors
+    self.full_clean()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\forms\forms.py", line 373, in full_clean
+    self._clean_form()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\forms\forms.py", line 400, in _clean_form
+    cleaned_data = self.clean()
+  File "E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\forms.py", line 107, in clean
+    for cur in cd.get('curriculum'):
+TypeError: 'NoneType' object is not iterable
+[15/Jan/2023 19:28:30] "POST /course/create/ HTTP/1.1" 500 129784
+[15/Jan/2023 19:28:39] "POST /course/create/ HTTP/1.1" 302 0
+[15/Jan/2023 19:28:54] "GET /courses/ HTTP/1.1" 200 105443
+[15/Jan/2023 19:40:47] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28667
+[15/Jan/2023 19:40:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:41:14] "POST /admin/semester/courseoffered/add/ HTTP/1.1" 302 0
+[15/Jan/2023 19:41:14] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28930
+[15/Jan/2023 19:41:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:41:27] "GET /course/create/ HTTP/1.1" 200 51976
+[15/Jan/2023 19:42:04] "GET /course/create/ HTTP/1.1" 200 51976
+[15/Jan/2023 19:44:47] "POST /course/create/ HTTP/1.1" 302 0
+[15/Jan/2023 19:45:02] "GET /courses/ HTTP/1.1" 200 106482
+[15/Jan/2023 19:48:27] "GET /course/create/ HTTP/1.1" 200 52292
+[15/Jan/2023 19:49:14] "POST /course/create/ HTTP/1.1" 302 0
+[15/Jan/2023 19:49:29] "GET /courses/ HTTP/1.1" 200 107519
+[15/Jan/2023 19:49:33] "GET /course/create/ HTTP/1.1" 200 52603
+[15/Jan/2023 19:49:44] "POST /course/create/ HTTP/1.1" 302 0
+[15/Jan/2023 19:49:59] "GET /courses/ HTTP/1.1" 200 108563
+[15/Jan/2023 19:50:34] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 28006
+[15/Jan/2023 19:50:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:50:41] "GET /admin/faculty/course/ HTTP/1.1" 200 40296
+[15/Jan/2023 19:50:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:51:43] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 28006
+[15/Jan/2023 19:51:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:51:45] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 28787
+[15/Jan/2023 19:51:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:52:35] "GET /admin/semester/semester/ HTTP/1.1" 200 22812
+[15/Jan/2023 19:52:35] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:52:53] "GET /admin/student/batch/ HTTP/1.1" 200 24795
+[15/Jan/2023 19:52:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:53:09] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\models.py changed, reloading.
+[15/Jan/2023 19:53:10] Watching for file changes with StatReloader
+[15/Jan/2023 19:53:14] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\models.py changed, reloading.
+[15/Jan/2023 19:53:14] Watching for file changes with StatReloader
+[15/Jan/2023 19:53:18] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\models.py changed, reloading.
+[15/Jan/2023 19:53:19] Watching for file changes with StatReloader
+[15/Jan/2023 19:53:21] Internal Server Error: /admin/student/batch/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\options.py", line 608, in get_field
+    return self.fields_map[field_name]
+KeyError: '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\utils.py", line 265, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\utils.py", line 296, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\options.py", line 610, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: Batch has no field named '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\test\utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\test\utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\test\utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\templatetags\base.py", line 33, in render
+    return super().render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\library.py", line 214, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 308, in result_list
+    'results': list(results(cl)),
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 284, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 275, in __init__
+    super().__init__(*items)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 200, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\utils.py", line 278, in lookup_field
+    value = attr()
+  File "E:\All Web Designing\My All Project\lu_routineMaker-dev\student\models.py", line 28, in __str__
+    return f"{self.id - str(self.batch)}"
+TypeError: unsupported operand type(s) for -: 'int' and 'str'
+[15/Jan/2023 19:53:21] "GET /admin/student/batch/ HTTP/1.1" 500 397158
+[15/Jan/2023 19:53:31] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\models.py changed, reloading.
+[15/Jan/2023 19:53:32] Watching for file changes with StatReloader
+[15/Jan/2023 19:53:33] "GET /admin/student/batch/ HTTP/1.1" 200 24807
+[15/Jan/2023 19:53:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:53:41] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\models.py changed, reloading.
+[15/Jan/2023 19:53:42] Watching for file changes with StatReloader
+[15/Jan/2023 19:53:52] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\models.py changed, reloading.
+[15/Jan/2023 19:53:53] Watching for file changes with StatReloader
+[15/Jan/2023 19:53:55] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\models.py changed, reloading.
+[15/Jan/2023 19:53:56] Watching for file changes with StatReloader
+[15/Jan/2023 19:53:57] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\models.py changed, reloading.
+[15/Jan/2023 19:53:59] Watching for file changes with StatReloader
+[15/Jan/2023 19:54:00] "GET /admin/student/batch/ HTTP/1.1" 200 24822
+[15/Jan/2023 19:54:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:54:26] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[15/Jan/2023 19:54:27] Watching for file changes with StatReloader
+[15/Jan/2023 19:54:29] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[15/Jan/2023 19:54:30] Watching for file changes with StatReloader
+[15/Jan/2023 19:54:32] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[15/Jan/2023 19:54:33] Watching for file changes with StatReloader
+[15/Jan/2023 19:54:36] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[15/Jan/2023 19:54:37] Watching for file changes with StatReloader
+[15/Jan/2023 19:54:38] "GET /admin/semester/semester/ HTTP/1.1" 200 22818
+[15/Jan/2023 19:54:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:54:44] "GET /admin/student/batch/ HTTP/1.1" 200 24822
+[15/Jan/2023 19:54:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:55:05] "GET /admin/faculty/course/ HTTP/1.1" 200 40296
+[15/Jan/2023 19:55:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:55:29] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\models.py changed, reloading.
+[15/Jan/2023 19:55:30] Watching for file changes with StatReloader
+[15/Jan/2023 19:55:32] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\models.py changed, reloading.
+[15/Jan/2023 19:55:33] Watching for file changes with StatReloader
+[15/Jan/2023 19:55:36] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\models.py changed, reloading.
+[15/Jan/2023 19:55:37] Watching for file changes with StatReloader
+[15/Jan/2023 19:55:38] "GET /admin/faculty/course/ HTTP/1.1" 200 40707
+[15/Jan/2023 19:55:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:57:59] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 28005
+[15/Jan/2023 19:57:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:58:50] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\admin.py changed, reloading.
+[15/Jan/2023 19:58:51] Watching for file changes with StatReloader
+[15/Jan/2023 19:59:03] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\admin.py changed, reloading.
+[15/Jan/2023 19:59:05] Watching for file changes with StatReloader
+[15/Jan/2023 19:59:10] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\admin.py changed, reloading.
+[15/Jan/2023 19:59:11] Watching for file changes with StatReloader
+[15/Jan/2023 19:59:23] Watching for file changes with StatReloader
+[15/Jan/2023 19:59:34] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 28237
+[15/Jan/2023 19:59:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:59:36] "GET /admin/semester/courseoffered/import/ HTTP/1.1" 200 21899
+[15/Jan/2023 19:59:36] "GET /static/import_export/import.css HTTP/1.1" 304 0
+[15/Jan/2023 19:59:37] "GET /static/import_export/guess_format.js HTTP/1.1" 304 0
+[15/Jan/2023 19:59:37] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 19:59:50] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 30564
+[15/Jan/2023 19:59:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 20:00:04] "GET /admin/student/batch/ HTTP/1.1" 200 24822
+[15/Jan/2023 20:00:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 20:00:33] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 28237
+[15/Jan/2023 20:00:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 20:00:35] "GET /admin/semester/courseoffered/import/ HTTP/1.1" 200 21899
+[15/Jan/2023 20:00:35] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 20:00:42] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 45110
+[15/Jan/2023 20:00:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 20:01:10] "GET /admin/semester/semester/ HTTP/1.1" 200 22818
+[15/Jan/2023 20:01:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 20:01:29] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 28237
+[15/Jan/2023 20:01:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 20:02:33] "GET /admin/student/batch/ HTTP/1.1" 200 24822
+[15/Jan/2023 20:02:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 20:03:18] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 28236
+[15/Jan/2023 20:03:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 20:03:20] "GET /admin/semester/courseoffered/import/ HTTP/1.1" 200 21899
+[15/Jan/2023 20:03:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 20:03:29] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 45080
+[15/Jan/2023 20:03:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 20:04:18] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[15/Jan/2023 20:04:19] Watching for file changes with StatReloader
+[15/Jan/2023 20:05:20] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 45080
+[15/Jan/2023 20:05:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 20:06:11] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 45081
+[15/Jan/2023 20:06:11] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 20:09:04] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 45080
+[15/Jan/2023 20:09:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 20:09:09] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 45080
+[15/Jan/2023 20:09:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[15/Jan/2023 20:12:42] "GET /admin/student/batch/ HTTP/1.1" 200 24822
+[15/Jan/2023 20:12:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[17/Jan/2023 13:46:39] Watching for file changes with StatReloader
+[17/Jan/2023 13:46:48] "GET / HTTP/1.1" 200 22228
+[17/Jan/2023 13:46:48] "GET /static/css/styles.css HTTP/1.1" 200 428968
+[17/Jan/2023 13:46:48] "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11479
+[17/Jan/2023 13:46:48] "GET /static/js/scripts.js HTTP/1.1" 200 3366
+[17/Jan/2023 13:46:48] "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 11275
+[17/Jan/2023 13:46:48] "GET /static/assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 200 24236
+[17/Jan/2023 13:46:48] "GET /static/assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 200 23664
+[17/Jan/2023 13:46:48] "GET /static/assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 200 23124
+[17/Jan/2023 13:46:48] "GET /static/assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 200 23240
+[17/Jan/2023 13:46:48] "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 3531
+[17/Jan/2023 13:46:48] "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+[17/Jan/2023 13:46:49] Not Found: /favicon.ico
+[17/Jan/2023 13:46:49] "GET /favicon.ico HTTP/1.1" 404 22201
+[17/Jan/2023 13:47:01] "GET /teachers/ HTTP/1.1" 200 54934
+[17/Jan/2023 13:47:26] "GET /teacher/update/?id=13 HTTP/1.1" 200 28982
+[17/Jan/2023 13:47:41] "POST /teacher/reset/ HTTP/1.1" 200 95
+[17/Jan/2023 13:47:44] "POST /teacher/reset/ HTTP/1.1" 200 95
+[17/Jan/2023 13:47:47] "GET /teacher/update/?id=13 HTTP/1.1" 200 28982
+[17/Jan/2023 13:49:49] "GET /offers/ HTTP/1.1" 200 34470
+[17/Jan/2023 13:49:59] - Broken pipe from ('127.0.0.1', 49886)
+
+[17/Jan/2023 13:50:59] "GET /admin HTTP/1.1" 301 0
+[17/Jan/2023 13:50:59] "GET /admin/ HTTP/1.1" 200 26101
+[17/Jan/2023 13:50:59] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+[17/Jan/2023 13:50:59] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+[17/Jan/2023 13:50:59] "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+[17/Jan/2023 13:50:59] "GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+[17/Jan/2023 13:51:00] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[17/Jan/2023 13:51:00] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+[17/Jan/2023 13:51:00] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[17/Jan/2023 13:51:00] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[17/Jan/2023 13:51:00] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[17/Jan/2023 13:51:00] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[17/Jan/2023 13:51:00] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[17/Jan/2023 13:51:06] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 28237
+[17/Jan/2023 13:51:06] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6874
+[17/Jan/2023 13:51:06] "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+[17/Jan/2023 13:51:06] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+[17/Jan/2023 13:51:06] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[17/Jan/2023 13:51:06] "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+[17/Jan/2023 13:51:06] "GET /static/admin/js/actions.js HTTP/1.1" 200 7867
+[17/Jan/2023 13:51:06] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[17/Jan/2023 13:51:06] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+[17/Jan/2023 13:51:06] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[17/Jan/2023 13:51:06] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+[17/Jan/2023 13:51:06] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[17/Jan/2023 13:51:09] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 29231
+[17/Jan/2023 13:51:09] "GET /static/admin/css/forms.css HTTP/1.1" 200 8804
+[17/Jan/2023 13:51:09] "GET /static/admin/css/widgets.css HTTP/1.1" 200 11097
+[17/Jan/2023 13:51:09] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+[17/Jan/2023 13:51:09] "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+[17/Jan/2023 13:51:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[17/Jan/2023 13:51:51] "GET /courses/ HTTP/1.1" 200 108563
+[17/Jan/2023 13:52:45] "GET /course/create/ HTTP/1.1" 200 52924
+[17/Jan/2023 13:54:10] Internal Server Error: /course/create/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: faculty_course.course_code
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\generic\edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\generic\edit.py", line 142, in post
+    return self.form_valid(form)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\generic\edit.py", line 125, in form_valid
+    self.object = form.save()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\forms\models.py", line 468, in save
+    self.instance.save()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 763, in save_base
+    updated = self._save_table(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 906, in _do_insert
+    return manager._insert(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 205, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 140, in _record
+    return method(sql, params)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 79, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: faculty_course.course_code
+[17/Jan/2023 13:54:10] "POST /course/create/ HTTP/1.1" 500 219968
+[17/Jan/2023 13:54:22] Internal Server Error: /course/create/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: faculty_course.course_code
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\generic\edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\generic\edit.py", line 142, in post
+    return self.form_valid(form)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\generic\edit.py", line 125, in form_valid
+    self.object = form.save()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\forms\models.py", line 468, in save
+    self.instance.save()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 763, in save_base
+    updated = self._save_table(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 906, in _do_insert
+    return manager._insert(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 205, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 140, in _record
+    return method(sql, params)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 79, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: faculty_course.course_code
+[17/Jan/2023 13:54:22] "POST /course/create/ HTTP/1.1" 500 219938
+[17/Jan/2023 13:54:32] "GET /course/create/ HTTP/1.1" 200 52924
+[17/Jan/2023 13:54:48] "POST /course/create/ HTTP/1.1" 302 0
+[17/Jan/2023 13:55:04] "GET /courses/ HTTP/1.1" 200 109618
+[17/Jan/2023 13:55:59] "GET /course/create/ HTTP/1.1" 200 53259
+[17/Jan/2023 13:57:40] "POST /course/create/ HTTP/1.1" 302 0
+[17/Jan/2023 13:57:56] "GET /courses/ HTTP/1.1" 200 110651
+[17/Jan/2023 13:58:04] "GET /course/create/ HTTP/1.1" 200 53565
+[17/Jan/2023 13:58:16] "POST /course/create/ HTTP/1.1" 302 0
+[17/Jan/2023 13:58:32] "GET /courses/ HTTP/1.1" 200 111689
+[17/Jan/2023 13:58:56] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 29366
+[17/Jan/2023 13:58:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[17/Jan/2023 13:59:04] "POST /admin/semester/courseoffered/add/ HTTP/1.1" 302 0
+[17/Jan/2023 13:59:04] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 29629
+[17/Jan/2023 13:59:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[17/Jan/2023 13:59:04] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[17/Jan/2023 13:59:26] "POST /admin/semester/courseoffered/add/ HTTP/1.1" 302 0
+[17/Jan/2023 13:59:26] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 29629
+[17/Jan/2023 13:59:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[17/Jan/2023 13:59:36] "POST /admin/semester/courseoffered/add/ HTTP/1.1" 302 0
+[17/Jan/2023 13:59:36] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 29630
+[17/Jan/2023 13:59:37] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[17/Jan/2023 14:00:11] "GET /course/create/ HTTP/1.1" 200 53881
+[17/Jan/2023 14:00:20] "POST /course/create/ HTTP/1.1" 302 0
+[17/Jan/2023 14:00:26] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 29411
+[17/Jan/2023 14:00:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[17/Jan/2023 14:00:37] "GET /courses/ HTTP/1.1" 200 112747
+[17/Jan/2023 14:00:40] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 29411
+[17/Jan/2023 14:00:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[17/Jan/2023 14:00:47] "POST /admin/semester/courseoffered/add/ HTTP/1.1" 302 0
+[17/Jan/2023 14:00:47] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 29674
+[17/Jan/2023 14:00:47] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 14:17:04] Watching for file changes with StatReloader
+[23/Jan/2023 14:18:43] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 14:18:44] Watching for file changes with StatReloader
+[23/Jan/2023 14:19:04] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 14:19:06] Watching for file changes with StatReloader
+[23/Jan/2023 14:19:07] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 302 0
+[23/Jan/2023 14:19:07] "GET /admin/login/?next=/admin/semester/courseoffered/add/ HTTP/1.1" 200 11934
+[23/Jan/2023 14:19:07] "GET /static/admin/css/login.css HTTP/1.1" 200 939
+[23/Jan/2023 14:19:10] "POST /admin/login/?next=/admin/semester/courseoffered/add/ HTTP/1.1" 302 0
+[23/Jan/2023 14:19:10] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 29411
+[23/Jan/2023 14:19:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 14:19:32] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 28862
+[23/Jan/2023 14:19:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 14:19:53] "GET /admin/semester/courseoffered/import/ HTTP/1.1" 200 21899
+[23/Jan/2023 14:19:53] "GET /static/import_export/import.css HTTP/1.1" 200 2051
+[23/Jan/2023 14:19:53] "GET /static/import_export/guess_format.js HTTP/1.1" 200 711
+[23/Jan/2023 14:19:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 14:20:05] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 45080
+[23/Jan/2023 14:20:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 14:20:20] "GET /admin/semester/courseoffered/import/ HTTP/1.1" 200 21899
+[23/Jan/2023 14:20:23] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 28862
+[23/Jan/2023 14:20:25] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 29411
+[23/Jan/2023 14:20:26] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 14:20:57] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 28862
+[23/Jan/2023 14:21:00] "GET /admin/semester/courseoffered/import/ HTTP/1.1" 200 21899
+[23/Jan/2023 14:21:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 14:21:08] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 45075
+[23/Jan/2023 14:21:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 14:21:19] "GET /admin/faculty/course/ HTTP/1.1" 200 41571
+[23/Jan/2023 14:21:19] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 14:21:28] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 28863
+[23/Jan/2023 14:21:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 14:21:35] "GET /admin/semester/semester/ HTTP/1.1" 200 22818
+[23/Jan/2023 14:21:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 14:22:36] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 28863
+[23/Jan/2023 14:22:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 14:22:37] "GET /admin/semester/courseoffered/import/ HTTP/1.1" 200 21899
+[23/Jan/2023 14:22:37] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 14:22:46] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 45075
+[23/Jan/2023 14:22:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 14:23:07] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 14:23:08] Watching for file changes with StatReloader
+[23/Jan/2023 14:23:33] "GET /admin/student/batch/ HTTP/1.1" 200 24822
+[23/Jan/2023 14:23:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 14:24:00] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 28862
+[23/Jan/2023 14:24:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 14:24:01] "GET /admin/semester/courseoffered/import/ HTTP/1.1" 200 21899
+[23/Jan/2023 14:24:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 14:24:09] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 45075
+[23/Jan/2023 14:24:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 18:41:28] Watching for file changes with StatReloader
+[23/Jan/2023 18:41:32] "GET / HTTP/1.1" 200 22227
+[23/Jan/2023 18:41:33] Not Found: /favicon.ico
+[23/Jan/2023 18:41:33] "GET /favicon.ico HTTP/1.1" 404 22201
+[23/Jan/2023 18:42:11] "GET /rooms/ HTTP/1.1" 200 34785
+[23/Jan/2023 18:42:34] "GET /offers/ HTTP/1.1" 200 36641
+[23/Jan/2023 18:42:42] "GET /offers/ HTTP/1.1" 200 36641
+[23/Jan/2023 18:42:56] "GET /admin/ HTTP/1.1" 200 26102
+[23/Jan/2023 18:43:38] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 28862
+[23/Jan/2023 18:43:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 18:43:39] "GET /admin/semester/courseoffered/import/ HTTP/1.1" 200 21899
+[23/Jan/2023 18:43:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 18:43:50] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 45075
+[23/Jan/2023 18:43:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 18:44:30] "GET /distributions/ HTTP/1.1" 200 21010
+[23/Jan/2023 18:44:40] "GET /rooms/ HTTP/1.1" 200 34785
+[23/Jan/2023 18:44:40] "GET /distributions/ HTTP/1.1" 200 21010
+[23/Jan/2023 18:44:44] - Broken pipe from ('127.0.0.1', 50097)
+
+[23/Jan/2023 18:44:47] "GET /offers/ HTTP/1.1" 200 36641
+[23/Jan/2023 18:44:54] "GET /semesters/ HTTP/1.1" 200 22029
+[23/Jan/2023 18:50:13] "GET /distributions/ HTTP/1.1" 200 21010
+[23/Jan/2023 18:50:18] "GET /offers/ HTTP/1.1" 200 36641
+[23/Jan/2023 18:51:51] "GET /rooms/ HTTP/1.1" 200 34785
+[23/Jan/2023 18:52:01] - Broken pipe from ('127.0.0.1', 50251)
+
+[23/Jan/2023 18:53:18] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 28862
+[23/Jan/2023 18:53:19] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 18:53:30] "GET /admin/semester/courseoffered/import/ HTTP/1.1" 200 21899
+[23/Jan/2023 18:53:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 18:53:33] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 28862
+[23/Jan/2023 18:53:35] "GET /admin/semester/courseoffered/import/ HTTP/1.1" 200 21899
+[23/Jan/2023 18:53:39] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 28862
+[23/Jan/2023 18:53:55] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 29411
+[23/Jan/2023 18:53:55] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 18:56:09] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 29411
+[23/Jan/2023 18:56:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 18:56:47] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 28863
+[23/Jan/2023 18:56:49] "GET /admin/semester/courseoffered/import/ HTTP/1.1" 200 21899
+[23/Jan/2023 18:56:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 18:57:13] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 45074
+[23/Jan/2023 18:57:13] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 18:59:19] "GET /admin/semester/courseoffered/import/ HTTP/1.1" 200 21899
+[23/Jan/2023 18:59:23] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 28862
+[23/Jan/2023 18:59:26] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 29411
+[23/Jan/2023 18:59:26] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 19:00:02] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 28862
+[23/Jan/2023 19:00:04] "GET /admin/semester/courseoffered/import/ HTTP/1.1" 200 21899
+[23/Jan/2023 19:00:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 19:00:12] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 45074
+[23/Jan/2023 19:00:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 19:00:50] "GET /admin/semester/courseoffered/import/ HTTP/1.1" 200 21899
+[23/Jan/2023 19:01:30] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 45074
+[23/Jan/2023 19:01:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 19:05:38] "GET /admin/semester/semester/ HTTP/1.1" 200 22818
+[23/Jan/2023 19:05:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 19:05:52] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 28863
+[23/Jan/2023 19:05:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 19:06:29] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\views.py changed, reloading.
+[23/Jan/2023 19:06:31] Watching for file changes with StatReloader
+[23/Jan/2023 19:06:46] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 19:06:47] Watching for file changes with StatReloader
+[23/Jan/2023 19:06:51] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 19:06:52] Watching for file changes with StatReloader
+[23/Jan/2023 19:06:53] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 19:06:54] Watching for file changes with StatReloader
+[23/Jan/2023 19:06:59] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 19:07:00] Watching for file changes with StatReloader
+[23/Jan/2023 19:07:10] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 19:07:11] Watching for file changes with StatReloader
+[23/Jan/2023 19:07:15] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 19:07:16] Watching for file changes with StatReloader
+[23/Jan/2023 19:07:21] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 19:07:22] Watching for file changes with StatReloader
+[23/Jan/2023 19:07:27] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 19:07:28] Watching for file changes with StatReloader
+[23/Jan/2023 19:07:31] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 19:07:32] Watching for file changes with StatReloader
+[23/Jan/2023 19:07:36] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 28833
+[23/Jan/2023 19:07:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 19:07:43] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 19:07:44] Watching for file changes with StatReloader
+[23/Jan/2023 19:07:49] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 19:07:50] Watching for file changes with StatReloader
+[23/Jan/2023 19:07:56] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 19:07:56] Watching for file changes with StatReloader
+[23/Jan/2023 19:08:01] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 28921
+[23/Jan/2023 19:08:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 19:08:18] "GET /admin/semester/courseoffered/import/ HTTP/1.1" 200 21899
+[23/Jan/2023 19:08:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 19:08:27] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 45074
+[23/Jan/2023 19:08:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 19:08:42] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 28920
+[23/Jan/2023 19:08:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 19:09:01] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 19:09:02] Watching for file changes with StatReloader
+[23/Jan/2023 19:09:08] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 29033
+[23/Jan/2023 19:09:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 19:10:05] "GET /admin/semester/courseoffered/import/ HTTP/1.1" 200 21899
+[23/Jan/2023 19:10:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 19:10:12] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 45080
+[23/Jan/2023 19:10:13] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 19:13:32] "GET /admin/student/batch/ HTTP/1.1" 200 24822
+[23/Jan/2023 19:13:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 19:13:35] "GET /admin/student/section/ HTTP/1.1" 200 25439
+[23/Jan/2023 19:13:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 19:13:42] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 29033
+[23/Jan/2023 19:13:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 20:52:28] Watching for file changes with StatReloader
+[23/Jan/2023 20:52:33] "GET / HTTP/1.1" 200 22227
+[23/Jan/2023 20:52:34] Not Found: /favicon.ico
+[23/Jan/2023 20:52:34] "GET /favicon.ico HTTP/1.1" 404 22201
+[23/Jan/2023 20:52:40] "GET /faculties/ HTTP/1.1" 200 21341
+[23/Jan/2023 20:52:44] "GET /rooms/ HTTP/1.1" 200 34785
+[23/Jan/2023 20:54:45] "GET /admin/ HTTP/1.1" 200 26102
+[23/Jan/2023 20:55:36] "GET /admin/student/batch/ HTTP/1.1" 200 24822
+[23/Jan/2023 20:55:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 20:56:23] "GET /admin/student/batch/ HTTP/1.1" 200 24822
+[23/Jan/2023 20:56:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 20:56:28] "GET /admin/student/batch/7/change/ HTTP/1.1" 200 23903
+[23/Jan/2023 20:56:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 20:57:27] "GET /admin/faculty/curriculum/add/?_to_field=id&_popup=1 HTTP/1.1" 200 15336
+[23/Jan/2023 20:57:28] "GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+[23/Jan/2023 20:57:28] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19634
+[23/Jan/2023 20:57:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 20:57:28] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[23/Jan/2023 20:57:46] "GET /admin/student/batch/7/history/ HTTP/1.1" 200 20669
+[23/Jan/2023 20:57:48] "GET /admin/faculty/course/ HTTP/1.1" 200 41571
+[23/Jan/2023 20:57:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 20:58:41] "GET /admin/student/batch/ HTTP/1.1" 200 24822
+[23/Jan/2023 20:58:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 21:00:18] "GET /admin/student/batch/ HTTP/1.1" 200 24822
+[23/Jan/2023 21:00:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 21:05:48] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 21:05:50] Watching for file changes with StatReloader
+[23/Jan/2023 21:05:58] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 29033
+[23/Jan/2023 21:05:58] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[23/Jan/2023 21:05:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 21:05:58] "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+[23/Jan/2023 21:05:58] "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+[23/Jan/2023 21:05:58] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+[23/Jan/2023 21:05:58] "GET /static/admin/js/actions.js HTTP/1.1" 200 7867
+[23/Jan/2023 21:05:58] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+[23/Jan/2023 21:05:58] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[23/Jan/2023 21:05:58] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+[23/Jan/2023 21:05:58] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+[23/Jan/2023 21:05:58] "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 11275
+[23/Jan/2023 21:05:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 21:05:58] "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 3531
+[23/Jan/2023 21:06:52] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 21:06:53] Watching for file changes with StatReloader
+[23/Jan/2023 21:06:59] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 29033
+[23/Jan/2023 21:07:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 21:29:08] Watching for file changes with StatReloader
+[23/Jan/2023 21:29:39] "GET / HTTP/1.1" 200 22228
+[23/Jan/2023 21:30:37] "GET /admin/semester/courseoffered/import/ HTTP/1.1" 200 21899
+[23/Jan/2023 21:30:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 21:32:27] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 45908
+[23/Jan/2023 21:32:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 21:39:30] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 45907
+[23/Jan/2023 21:39:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 21:40:05] "GET /admin/faculty/teacher/ HTTP/1.1" 200 29931
+[23/Jan/2023 21:40:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 21:40:09] "GET /admin/faculty/teacher/import/ HTTP/1.1" 200 21962
+[23/Jan/2023 21:40:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 21:40:26] "POST /admin/faculty/teacher/import/ HTTP/1.1" 200 54827
+[23/Jan/2023 21:40:26] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 21:40:56] - Broken pipe from ('127.0.0.1', 65411)
+
+[23/Jan/2023 21:40:57] "GET / HTTP/1.1" 200 22229
+[23/Jan/2023 21:41:34] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 21:41:36] Watching for file changes with StatReloader
+[23/Jan/2023 21:42:58] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 21:43:00] Watching for file changes with StatReloader
+[23/Jan/2023 21:43:10] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 21:43:11] Watching for file changes with StatReloader
+[23/Jan/2023 21:44:04] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 21:44:05] Watching for file changes with StatReloader
+[23/Jan/2023 21:45:41] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 21:45:42] Watching for file changes with StatReloader
+[23/Jan/2023 21:46:06] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 21:46:07] Watching for file changes with StatReloader
+[23/Jan/2023 21:46:10] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 21:46:11] Watching for file changes with StatReloader
+[23/Jan/2023 21:48:11] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 21:48:12] Watching for file changes with StatReloader
+[23/Jan/2023 21:48:20] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 21:48:22] Watching for file changes with StatReloader
+[23/Jan/2023 21:48:55] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 21:48:57] Watching for file changes with StatReloader
+[23/Jan/2023 21:51:58] "GET /admin/ HTTP/1.1" 200 26044
+[23/Jan/2023 21:52:08] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 29033
+[23/Jan/2023 21:52:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 21:52:12] "GET /admin/semester/courseoffered/import/ HTTP/1.1" 200 21899
+[23/Jan/2023 21:52:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 21:52:21] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 41278
+[23/Jan/2023 21:52:21] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 21:54:56] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 29033
+[23/Jan/2023 21:54:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 21:55:25] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 29033
+[23/Jan/2023 21:55:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 21:55:26] "GET /admin/semester/courseoffered/import/ HTTP/1.1" 200 21899
+[23/Jan/2023 21:55:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 21:55:36] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 31634
+[23/Jan/2023 21:55:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 22:13:44] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 45080
+[23/Jan/2023 22:13:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 22:14:01] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 31635
+[23/Jan/2023 22:14:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 22:14:29] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 29033
+[23/Jan/2023 22:14:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 22:14:45] "GET /admin/semester/courseoffered/import/ HTTP/1.1" 200 21899
+[23/Jan/2023 22:14:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 22:15:01] "GET /admin/faculty/course/ HTTP/1.1" 200 41571
+[23/Jan/2023 22:15:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 22:15:04] "GET /admin/faculty/course/add/ HTTP/1.1" 200 30507
+[23/Jan/2023 22:15:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 22:15:14] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 29033
+[23/Jan/2023 22:15:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 22:15:17] "GET /admin/semester/courseoffered/add/ HTTP/1.1" 200 29411
+[23/Jan/2023 22:15:17] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 22:15:29] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 29033
+[23/Jan/2023 22:17:22] "GET /admin/student/batch/ HTTP/1.1" 200 24822
+[23/Jan/2023 22:17:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Jan/2023 22:20:33] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 22:20:34] Watching for file changes with StatReloader
+[23/Jan/2023 22:27:53] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 22:27:55] Watching for file changes with StatReloader
+[23/Jan/2023 22:28:37] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 22:28:38] Watching for file changes with StatReloader
+[23/Jan/2023 22:28:49] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 22:28:50] Watching for file changes with StatReloader
+[23/Jan/2023 22:28:53] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 22:28:54] Watching for file changes with StatReloader
+[23/Jan/2023 22:28:56] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[23/Jan/2023 22:28:58] Watching for file changes with StatReloader
+[24/Jan/2023 00:04:43] Watching for file changes with StatReloader
+[24/Jan/2023 00:04:53] "GET / HTTP/1.1" 200 22228
+[24/Jan/2023 00:04:54] Not Found: /favicon.ico
+[24/Jan/2023 00:04:54] "GET /favicon.ico HTTP/1.1" 404 22201
+[24/Jan/2023 00:05:06] "GET /admin/ HTTP/1.1" 200 26044
+[24/Jan/2023 00:05:14] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 29033
+[24/Jan/2023 00:05:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:05:17] "GET /admin/faculty/course/ HTTP/1.1" 200 41571
+[24/Jan/2023 00:05:17] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:05:23] "GET /admin/faculty/course/94/change/ HTTP/1.1" 200 30876
+[24/Jan/2023 00:05:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:06:11] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 29033
+[24/Jan/2023 00:06:11] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:06:22] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 29033
+[24/Jan/2023 00:06:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:06:37] "GET /admin/faculty/course/ HTTP/1.1" 200 41571
+[24/Jan/2023 00:06:37] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:07:03] "GET /admin/student/batch/ HTTP/1.1" 200 24822
+[24/Jan/2023 00:07:03] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:07:30] "GET /admin/student/batch/ HTTP/1.1" 200 24822
+[24/Jan/2023 00:07:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:07:58] "GET /courses/ HTTP/1.1" 200 112747
+[24/Jan/2023 00:08:33] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[24/Jan/2023 00:08:34] Watching for file changes with StatReloader
+[24/Jan/2023 00:08:41] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[24/Jan/2023 00:08:42] Watching for file changes with StatReloader
+[24/Jan/2023 00:08:53] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[24/Jan/2023 00:08:54] Watching for file changes with StatReloader
+[24/Jan/2023 00:08:58] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[24/Jan/2023 00:08:59] Watching for file changes with StatReloader
+[24/Jan/2023 00:09:13] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[24/Jan/2023 00:09:14] Watching for file changes with StatReloader
+[24/Jan/2023 00:12:46] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 29033
+[24/Jan/2023 00:12:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:12:47] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:12:48] "GET /admin/semester/courseoffered/import/ HTTP/1.1" 200 21899
+[24/Jan/2023 00:12:48] "GET /static/import_export/guess_format.js HTTP/1.1" 200 711
+[24/Jan/2023 00:12:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:12:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:12:58] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 41279
+[24/Jan/2023 00:12:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:12:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:13:16] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 22026
+[24/Jan/2023 00:13:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:13:25] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 41278
+[24/Jan/2023 00:13:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:14:38] "GET /admin/student/batch/ HTTP/1.1" 200 24822
+[24/Jan/2023 00:14:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:14:43] "GET /admin/faculty/course/ HTTP/1.1" 200 41571
+[24/Jan/2023 00:14:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:16:59] "GET /admin/semester/coursedistribution/ HTTP/1.1" 200 21532
+[24/Jan/2023 00:16:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:17:07] - Broken pipe from ('127.0.0.1', 56478)
+
+[24/Jan/2023 00:17:11] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 29033
+[24/Jan/2023 00:17:11] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:19:00] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 29033
+[24/Jan/2023 00:19:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:19:05] "GET /admin/semester/courseoffered/import/ HTTP/1.1" 200 21899
+[24/Jan/2023 00:19:06] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:19:15] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 41278
+[24/Jan/2023 00:19:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:23:01] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[24/Jan/2023 00:23:02] Watching for file changes with StatReloader
+[24/Jan/2023 00:33:47] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 41278
+[24/Jan/2023 00:33:47] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:34:50] E:\All Web Designing\My All Project\lu_routineMaker-dev\routineMaker\wsgi.py changed, reloading.
+[24/Jan/2023 00:34:51] Watching for file changes with StatReloader
+[24/Jan/2023 00:36:48] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 41278
+[24/Jan/2023 00:36:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:44:52] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 41278
+[24/Jan/2023 00:44:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:46:14] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 29033
+[24/Jan/2023 00:46:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:46:17] "GET /admin/semester/courseoffered/import/ HTTP/1.1" 200 21899
+[24/Jan/2023 00:46:17] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:47:06] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 26812
+[24/Jan/2023 00:47:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:47:40] "GET /admin/semester/courseoffered/import/ HTTP/1.1" 200 21899
+[24/Jan/2023 00:47:50] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 26812
+[24/Jan/2023 00:47:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:48:06] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 26813
+[24/Jan/2023 00:48:06] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:48:28] "GET /admin/semester/courseoffered/import/ HTTP/1.1" 200 21899
+[24/Jan/2023 00:48:36] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 26812
+[24/Jan/2023 00:48:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:48:50] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 26812
+[24/Jan/2023 00:48:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:49:15] "GET /semesters/ HTTP/1.1" 200 22029
+[24/Jan/2023 00:49:46] "GET /courses/ HTTP/1.1" 200 112746
+[24/Jan/2023 00:49:48] "GET /distributions/ HTTP/1.1" 200 21010
+[24/Jan/2023 00:49:54] "GET /offers/ HTTP/1.1" 200 36641
+[24/Jan/2023 00:50:49] "GET /admin/semester/courseoffered/import/ HTTP/1.1" 200 21899
+[24/Jan/2023 00:50:56] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 23745
+[24/Jan/2023 00:50:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:51:46] - Broken pipe from ('127.0.0.1', 56845)
+
+[24/Jan/2023 00:52:04] - Broken pipe from ('127.0.0.1', 56853)
+
+[24/Jan/2023 00:52:13] - Broken pipe from ('127.0.0.1', 56854)
+
+[24/Jan/2023 00:52:26] - Broken pipe from ('127.0.0.1', 56856)
+
+[24/Jan/2023 00:52:42] "GET /courses/ HTTP/1.1" 200 112747
+[24/Jan/2023 00:53:32] "GET /admin/semester/courseoffered/import/ HTTP/1.1" 200 21899
+[24/Jan/2023 00:53:41] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 24412
+[24/Jan/2023 00:53:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:54:12] "GET /admin/student/batch/ HTTP/1.1" 200 24822
+[24/Jan/2023 00:54:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:54:36] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 29033
+[24/Jan/2023 00:54:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:54:40] "GET /admin/semester/courseoffered/import/ HTTP/1.1" 200 21899
+[24/Jan/2023 00:54:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:54:49] "POST /admin/semester/courseoffered/import/ HTTP/1.1" 200 41278
+[24/Jan/2023 00:54:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:56:07] - Broken pipe from ('127.0.0.1', 56857)
+
+[24/Jan/2023 00:56:08] "GET /admin/student/batch/ HTTP/1.1" 200 24822
+[24/Jan/2023 00:56:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:56:29] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 29033
+[24/Jan/2023 00:56:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:57:21] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[24/Jan/2023 00:57:23] Watching for file changes with StatReloader
+[24/Jan/2023 00:57:27] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[24/Jan/2023 00:57:28] Watching for file changes with StatReloader
+[24/Jan/2023 00:57:39] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[24/Jan/2023 00:57:40] Watching for file changes with StatReloader
+[24/Jan/2023 00:58:21] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 29700
+[24/Jan/2023 00:58:21] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 00:59:27] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[24/Jan/2023 00:59:28] Watching for file changes with StatReloader
+[24/Jan/2023 00:59:31] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[24/Jan/2023 00:59:32] Watching for file changes with StatReloader
+[24/Jan/2023 00:59:52] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[24/Jan/2023 00:59:53] Watching for file changes with StatReloader
+[24/Jan/2023 01:00:18] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[24/Jan/2023 01:00:19] Watching for file changes with StatReloader
+[24/Jan/2023 01:00:24] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[24/Jan/2023 01:00:25] Watching for file changes with StatReloader
+[24/Jan/2023 01:01:41] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[24/Jan/2023 01:01:42] Watching for file changes with StatReloader
+[24/Jan/2023 01:01:46] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[24/Jan/2023 01:01:47] Watching for file changes with StatReloader
+[24/Jan/2023 01:01:53] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 29996
+[24/Jan/2023 01:01:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 01:02:09] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[24/Jan/2023 01:02:11] Watching for file changes with StatReloader
+[24/Jan/2023 01:02:13] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[24/Jan/2023 01:02:15] Watching for file changes with StatReloader
+[24/Jan/2023 01:02:22] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[24/Jan/2023 01:02:23] Watching for file changes with StatReloader
+[24/Jan/2023 01:02:27] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[24/Jan/2023 01:02:28] Watching for file changes with StatReloader
+[24/Jan/2023 01:02:30] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[24/Jan/2023 01:02:32] Watching for file changes with StatReloader
+[24/Jan/2023 01:02:40] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[24/Jan/2023 01:02:41] Watching for file changes with StatReloader
+[24/Jan/2023 01:02:46] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[24/Jan/2023 01:02:47] Watching for file changes with StatReloader
+[24/Jan/2023 01:02:54] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 30340
+[24/Jan/2023 01:02:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[24/Jan/2023 01:03:06] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[24/Jan/2023 01:03:08] Watching for file changes with StatReloader
+[24/Jan/2023 01:03:14] "GET /admin/semester/courseoffered/ HTTP/1.1" 200 30282
+[24/Jan/2023 01:03:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
