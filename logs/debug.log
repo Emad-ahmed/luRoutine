@@ -7967,3 +7967,319 @@ ValueError: Field 'id' expected a number but got 'Chose One'.
 [25/Jan/2023 18:26:01] Watching for file changes with StatReloader
 [25/Jan/2023 18:30:37] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
 [25/Jan/2023 18:30:38] Watching for file changes with StatReloader
+[25/Jan/2023 18:31:35] Watching for file changes with StatReloader
+[25/Jan/2023 18:32:02] "GET /courses/ HTTP/1.1" 200 128367
+[25/Jan/2023 19:12:09] Watching for file changes with StatReloader
+[25/Jan/2023 19:12:15] "GET / HTTP/1.1" 200 22227
+[25/Jan/2023 19:12:16] Not Found: /favicon.ico
+[25/Jan/2023 19:12:16] "GET /favicon.ico HTTP/1.1" 404 22201
+[25/Jan/2023 19:12:26] "GET / HTTP/1.1" 200 22226
+[25/Jan/2023 19:12:29] "GET /faculties/ HTTP/1.1" 200 21341
+[25/Jan/2023 19:12:31] "GET / HTTP/1.1" 200 22226
+[25/Jan/2023 19:13:48] "GET /courses/ HTTP/1.1" 200 128367
+[25/Jan/2023 19:15:02] "GET /sections/ HTTP/1.1" 200 31466
+[25/Jan/2023 19:15:09] "GET /distributions/ HTTP/1.1" 200 21010
+[25/Jan/2023 19:15:15] "GET /distribution/create/ HTTP/1.1" 200 52526
+[25/Jan/2023 19:15:20] "GET /getOfferedSections/?offered=1 HTTP/1.1" 200 47
+[25/Jan/2023 19:15:20] "GET /getOfferedParents/?offered=1 HTTP/1.1" 200 15
+[25/Jan/2023 19:15:39] "POST /distribution/create/ HTTP/1.1" 302 0
+[25/Jan/2023 19:15:39] "GET /distributions/ HTTP/1.1" 200 21657
+[25/Jan/2023 19:15:55] "GET /distribution/create/ HTTP/1.1" 200 52526
+[25/Jan/2023 19:15:59] "GET /getOfferedSections/?offered=2 HTTP/1.1" 200 47
+[25/Jan/2023 19:15:59] "GET /getOfferedParents/?offered=2 HTTP/1.1" 200 15
+[25/Jan/2023 19:16:13] "POST /distribution/create/ HTTP/1.1" 302 0
+[25/Jan/2023 19:16:14] "GET /distributions/ HTTP/1.1" 200 22322
+[25/Jan/2023 19:16:18] "GET /distribution/create/ HTTP/1.1" 200 52526
+[25/Jan/2023 19:16:50] "GET /getOfferedSections/?offered=3 HTTP/1.1" 200 47
+[25/Jan/2023 19:16:50] "GET /getOfferedParents/?offered=3 HTTP/1.1" 200 15
+[25/Jan/2023 19:17:16] "POST /distribution/create/ HTTP/1.1" 302 0
+[25/Jan/2023 19:17:17] "GET /distributions/ HTTP/1.1" 200 22979
+[25/Jan/2023 19:17:22] "GET /distribution/create/ HTTP/1.1" 200 52526
+[25/Jan/2023 19:19:42] "GET /distribution/create/ HTTP/1.1" 200 52526
+[25/Jan/2023 19:19:51] "GET /getOfferedSections/?offered=4 HTTP/1.1" 200 47
+[25/Jan/2023 19:19:51] "GET /getOfferedParents/?offered=4 HTTP/1.1" 200 15
+[25/Jan/2023 19:20:26] "GET /teachers/ HTTP/1.1" 200 54934
+[26/Jan/2023 21:05:01] Watching for file changes with StatReloader
+[26/Jan/2023 21:05:05] "GET / HTTP/1.1" 200 22227
+[26/Jan/2023 21:05:05] "GET /static/js/scripts.js HTTP/1.1" 200 3366
+[26/Jan/2023 21:05:06] "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 11275
+[26/Jan/2023 21:05:06] Not Found: /favicon.ico
+[26/Jan/2023 21:05:06] "GET /favicon.ico HTTP/1.1" 404 22201
+[26/Jan/2023 21:05:06] "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 3531
+[26/Jan/2023 21:05:45] "GET /semesters/ HTTP/1.1" 200 22029
+[26/Jan/2023 21:05:49] - Broken pipe from ('127.0.0.1', 53523)
+
+[26/Jan/2023 21:05:51] "GET /distributions/ HTTP/1.1" 200 22980
+[26/Jan/2023 21:05:55] - Broken pipe from ('127.0.0.1', 53534)
+
+[26/Jan/2023 21:06:14] "GET /courses/ HTTP/1.1" 200 128366
+[26/Jan/2023 21:11:43] "GET /distributions/ HTTP/1.1" 200 22979
+[26/Jan/2023 21:11:48] "GET /distribution/create/ HTTP/1.1" 200 52526
+[26/Jan/2023 21:12:31] "GET /courses/ HTTP/1.1" 200 128367
+[26/Jan/2023 21:13:35] "GET /admin HTTP/1.1" 301 0
+[26/Jan/2023 21:13:35] "GET /admin/ HTTP/1.1" 200 26505
+[26/Jan/2023 21:13:35] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[26/Jan/2023 21:13:35] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[26/Jan/2023 21:13:35] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[26/Jan/2023 21:13:35] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+[26/Jan/2023 21:13:35] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[26/Jan/2023 21:13:35] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[26/Jan/2023 21:13:35] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[26/Jan/2023 21:13:35] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[26/Jan/2023 21:13:35] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[26/Jan/2023 21:13:35] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[26/Jan/2023 21:13:35] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[26/Jan/2023 21:13:39] "GET /admin/faculty/course/ HTTP/1.1" 200 44633
+[26/Jan/2023 21:13:39] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[26/Jan/2023 21:13:39] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[26/Jan/2023 21:13:39] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[26/Jan/2023 21:13:39] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[26/Jan/2023 21:13:39] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[26/Jan/2023 21:13:39] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[26/Jan/2023 21:13:39] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[26/Jan/2023 21:13:39] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[26/Jan/2023 21:13:39] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[26/Jan/2023 21:13:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[26/Jan/2023 21:13:39] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[26/Jan/2023 21:13:42] "GET /admin/faculty/course/export/? HTTP/1.1" 200 21115
+[26/Jan/2023 21:13:42] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[26/Jan/2023 21:13:42] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[26/Jan/2023 21:13:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[26/Jan/2023 21:13:49] "POST /admin/faculty/course/export/? HTTP/1.1" 200 10965
+[26/Jan/2023 21:15:04] "GET /admin/faculty/course/ HTTP/1.1" 200 44633
+[26/Jan/2023 21:15:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[26/Jan/2023 21:15:09] "GET /admin/faculty/course/import/ HTTP/1.1" 200 21909
+[26/Jan/2023 21:15:09] "GET /static/import_export/guess_format.js HTTP/1.1" 304 0
+[26/Jan/2023 21:15:09] "GET /static/import_export/import.css HTTP/1.1" 304 0
+[26/Jan/2023 21:15:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[26/Jan/2023 21:15:11] "GET /admin/faculty/course/ HTTP/1.1" 200 44633
+[26/Jan/2023 21:15:13] "GET /admin/faculty/course/export/? HTTP/1.1" 200 21115
+[26/Jan/2023 21:15:13] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[26/Jan/2023 21:15:15] "GET /admin/faculty/course/ HTTP/1.1" 200 44633
+[26/Jan/2023 21:15:18] "GET /admin/faculty/course/import/ HTTP/1.1" 200 21909
+[26/Jan/2023 21:15:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[26/Jan/2023 21:15:20] "GET /admin/faculty/course/ HTTP/1.1" 200 44633
+[26/Jan/2023 21:15:21] "GET /admin/faculty/course/export/? HTTP/1.1" 200 21115
+[26/Jan/2023 21:15:21] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[26/Jan/2023 21:15:24] "GET /admin/faculty/course/ HTTP/1.1" 200 44633
+[26/Jan/2023 21:15:35] "GET /distributions/ HTTP/1.1" 200 22979
+[26/Jan/2023 21:16:00] "GET /admin/semester/coursedistribution/ HTTP/1.1" 200 23162
+[26/Jan/2023 21:16:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[26/Jan/2023 21:16:09] "GET /distribution/create/ HTTP/1.1" 200 52526
+[26/Jan/2023 21:49:42] - Broken pipe from ('127.0.0.1', 53911)
+
+[26/Jan/2023 21:49:46] "GET /admin/semester/coursedistribution/add/ HTTP/1.1" 200 33491
+[26/Jan/2023 21:49:46] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[26/Jan/2023 21:49:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[26/Jan/2023 21:49:46] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+[26/Jan/2023 21:49:46] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[26/Jan/2023 22:37:35] "GET /getOfferedSections/?offered=5 HTTP/1.1" 200 47
+[26/Jan/2023 22:37:36] "GET /getOfferedParents/?offered=5 HTTP/1.1" 200 15
+[26/Jan/2023 22:48:17] "GET /getOfferedSections/?offered=4 HTTP/1.1" 200 47
+[26/Jan/2023 22:48:17] "GET /getOfferedParents/?offered=4 HTTP/1.1" 200 15
+[26/Jan/2023 22:48:19] "POST /distribution/create/ HTTP/1.1" 302 0
+[26/Jan/2023 22:48:20] "GET /distributions/ HTTP/1.1" 200 23638
+[26/Jan/2023 22:48:20] "GET /static/css/styles.css HTTP/1.1" 304 0
+[26/Jan/2023 22:48:20] "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+[26/Jan/2023 22:48:20] "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+[26/Jan/2023 22:48:21] "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+[26/Jan/2023 22:48:21] "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+[26/Jan/2023 22:48:30] "GET /distribution/create/ HTTP/1.1" 200 52526
+[26/Jan/2023 22:48:33] "GET /getOfferedSections/?offered=5 HTTP/1.1" 200 47
+[26/Jan/2023 22:48:33] "GET /getOfferedParents/?offered=5 HTTP/1.1" 200 15
+[26/Jan/2023 22:49:15] "POST /distribution/create/ HTTP/1.1" 302 0
+[26/Jan/2023 22:49:16] "GET /distributions/ HTTP/1.1" 200 24293
+[26/Jan/2023 22:49:56] "GET /distribution/create/ HTTP/1.1" 200 52526
+[26/Jan/2023 22:50:00] "GET /getOfferedSections/?offered=6 HTTP/1.1" 200 47
+[26/Jan/2023 22:50:01] "GET /getOfferedParents/?offered=6 HTTP/1.1" 200 15
+[26/Jan/2023 22:53:27] "POST /distribution/create/ HTTP/1.1" 302 0
+[26/Jan/2023 22:53:28] "GET /distributions/ HTTP/1.1" 200 24931
+[26/Jan/2023 23:03:56] "GET /distribution/create/ HTTP/1.1" 200 52526
+[26/Jan/2023 23:04:01] "GET /getOfferedSections/?offered=7 HTTP/1.1" 200 47
+[26/Jan/2023 23:04:01] "GET /getOfferedParents/?offered=7 HTTP/1.1" 200 15
+[26/Jan/2023 23:04:20] "POST /distribution/create/ HTTP/1.1" 302 0
+[26/Jan/2023 23:04:22] "GET /distributions/ HTTP/1.1" 200 25580
+[26/Jan/2023 23:04:41] "GET /teachers/ HTTP/1.1" 200 54935
+[26/Jan/2023 23:04:51] "GET /distribution/create/ HTTP/1.1" 200 52526
+[26/Jan/2023 23:05:40] "GET /getOfferedSections/?offered=8 HTTP/1.1" 200 47
+[26/Jan/2023 23:05:40] "GET /getOfferedParents/?offered=8 HTTP/1.1" 200 15
+[26/Jan/2023 23:05:49] "POST /distribution/create/ HTTP/1.1" 302 0
+[26/Jan/2023 23:05:51] "GET /distributions/ HTTP/1.1" 200 26229
+[26/Jan/2023 23:06:12] "GET /distribution/create/ HTTP/1.1" 200 52526
+[26/Jan/2023 23:06:35] "GET /getOfferedSections/?offered=2 HTTP/1.1" 200 47
+[26/Jan/2023 23:06:35] "GET /getOfferedParents/?offered=2 HTTP/1.1" 200 35
+[27/Jan/2023 20:19:52] Watching for file changes with StatReloader
+[27/Jan/2023 20:20:09] Watching for file changes with StatReloader
+[27/Jan/2023 20:21:39] "GET / HTTP/1.1" 200 22227
+[27/Jan/2023 20:21:39] "GET /static/css/styles.css HTTP/1.1" 200 428968
+[27/Jan/2023 20:21:39] "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11479
+[27/Jan/2023 20:21:39] "GET /static/js/scripts.js HTTP/1.1" 200 3366
+[27/Jan/2023 20:21:39] "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 11275
+[27/Jan/2023 20:21:40] "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+[27/Jan/2023 20:21:40] "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 3531
+[27/Jan/2023 20:21:40] "GET /static/assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 200 23124
+[27/Jan/2023 20:21:40] "GET /static/assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 200 23664
+[27/Jan/2023 20:21:40] "GET /static/assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 200 24236
+[27/Jan/2023 20:21:40] "GET /static/assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 200 23240
+[27/Jan/2023 20:21:40] Not Found: /favicon.ico
+[27/Jan/2023 20:21:40] "GET /favicon.ico HTTP/1.1" 404 22201
+[27/Jan/2023 20:21:49] "GET /offers/ HTTP/1.1" 200 49143
+[27/Jan/2023 20:22:11] "GET /distributions/ HTTP/1.1" 200 26229
+[27/Jan/2023 20:22:17] "GET /distribution/create/ HTTP/1.1" 200 52526
+[27/Jan/2023 20:23:31] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[27/Jan/2023 20:23:33] Watching for file changes with StatReloader
+[27/Jan/2023 20:24:50] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\models.py changed, reloading.
+[27/Jan/2023 20:24:52] Watching for file changes with StatReloader
+[27/Jan/2023 20:26:29] "GET /distribution/create/ HTTP/1.1" 200 52526
+[27/Jan/2023 20:26:35] "GET /getOfferedSections/?offered=1 HTTP/1.1" 200 47
+[27/Jan/2023 20:26:36] "GET /getOfferedParents/?offered=1 HTTP/1.1" 200 35
+[27/Jan/2023 20:26:52] - Broken pipe from ('127.0.0.1', 54583)
+
+[27/Jan/2023 20:26:55] "GET /distribution/create/ HTTP/1.1" 200 52525
+[27/Jan/2023 20:26:57] "GET /getOfferedSections/?offered=1 HTTP/1.1" 200 47
+[27/Jan/2023 20:26:58] "GET /getOfferedParents/?offered=1 HTTP/1.1" 200 35
+[27/Jan/2023 20:29:03] "POST /distribution/create/ HTTP/1.1" 302 0
+[27/Jan/2023 20:29:05] "GET /distributions/ HTTP/1.1" 200 26877
+[27/Jan/2023 20:29:06] "GET /teachers/ HTTP/1.1" 200 54935
+[27/Jan/2023 20:29:12] "GET /distribution/create/ HTTP/1.1" 200 52526
+[27/Jan/2023 20:29:15] "GET /getOfferedSections/?offered=2 HTTP/1.1" 200 47
+[27/Jan/2023 20:29:16] "GET /getOfferedParents/?offered=2 HTTP/1.1" 200 35
+[27/Jan/2023 20:29:58] "POST /distribution/create/ HTTP/1.1" 302 0
+[27/Jan/2023 20:30:00] "GET /distributions/ HTTP/1.1" 200 27542
+[27/Jan/2023 20:30:06] "GET /distribution/create/ HTTP/1.1" 200 52526
+[27/Jan/2023 20:33:11] "GET /distribution/create/ HTTP/1.1" 200 52526
+[27/Jan/2023 20:33:16] "GET /getOfferedSections/?offered=5 HTTP/1.1" 200 47
+[27/Jan/2023 20:33:16] "GET /getOfferedParents/?offered=5 HTTP/1.1" 200 35
+[27/Jan/2023 20:34:04] "POST /distribution/create/ HTTP/1.1" 302 0
+[27/Jan/2023 20:34:07] "GET /distributions/ HTTP/1.1" 200 28206
+[27/Jan/2023 20:34:12] "GET /distribution/create/ HTTP/1.1" 200 52526
+[27/Jan/2023 20:34:41] "GET /getOfferedSections/?offered=4 HTTP/1.1" 200 47
+[27/Jan/2023 20:34:41] "GET /getOfferedParents/?offered=4 HTTP/1.1" 200 35
+[27/Jan/2023 20:35:00] "POST /distribution/create/ HTTP/1.1" 302 0
+[27/Jan/2023 20:35:02] "GET /distributions/ HTTP/1.1" 200 28863
+[27/Jan/2023 20:35:08] "GET /distribution/create/ HTTP/1.1" 200 52526
+[27/Jan/2023 20:35:57] "GET /admin HTTP/1.1" 301 0
+[27/Jan/2023 20:35:57] "GET /admin/ HTTP/1.1" 200 26505
+[27/Jan/2023 20:35:57] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+[27/Jan/2023 20:35:57] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+[27/Jan/2023 20:35:57] "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+[27/Jan/2023 20:35:57] "GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+[27/Jan/2023 20:35:57] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[27/Jan/2023 20:35:57] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+[27/Jan/2023 20:35:58] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[27/Jan/2023 20:35:58] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[27/Jan/2023 20:35:58] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[27/Jan/2023 20:35:58] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[27/Jan/2023 20:35:58] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[27/Jan/2023 20:36:03] "GET /admin/semester/coursedistribution/ HTTP/1.1" 200 25146
+[27/Jan/2023 20:36:03] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6874
+[27/Jan/2023 20:36:03] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[27/Jan/2023 20:36:03] "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+[27/Jan/2023 20:36:03] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+[27/Jan/2023 20:36:03] "GET /static/admin/js/actions.js HTTP/1.1" 200 7867
+[27/Jan/2023 20:36:03] "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+[27/Jan/2023 20:36:03] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[27/Jan/2023 20:36:03] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+[27/Jan/2023 20:36:03] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+[27/Jan/2023 20:36:03] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[27/Jan/2023 20:36:03] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[27/Jan/2023 20:36:15] "GET /admin/semester/coursedistribution/34/change/ HTTP/1.1" 200 34055
+[27/Jan/2023 20:36:15] "GET /static/admin/css/forms.css HTTP/1.1" 200 8804
+[27/Jan/2023 20:36:15] "GET /static/admin/css/widgets.css HTTP/1.1" 200 11097
+[27/Jan/2023 20:36:15] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+[27/Jan/2023 20:36:15] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+[27/Jan/2023 20:36:15] "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+[27/Jan/2023 20:36:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[27/Jan/2023 20:36:56] "GET /admin/semester/coursedistribution/34/delete/ HTTP/1.1" 200 21722
+[27/Jan/2023 20:36:56] "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+[27/Jan/2023 20:36:58] "POST /admin/semester/coursedistribution/34/delete/ HTTP/1.1" 302 0
+[27/Jan/2023 20:37:00] "GET /admin/semester/coursedistribution/ HTTP/1.1" 200 25092
+[27/Jan/2023 20:37:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[27/Jan/2023 20:37:00] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[27/Jan/2023 20:37:08] "GET /distributions/ HTTP/1.1" 200 28199
+[27/Jan/2023 20:37:13] "GET /distribution/create/ HTTP/1.1" 200 52526
+[27/Jan/2023 20:37:23] "GET /getOfferedSections/?offered=3 HTTP/1.1" 200 47
+[27/Jan/2023 20:37:23] "GET /getOfferedParents/?offered=3 HTTP/1.1" 200 35
+[27/Jan/2023 20:59:32] "POST /distribution/create/ HTTP/1.1" 302 0
+[27/Jan/2023 20:59:34] "GET /distributions/ HTTP/1.1" 200 28857
+[27/Jan/2023 20:59:59] "GET /distribution/create/ HTTP/1.1" 200 52526
+[27/Jan/2023 21:45:35] "GET /getOfferedSections/?offered=14 HTTP/1.1" 200 16
+[27/Jan/2023 21:45:35] "GET /getOfferedParents/?offered=14 HTTP/1.1" 200 15
+[27/Jan/2023 21:45:38] "GET /getOfferedSections/?offered=16 HTTP/1.1" 200 16
+[27/Jan/2023 21:45:38] "GET /getOfferedParents/?offered=16 HTTP/1.1" 200 15
+[27/Jan/2023 23:36:53] "GET / HTTP/1.1" 200 22228
+[27/Jan/2023 23:36:53] Not Found: /favicon.ico
+[27/Jan/2023 23:36:53] "GET /favicon.ico HTTP/1.1" 404 22201
+[27/Jan/2023 23:36:57] "GET /teachers/ HTTP/1.1" 200 54935
+[28/Jan/2023 13:23:37] Watching for file changes with StatReloader
+[28/Jan/2023 13:23:42] "GET / HTTP/1.1" 200 22227
+[28/Jan/2023 13:23:42] Not Found: /favicon.ico
+[28/Jan/2023 13:23:42] "GET /favicon.ico HTTP/1.1" 404 22201
+[28/Jan/2023 13:24:05] "GET /courses/ HTTP/1.1" 200 128367
+[28/Jan/2023 13:24:14] "GET /teachers/ HTTP/1.1" 200 54934
+[28/Jan/2023 13:24:29] "GET /distributions/ HTTP/1.1" 200 28857
+[28/Jan/2023 13:25:15] "GET /distribution/create/ HTTP/1.1" 200 52526
+[28/Jan/2023 13:25:25] "GET /getOfferedSections/?offered=5 HTTP/1.1" 200 47
+[28/Jan/2023 13:25:25] "GET /getOfferedParents/?offered=5 HTTP/1.1" 200 35
+[28/Jan/2023 13:25:50] "POST /distribution/create/ HTTP/1.1" 302 0
+[28/Jan/2023 13:25:52] "GET /distributions/ HTTP/1.1" 200 29513
+[28/Jan/2023 13:28:59] "GET /distribution/create/ HTTP/1.1" 200 52526
+[28/Jan/2023 13:29:11] "GET /getOfferedSections/?offered=6 HTTP/1.1" 200 47
+[28/Jan/2023 13:29:11] "GET /getOfferedParents/?offered=6 HTTP/1.1" 200 35
+[28/Jan/2023 13:29:35] - Broken pipe from ('127.0.0.1', 56051)
+
+[28/Jan/2023 13:29:36] "POST /distribution/create/ HTTP/1.1" 200 52525
+[28/Jan/2023 13:32:36] "GET /distributions/ HTTP/1.1" 200 29513
+[28/Jan/2023 13:32:36] "GET /static/js/scripts.js HTTP/1.1" 200 3366
+[28/Jan/2023 13:32:37] "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 11275
+[28/Jan/2023 13:32:37] "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 3531
+[28/Jan/2023 13:32:49] "GET /distribution/create/ HTTP/1.1" 200 52526
+[28/Jan/2023 13:32:59] "GET /getOfferedSections/?offered=14 HTTP/1.1" 200 16
+[28/Jan/2023 13:32:59] "GET /getOfferedParents/?offered=14 HTTP/1.1" 200 15
+[28/Jan/2023 13:33:06] "GET /getOfferedSections/?offered=6 HTTP/1.1" 200 47
+[28/Jan/2023 13:33:07] "GET /getOfferedParents/?offered=6 HTTP/1.1" 200 35
+[28/Jan/2023 13:33:22] "POST /distribution/create/ HTTP/1.1" 302 0
+[28/Jan/2023 13:33:25] "GET /distributions/ HTTP/1.1" 200 30156
+[28/Jan/2023 13:33:32] "GET /distribution/create/ HTTP/1.1" 200 52526
+[28/Jan/2023 13:34:07] "GET /getOfferedSections/?offered=7 HTTP/1.1" 200 47
+[28/Jan/2023 13:34:08] "GET /getOfferedParents/?offered=7 HTTP/1.1" 200 35
+[28/Jan/2023 13:34:42] "POST /distribution/create/ HTTP/1.1" 302 0
+[28/Jan/2023 13:34:45] "GET /distributions/ HTTP/1.1" 200 30800
+[28/Jan/2023 13:34:51] "GET /distribution/create/ HTTP/1.1" 200 52526
+[28/Jan/2023 13:40:12] E:\All Web Designing\My All Project\lu_routineMaker-dev\semester\views.py changed, reloading.
+[28/Jan/2023 13:40:14] Watching for file changes with StatReloader
+[28/Jan/2023 13:40:19] "GET /distribution/create/ HTTP/1.1" 200 52526
+[28/Jan/2023 13:40:30] "GET /getOfferedSections/?offered=1 HTTP/1.1" 200 47
+[28/Jan/2023 13:40:30] "GET /getOfferedParents/?offered=1 HTTP/1.1" 200 57
+[28/Jan/2023 13:40:45] "POST /distribution/create/ HTTP/1.1" 302 0
+[28/Jan/2023 13:40:48] "GET /distributions/ HTTP/1.1" 200 31458
+[28/Jan/2023 13:40:56] "GET /distribution/create/ HTTP/1.1" 200 52526
+[06/Feb/2023 21:23:38] Watching for file changes with StatReloader
+[06/Feb/2023 21:23:55] Watching for file changes with StatReloader
+[06/Feb/2023 21:23:59] "GET / HTTP/1.1" 200 22208
+[06/Feb/2023 21:23:59] "GET /static/css/styles.css HTTP/1.1" 200 428968
+[06/Feb/2023 21:23:59] "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11479
+[06/Feb/2023 21:23:59] "GET /static/js/scripts.js HTTP/1.1" 200 3366
+[06/Feb/2023 21:23:59] "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 11275
+[06/Feb/2023 21:23:59] "GET /static/js/scripts.js HTTP/1.1" 200 3366
+[06/Feb/2023 21:23:59] "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 11275
+[06/Feb/2023 21:24:00] "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+[06/Feb/2023 21:24:00] "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 3531
+[06/Feb/2023 21:24:00] "GET /static/assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 200 23664
+[06/Feb/2023 21:24:00] "GET /static/assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 200 24236
+[06/Feb/2023 21:24:00] "GET /static/assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 200 23124
+[06/Feb/2023 21:24:00] "GET /static/assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 200 23240
+[06/Feb/2023 21:24:01] Not Found: /favicon.ico
+[06/Feb/2023 21:24:01] "GET /favicon.ico HTTP/1.1" 404 22201
+[06/Feb/2023 21:24:01] "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 3531
+[06/Feb/2023 21:24:03] "GET /departments/ HTTP/1.1" 302 0
+[06/Feb/2023 21:24:03] "GET /login?next=/departments/ HTTP/1.1" 301 0
+[06/Feb/2023 21:24:03] "GET /login/?next=/departments/ HTTP/1.1" 200 14220
+[06/Feb/2023 21:24:06] "POST /login/?next=/departments/ HTTP/1.1" 302 0
+[06/Feb/2023 21:24:07] "GET / HTTP/1.1" 200 22227
+[06/Feb/2023 21:24:10] "GET /faculties/ HTTP/1.1" 200 21341
+[06/Feb/2023 21:24:12] "GET /departments/ HTTP/1.1" 200 22279
+[06/Feb/2023 21:24:13] "GET /programs/ HTTP/1.1" 200 21477
+[06/Feb/2023 21:24:15] "GET /curriculums/ HTTP/1.1" 200 22782
+[06/Feb/2023 21:24:17] "GET /teachers/ HTTP/1.1" 200 54935
+[06/Feb/2023 21:24:49] "GET /courses/ HTTP/1.1" 200 128367
