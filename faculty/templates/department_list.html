@@ -32,7 +32,7 @@
                         <th>Title</th>
                         <th>Name of Head</th>
                         <th>Faculty</th>
-                        <th>Actions</th>
+                      
                     </tr>
                     </thead>
                     <tfoot>
@@ -42,7 +42,7 @@
                         <th>Title</th>
                         <th>Name of Dean</th>
                         <th>Faculty</th>
-                        <th>Actions</th>
+               
                     </tr>
                     </tfoot>
                     <tbody>
@@ -53,10 +53,7 @@
                             <td>{{ department.title }}</td>
                             <td>{{ department.heads.all.first.head }}</td>
                             <td>{{ department.faculty.title }}</td>
-                            <td class="text-center">
-                                <a href="{% url 'faculty:department_update' %}?id={{ department.id }}" class="btn btn-datatable btn-icon btn-transparent-dark me-2"><i
-                                        data-feather="edit"></i></a>
-                            </td>
+                            
                         </tr>
                     {% endfor %}
 

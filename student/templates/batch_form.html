@@ -7,10 +7,18 @@
             <div class="page-header-content pt-4">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-auto mt-4">
+                        {% if batches %}
+                        <h1 class="page-header-title">
+                            <div class="page-header-icon"><i data-feather="plus"></i></div>
+                            Update Batch
+                        </h1>
+                        {% else %}
                         <h1 class="page-header-title">
                             <div class="page-header-icon"><i data-feather="plus"></i></div>
                             Add Batch
                         </h1>
+                        {% endif %}
+
                     </div>
                 </div>
             </div>
@@ -32,8 +40,8 @@
                                     <label for="batch">Batch</label>
                                     <input class="form-control" type="text" id="batch" name="batch"
                                            placeholder="Batch"
-                                            {% if batch %}
-                                           value="{{ batch.batch }}"
+                                            {% if batches %}
+                                           value="{{ batches.batch }}"
                                             {% endif %}
                                            required
                                     />

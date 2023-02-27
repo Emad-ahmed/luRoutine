@@ -32,9 +32,9 @@ class HomeView(ListView):
                 email=self.request.user)
         except:
             context['teachername'] = "None"
-        context['gen_routine'] = generateRoutine(
+            context['gen_routine'] = generateRoutine(
             self.request.GET.get('day') if self.request.GET.get('day') else 'sunday', self.request.user)
-        context['sc'] = [0, 1, 2, 3, 4, 5, 6]
+            context['sc'] = [0, 1, 2, 3, 4, 5, 6]
 
         return context
 

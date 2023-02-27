@@ -6,10 +6,19 @@
             <div class="page-header-content pt-4">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-auto mt-4">
+                        {% if course %}
                         <h1 class="page-header-title">
                             <div class="page-header-icon"><i data-feather="plus"></i></div>
-                            Add Course
+                            Update Course
                         </h1>
+                        {% else %}
+                            <h1 class="page-header-title">
+                            <div class="page-header-icon"><i data-feather="plus"></i></div>
+                                Add Course
+                            </h1>
+                        {% endif %}
+
+                       
                     </div>
                 </div>
             </div>
@@ -50,7 +59,7 @@
                                             {% for cur in curriculums %}
                                                 <option value="{{ cur.id }}"
                                                         {% if course.curriculum.id == cur.id %}
-                                                        selected
+                                                            selected
                                                         {% endif %}
                                                 >{{ cur.program.program_id }}
                                                     in {{ cur.program.department.department_id }}

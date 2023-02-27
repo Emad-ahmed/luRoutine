@@ -30,7 +30,7 @@
                         <th>#</th>
                         <th>Title</th>
                         <th>Name of Dean</th>
-                        <th>Actions</th>
+                     
                     </tr>
                     </thead>
                     <tfoot>
@@ -38,7 +38,7 @@
                         <th>#</th>
                         <th>Title</th>
                         <th>Name of Dean</th>
-                        <th>Actions</th>
+                        
                     </tr>
                     </tfoot>
                     <tbody>
@@ -47,9 +47,7 @@
                             <td>{{ faculty.id }}</td>
                             <td>{{ faculty.title }}</td>
                             <td>{{ faculty.deans.all.first.dean }}</td>
-                            <td class="text-center">
-                                <a href="{% url 'faculty:faculty_update' %}?id={{ faculty.id }}" class="btn btn-datatable btn-icon btn-transparent-dark me-2"><i class="fa fa-list" aria-hidden="true"></i></a>
-                            </td>
+                            
                         </tr>
                     {% endfor %}
 

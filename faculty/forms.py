@@ -11,16 +11,16 @@ class FacultyForm(forms.ModelForm):
 
     class Meta:
         model = Faculty
-        fields = ('title', 'dean')
+        fields = ('id', 'title', 'dean')
+        
 
     def save(self, commit=True):
         cd = self.cleaned_data
         instance = Faculty.objects.create(title=cd.get('title'))
         FacultyDean.objects.create(faculty=instance, dean=cd.get('dean'))
-        print(instance)
+            
         return instance
-
-
+        
 
 
 

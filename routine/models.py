@@ -23,7 +23,7 @@ class Room(AbstractTimestampModel):
         verbose_name=_('Building'),
         to='routine.Building',
         related_name='rooms',
-        on_delete=models.DO_NOTHING,
+        on_delete=models.CASCADE,
         null=True
     )
     room_number = models.CharField(
@@ -38,7 +38,7 @@ class Room(AbstractTimestampModel):
         verbose_name=_('Department'),
         to='faculty.Department',
         related_name='rooms',
-        on_delete=models.SET_NULL,
+        on_delete=models.CASCADE,
         null=True
     )
 
@@ -113,7 +113,7 @@ class Routine(AbstractTimestampModel):
         verbose_name=_('Room'),
         to='routine.Room',
         related_name='routines',
-        on_delete=models.SET_NULL,
+        on_delete=models.CASCADE,
         blank=True,
         null=True
     )

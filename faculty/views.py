@@ -8,7 +8,7 @@ from django.urls import reverse
 from django.utils.encoding import force_bytes
 from django.utils.http import urlsafe_base64_encode
 from django.views.generic import ListView, CreateView, UpdateView
-
+from django.core.paginator import Paginator
 from accounts.models import BindAccount
 from faculty.models import Faculty, Department, Program, Teacher, Course, Curriculum, FacultyDean
 from .forms import FacultyForm, DepartmentForm, ProgramForm, TeacherForm, CourseForm, CurriculumForm
@@ -54,18 +54,20 @@ class FacultyUpdateView(UpdateView):
 
     def get_object(self):
         return get_object_or_404(FacultyDean, id=self.request.GET.get('id'))
-
     def get_context_data(self, **kwargs):
+        print(self.get_object)
         context = super().get_context_data(**kwargs)
         context['user'] = self.request.user
-        print(context['faculty'])
         return context
-
     def form_invalid(self, form):
         return self.render_to_response(self.get_context_data(**({'form': form})))
-
     def get_success_url(self):
+        
         return reverse('faculty:faculty_list')
+
+
+
+
 
 
 @method_decorator(login_required, name='dispatch')
@@ -270,11 +272,12 @@ class CourseListView(ListView):
     model = Course
     template_name = 'course_list.html'
     context_object_name = 'courses'
-
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['user'] = self.request.user
         return context
+
+
 
 
 @method_decorator(login_required, name='dispatch')
@@ -298,6 +301,29 @@ class CourseCreateView(CreateView):
         print(form.errors)
         return self.render_to_response(self.get_context_data(**({'form': form})))
 
+
+
+@method_decorator(login_required, name='dispatch')
+class CourseUpdateView(UpdateView):
+    template_name = 'course_form.html'
+    model = Course
+    form_class = CourseForm
+    context_object_name = 'course'
+
+    def get_object(self):
+        return get_object_or_404(Course, id=self.request.GET.get('id'))
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['user'] = self.request.user
+        context['curriculums'] = Curriculum.objects.all()
+        return context
+
+    def form_invalid(self, form):
+        return self.render_to_response(self.get_context_data(**({'form': form})))
+
+    def get_success_url(self):
+        return reverse('faculty:course_list')
 
 @login_required
 def teacher_account_reset(request):

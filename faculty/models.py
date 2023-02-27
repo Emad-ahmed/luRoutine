@@ -12,7 +12,7 @@ class Faculty(AbstractTimestampModel):
     class Meta:
         verbose_name = _('Faculty')
         verbose_name_plural = _('Faculties')
-
+    
     
     def __str__(self) -> str:
         return self.title
@@ -46,7 +46,7 @@ class Department(AbstractTimestampModel):
         verbose_name=_('Faculty'),
         to='faculty.Faculty',
         related_name='departments',
-        on_delete=models.SET_NULL,
+        on_delete=models.CASCADE,
         null=True
     )
 
@@ -85,7 +85,7 @@ class Program(AbstractTimestampModel):
         verbose_name=_('Department'),
         to='faculty.Department',
         related_name='programs',
-        on_delete=models.SET_NULL,
+        on_delete=models.CASCADE,
         null=True
     )
 
@@ -129,7 +129,7 @@ class Teacher(AbstractTimestampModel):
         verbose_name=_('Department'),
         to='faculty.Department',
         related_name='teachers',
-        on_delete=models.SET_NULL,
+        on_delete=models.CASCADE,
         null=True
     )
     designation = models.CharField(
@@ -178,7 +178,7 @@ class Course(AbstractTimestampModel):
         verbose_name=_("Pre Req"),
         to="faculty.Course",
         related_name="dependents",
-        on_delete=models.SET_NULL,
+        on_delete=models.CASCADE,
         blank=True,
         null=True
     )

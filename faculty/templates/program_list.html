@@ -31,7 +31,7 @@
                         <th>Program ID</th>
                         <th>Title</th>
                         <th>Department</th>
-                        <th>Actions</th>
+                      
                     </tr>
                     </thead>
                     <tfoot>
@@ -40,7 +40,7 @@
                         <th>Program ID</th>
                         <th>Title</th>
                         <th>Department</th>
-                        <th>Actions</th>
+                        
                     </tr>
                     </tfoot>
                     <tbody>
@@ -50,10 +50,7 @@
                             <td>{{ program.program_id }}</td>
                             <td>{{ program.title }}</td>
                             <td>{{ program.department.department_id }}</td>
-                            <td class="text-center">
-                                <a href="{% url 'faculty:program_update' %}?id={{ program.id }}" class="btn btn-datatable btn-icon btn-transparent-dark me-2"><i
-                                        data-feather="edit"></i></a>
-                            </td>
+                            
                         </tr>
                     {% endfor %}
 

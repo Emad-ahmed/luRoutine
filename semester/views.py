@@ -2,8 +2,8 @@ from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
 from django.urls import reverse
 from django.utils.decorators import method_decorator
-from django.views.generic import ListView, CreateView
-
+from django.views.generic import ListView, CreateView, UpdateView
+from django.shortcuts import get_object_or_404
 from faculty.models import Course, Teacher
 from semester.models import Semester, CourseOffered, CourseDistribution
 from student.models import Batch, Section
@@ -39,6 +39,29 @@ class SemesterCreateView(CreateView):
 
     def form_invalid(self, form):
         return self.render_to_response(self.get_context_data(**({'form': form})))
+
+
+@method_decorator(login_required, name='dispatch')
+class SemesterUpdateView(UpdateView):
+    model = Section
+    template_name = 'semester_form.html'
+    form_class = SemesterForm
+    context_object_name = 'semesters'
+
+    def get_object(self):
+        return get_object_or_404(Semester, id=self.request.GET.get('id'))
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['user'] = self.request.user
+        return context
+    
+    def get_success_url(self):
+        return reverse('semester:semester_list')
+    
+    def form_invalid(self, form):
+        return self.render_to_response(self.get_context_data(**({'form': form})))
+
 
 
 @method_decorator(login_required, name='dispatch')

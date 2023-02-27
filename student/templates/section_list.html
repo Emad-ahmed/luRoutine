@@ -51,7 +51,7 @@
                                 ({{ section.batch.curriculum.start_effect_date|date:"Y" }}
                                 - {{ section.batch.curriculum.end_effect_date|date:"Y" }})</td>
                             <td class="text-center">
-                                <a href="#?id={{ section.id }}" class="btn btn-datatable btn-icon btn-transparent-dark me-2"><i
+                                <a href="{% url 'student:section_update' %}?id={{ section.id }}" class="btn btn-datatable btn-icon btn-transparent-dark me-2"><i
                                         data-feather="edit"></i></a>
                             </td>
                         </tr>
