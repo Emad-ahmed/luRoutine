@@ -10,9 +10,11 @@ urlpatterns = [
 
     path('offers/', views.CourseOfferingListView.as_view(), name='offer_list'),
     path('offer/create/', views.CourseOfferingCreateView.as_view(), name='offer_create'),
+    path('offer/update/', views.CourseOfferUpdateView.as_view(), name='offer_update'),
 
     path('distributions/', views.CourseDistributionList.as_view(), name='dist_list'),
     path('distribution/create/', views.CourseDistributionCreateView.as_view(), name='dist_create'),
+     path('distribution/update/', views.CourseDistributionUpdateView.as_view(), name='dist_update'),
 
     path('getBatchWiseCourse/', views.getBatchCourses, name='batch_course'),
     path('getOfferedSections/', views.getOfferedSection, name='offered_section'),

@@ -21,6 +21,7 @@ urlpatterns = [
 
     path('routines/', views.RoutineListView.as_view(), name='routine_list'),
     path('routine/create/', views.RoutineCreateView.as_view(), name='routine-create'),
+    path('routine/update/', views.RoutineUpdateView.as_view(), name='routine-update'),
 
     path('routine/check/', views.getRoutineSuggestion, name='routine-check'),
     path('routine/getRoom/', views.getRoom, name='room-check'),

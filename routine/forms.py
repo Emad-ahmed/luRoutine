@@ -198,6 +198,61 @@ class RoutineForm(forms.ModelForm):
         return instance
 
 
+
+
+
+
+
+class RoutineUpdateForm(forms.ModelForm):
+    class Meta:
+        model = Routine
+        fields = ['slot', 'room', 'course_dist', 'day_of_week']
+
+    def clean(self):
+        cd = self.cleaned_data
+        rc = Routine.objects.filter(
+            slot=cd.get('slot'),
+            day_of_week=cd.get('day_of_week'),
+            room=cd.get('room')
+        )
+        if rc:
+            raise ValidationError("Room is equipped already in the given day and time")
+
+        dist = cd.get('course_dist')
+
+        while dist.parent_dist != dist:
+            dist = dist.parent_dist
+
+        cd['course_dist'] = dist
+
+        for child in dist.child_dists.all():
+            qs = Routine.objects.filter(
+                course_dist__section=child.section,
+                slot=cd.get('slot'),
+                day_of_week=cd.get('day_of_week')
+            )
+            for data in qs:
+                qd = data.course_dist.section_details
+                cd = child.section_details
+                if cd.starting_id == "*" or qd.starting_id == "*":
+                    raise ValidationError("Student are engaged already in different classroom.")
+                else:
+                    if not (cd.ending_id < qd.starting_id or cd.starting_id > qd.ending_id):
+                        raise ValidationError("Student are engaged already in different classroom.")
+
+        teacher = dist.teacher
+
+        qs = Routine.objects.filter(course_dist__teacher=teacher, slot=cd.get('slot'),
+                                    day_of_week=cd.get('day_of_week'))
+        if qs:
+            raise ValidationError("Teacher is already engage in different classroom.")
+        return cd
+
+    
+
+
+
+
 class DummyRoutineForm(forms.ModelForm):
     class Meta:
         model = Routine

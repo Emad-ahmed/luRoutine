@@ -76,12 +76,15 @@
                             </td>
                             {% for rt in routine %}
                                 {% if rt %}
+                               
                                     <td class="text-center">
+                                        <a href="{% url 'routine:routine-update' %}?id={{ rt.id }}">
                                         {{ rt.course_dist.offered.course.course_code }}
                                         <p class="text-muted m-0">{{ rt.room.room_number }}
                                             | {{ rt.course_dist.teacher.name_initials }}</p>
-
+                                        </a>
                                     </td>
+                                    
                                 {% else %}
                                     <td class="text-center">---</td>
                                 {% endif %}

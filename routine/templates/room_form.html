@@ -9,10 +9,17 @@
             <div class="page-header-content pt-4">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-auto mt-4">
+                        {% if room %}
+                        <h1 class="page-header-title">
+                            <div class="page-header-icon"><i data-feather="plus"></i></div>
+                            Update Room
+                        </h1>
+                        {% else %}
                         <h1 class="page-header-title">
                             <div class="page-header-icon"><i data-feather="plus"></i></div>
                             Add Room
                         </h1>
+                        {% endif %}
                     </div>
                 </div>
             </div>

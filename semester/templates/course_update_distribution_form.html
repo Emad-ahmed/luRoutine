@@ -9,17 +9,12 @@
             <div class="page-header-content pt-4">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-auto mt-4">
-                        {% if dists %}
+                   
                         <h1 class="page-header-title">
                             <div class="page-header-icon"><i data-feather="plus"></i></div>
                             Update Course Distribution
                         </h1>
-                        {% else %}
-                        <h1 class="page-header-title">
-                            <div class="page-header-icon"><i data-feather="plus"></i></div>
-                           New Course Distribution
-                        </h1>
-                        {% endif %}
+                        
                     </div>
                 </div>
             </div>
@@ -60,34 +55,16 @@
                                             <option>Choose Offered Course</option>
                                         </select>
                                     </div>
-                                    <div class="col-3">
-                                        <label for="starting_at">Starting At</label>
-                                        <input class="form-control" type="text" id="starting_at"
-                                            
-                                               value="*"
                                     
-                                               disabled
-                                               required
-                                               name="starting_id"
-                                        />
-                                    </div>
-                                    <div class="col-3">
-                                        <label for="ending_at">Ending At</label>
-                                        <input class="form-control" type="text" id="ending_at"
-                                               value="*"
-                                               disabled
-                                               required
-                                               name="ending_id"
-                                        />
-                                    </div>
                                 </div>
 
+                                <p id="target-element-id"></p>
 
                                 <div class="row mb-3">
                                     <label for="section">Parent</label>
                                     <select class="form-control form-control-solid" id="parent"
                                             name="parent_dist">
-                                        <option value="">Select an offered course first</option>
+                                            <option value="">Select an offered course first</option>
                                     </select>
                                 </div>
                                 <div class="row mb-3">
@@ -96,7 +73,7 @@
                                         <option>Chose One</option>
                                         {% for teacher in teachers %}
                                             <option value="{{ teacher.id }}"
-                                                    {% if dist.teacher.id == teacher.id %}
+                                                    {% if dists.teacher.id == teacher.id %}
                                                     selected
                                                     {% endif %}
                                             >{{ teacher.first_name }} {{ teacher.last_name }}
@@ -137,6 +114,7 @@
                     $("#section").empty();
                     for (let sec of resp.sections) {
                         $("#section").append(`<option value="` + sec[0] + `">` + sec[1] + `</option>`);
+                      
                     }
                     $("#starting_at").removeAttr("disabled");
                     $("#ending_at").removeAttr("disabled");

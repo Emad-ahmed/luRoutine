@@ -9,10 +9,17 @@
             <div class="page-header-content pt-4">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-auto mt-4">
+                        {% if curriculums %}
+                        <h1 class="page-header-title">
+                            <div class="page-header-icon"><i data-feather="plus"></i></div>
+                            Update Curriculum
+                        </h1>
+                        {% else %}
                         <h1 class="page-header-title">
                             <div class="page-header-icon"><i data-feather="plus"></i></div>
                             Add Curriculum
                         </h1>
+                        {% endif %}
                     </div>
                 </div>
             </div>
@@ -36,7 +43,7 @@
                                         <option>Chose One</option>
                                         {% for program in programs %}
                                             <option value="{{ program.id }}"
-                                                    {% if curriculum.program.id == program.id %}
+                                                    {% if curriculums.program.id == program.id %}
                                                     selected
                                                     {% endif %}
                                             >{{ program.program_id }}
@@ -48,8 +55,8 @@
                                     <label for="title">Total Credit</label>
                                     <input class="form-control" type="text" id="total_credit" name="total_credit"
                                            placeholder="Total Credit"
-                                            {% if program %}
-                                           value="{{ program.title }}"
+                                            {% if curriculums %}
+                                                value="{{ curriculums.total_credit }}"
                                             {% endif %}
                                     />
                                 </div>

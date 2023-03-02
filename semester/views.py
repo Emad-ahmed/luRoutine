@@ -7,7 +7,7 @@ from django.shortcuts import get_object_or_404
 from faculty.models import Course, Teacher
 from semester.models import Semester, CourseOffered, CourseDistribution
 from student.models import Batch, Section
-from .forms import SemesterForm, CourseOfferingForm, CourseDistributionForm
+from .forms import SemesterForm, CourseOfferingForm, CourseDistributionForm, CourseDistributionUpdateForm
 
 
 # from django.shortcuts import get_object_or_404
@@ -98,6 +98,35 @@ class CourseOfferingCreateView(CreateView):
 
 
 @method_decorator(login_required, name='dispatch')
+class CourseOfferUpdateView(UpdateView):
+    model = CourseOffered
+    template_name = 'course_offering_form.html'
+    form_class = CourseOfferingForm
+    context_object_name = 'offers'
+
+    def get_object(self):
+        return get_object_or_404(CourseOffered, id=self.request.GET.get('id'))
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['user'] = self.request.user
+        context['semesters'] = Semester.objects.all()
+        context['batches'] = Batch.objects.all()
+        context['courses'] = Course.objects.all()
+        return context
+
+    def get_success_url(self):
+        return reverse('semester:offer_list')
+
+    def form_invalid(self, form):
+        return self.render_to_response(self.get_context_data(**({'form': form})))
+
+
+
+
+
+
+@method_decorator(login_required, name='dispatch')
 class CourseDistributionList(ListView):
     model = CourseDistribution
     template_name = 'course_distribution_list.html'
@@ -130,6 +159,34 @@ class CourseDistributionCreateView(CreateView):
         return self.render_to_response(self.get_context_data(**({'form': form})))
 
 
+
+@method_decorator(login_required, name='dispatch')
+class CourseDistributionUpdateView(UpdateView):
+    model = CourseDistribution
+    template_name = 'course_update_distribution_form.html'
+    form_class = CourseDistributionUpdateForm
+    context_object_name = 'dists'
+
+    def get_object(self):
+        return get_object_or_404(CourseDistribution, id=self.request.GET.get('id'))
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['user'] = self.request.user
+        context['teachers'] = Teacher.objects.all()
+        context['offers'] = CourseOffered.objects.all()
+        return context
+
+    def get_success_url(self):
+        return reverse('semester:dist_list')
+
+    def form_invalid(self, form):
+        return self.render_to_response(self.get_context_data(**({'form': form})))
+
+
+
+   
+
 def getBatchCourses(request):
     batch = request.GET.get('batch')
 
@@ -146,23 +203,18 @@ def getBatchCourses(request):
 
 def getOfferedSection(request):
     offered = request.GET.get('offered')
-
     response = {}
-
     qs = Section.objects.filter(batch=CourseOffered.objects.get(id=offered).batch)
     sections = []
     for d in qs:
         sections.append((d.id, d.section))
     response['sections'] = sections
-
     return JsonResponse(response)
 
 
 def getOfferedParent(request):
     offered = request.GET.get('offered')
-
     response = {}
-
     qs = CourseDistribution.objects.filter(offered__course=CourseOffered.objects.get(id=offered).course)
     print(qs)
     parents = []

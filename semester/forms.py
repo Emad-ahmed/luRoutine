@@ -90,10 +90,30 @@ class CourseDistributionForm(forms.ModelForm):
             instance.parent_dist = instance
             instance.save()
 
-        DistributedSectionDetail.objects.create(
+        DistributedSectionDetail.objects.update(
             distribution=instance,
             starting_id=cd.get('starting_id'),
             ending_id=cd.get('ending_id')
         )
 
         return instance
+
+
+
+class CourseDistributionUpdateForm(forms.ModelForm):
+    class Meta:
+        model = CourseDistribution
+        fields = ('offered', 'section', 'teacher', 'parent_dist')
+    def clean(self):
+        cd = self.cleaned_data
+        parent = cd.get('parent_dist')
+        if parent:
+            while parent.parent_dist != parent:
+                cd['parent_dist'] = parent.parent_dist
+                parent = cd.get('parent_dist')
+
+        if parent and cd.get('teacher') != parent.teacher:
+            raise ValidationError("Merged sections has different teacher")
+
+        return cd
+

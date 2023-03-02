@@ -58,11 +58,11 @@
                                                 name="curriculum">
                                             {% for cur in curriculums %}
                                                 <option value="{{ cur.id }}"
-                                                        {% if course.curriculum.id == cur.id %}
+                                                        {% if courses.curriculum.id == cur.id %}
                                                             selected
                                                         {% endif %}
                                                 >{{ cur.program.program_id }}
-                                                    in {{ cur.program.department.department_id }}
+                                                    in {{ cur.program.department.department_id}}
                                                     ({{ cur.start_effect_date|date:"Y" }} - {{ cur.end_effect_date|date:"Y" }})
                                                 </option>
                                             {% endfor %}

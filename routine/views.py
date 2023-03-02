@@ -11,7 +11,7 @@ from faculty.models import Department
 from routine.models import Room, Building, SlotMaster, SlotDetail, Routine
 from semester.models import CourseDistribution
 from student.models import Section
-from .forms import RoomForm, BuildingForm, SlotMasterForm, SlotDetailForm, RoutineForm, DummyRoutineForm
+from .forms import RoomForm, BuildingForm, SlotMasterForm, SlotDetailForm, RoutineForm,RoutineUpdateForm, DummyRoutineForm
 from .utils import link_callback
 
 
@@ -79,6 +79,7 @@ class RoomUpdateView(UpdateView):
         context = super().get_context_data(**kwargs)
         context['user'] = self.request.user
         context['departments'] = Department.objects.all()
+        context['buildings'] = Building.objects.all()
         return context
 
     def form_invalid(self, form):
@@ -151,16 +152,13 @@ class SlotDetailCreateView(CreateView):
     model = SlotDetail
     template_name = 'slot_form.html'
     form_class = SlotDetailForm
-
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['user'] = self.request.user
         context['slots'] = SlotMaster.objects.all()
         return context
-
     def get_success_url(self):
         return reverse('routine:slot_list')
-
     def form_invalid(self, form):
         return self.render_to_response(self.get_context_data(**({'form': form})))
 
@@ -178,6 +176,7 @@ class SlotDetailUpdateView(UpdateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['user'] = self.request.user
+        context['slots'] = SlotMaster.objects.all()
         return context
 
     def form_invalid(self, form):
@@ -193,6 +192,9 @@ class RoutineListView(ListView):
     model = Routine
     template_name = 'routine_list.html'
     context_object_name = 'routines'
+
+    
+
     
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -200,8 +202,10 @@ class RoutineListView(ListView):
         context['slots'] = SlotDetail.objects.all()
         context['gen_routine'] = generateRoutine(
             self.request.GET.get('day') if self.request.GET.get('day') else 'sunday')
-        context['sc'] = [0, 1, 2, 3, 4, 5, 6]
+        print(context['gen_routine'])
         return context
+
+
 
 
 @method_decorator(login_required, name='dispatch')
@@ -229,6 +233,39 @@ class RoutineCreateView(CreateView):
     def form_invalid(self, form):
         print(form.errors)
         return self.render_to_response(self.get_context_data(**({'form': form})))
+
+
+
+@method_decorator(login_required, name='dispatch')
+class RoutineUpdateView(UpdateView):
+    model = Routine
+    template_name = 'routine_update.html'
+    context_object_name = 'routines'
+
+    def get_form_class(self):
+        if self.request.GET.get('dummy'):
+            return DummyRoutineForm
+        return RoutineUpdateForm
+    
+    def get_object(self):
+        return get_object_or_404(Routine, id=self.request.GET.get('id'))
+    
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['user'] = self.request.user
+        context['dists'] = CourseDistribution.objects.all()
+        context['slots'] = SlotDetail.objects.all().order_by('start_time')
+        context['rooms'] = Room.objects.all()
+        context['form'] = self.get_form()
+        return context
+    
+    def form_invalid(self, form):
+        print(form.errors)
+        return self.render_to_response(self.get_context_data(**({'form': form})))
+
+    def get_success_url(self):
+        return reverse('routine:routine_list')
+
 
 
 def getRoutineSuggestion(request):
@@ -316,10 +353,9 @@ def generateRoutine(day_of_week):
     final = {}
     slots = SlotDetail.objects.all()
     rt = Routine.objects.filter(
-        course_dist__offered__semester=True,
+        course_dist__offered__semester__isnull=False,
         day_of_week=day_of_week,
         dummy_department__isnull=True
-
     )
     print(rt)
     for sec in Section.objects.all():

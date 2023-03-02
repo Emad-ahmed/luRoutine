@@ -7,7 +7,7 @@ from django.shortcuts import get_object_or_404
 from django.urls import reverse
 from django.utils.encoding import force_bytes
 from django.utils.http import urlsafe_base64_encode
-from django.views.generic import ListView, CreateView, UpdateView
+from django.views.generic import ListView, CreateView, UpdateView, DeleteView
 from django.core.paginator import Paginator
 from accounts.models import BindAccount
 from faculty.models import Faculty, Department, Program, Teacher, Course, Curriculum, FacultyDean
@@ -51,6 +51,7 @@ class FacultyUpdateView(UpdateView):
     model = FacultyDean
     form_class = FacultyForm
     context_object_name = 'faculty'
+    
 
     def get_object(self):
         return get_object_or_404(FacultyDean, id=self.request.GET.get('id'))
@@ -213,6 +214,31 @@ class CurriculumCreateView(CreateView):
 
 
 @method_decorator(login_required, name='dispatch')
+class CurriculumUpdateView(UpdateView):
+    model = Curriculum
+    template_name = 'curriculum_form.html'
+    form_class = CurriculumForm
+    context_object_name = 'curriculums'
+
+    def get_object(self):
+        return get_object_or_404(Curriculum, id=self.request.GET.get('id'))
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['user'] = self.request.user
+        context['programs'] = Program.objects.all()
+        return context
+
+    def get_success_url(self):
+        return reverse('faculty:curriculum_list')
+
+    def form_invalid(self, form):
+        print(form.errors)
+        return self.render_to_response(self.get_context_data(**({'form': form})))
+
+
+
+@method_decorator(login_required, name='dispatch')
 class TeacherListView(ListView):
     model = Teacher
     template_name = 'teacher_list.html'
@@ -316,6 +342,8 @@ class CourseUpdateView(UpdateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['user'] = self.request.user
+        context['courses'] = Course.objects.all()
+        context['programs'] = Program.objects.all()
         context['curriculums'] = Curriculum.objects.all()
         return context
 

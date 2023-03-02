@@ -16,9 +16,12 @@ urlpatterns = [
     path('programs/', views.ProgramListView.as_view(), name='program_list'),
     path('program/create/', views.ProgramCreateView.as_view(), name='program_create'),
     path('program/update/', views.ProgramUpdateView.as_view(), name='program_update'),
+    
 
     path('curriculums/', views.CurriculumListView.as_view(), name='curriculum_list'),
     path('curriculum/create/', views.CurriculumCreateView.as_view(), name='curriculum_create'),
+    path('curriculum/update/', views.CurriculumUpdateView.as_view(), name='curriculum_update'),
+ 
 
     path('teachers/', views.TeacherListView.as_view(), name='teacher_list'),
     path('teacher/create/', views.TeacherCreateView.as_view(), name='teacher_create'),

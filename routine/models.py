@@ -139,4 +139,7 @@ class Routine(AbstractTimestampModel):
 
 
     def __str__(self) -> str:
-        return f"{self.slot}-{self.course_dist.offered.batch}-{self.course_dist.offered.semester}"
+        if self.dummy_department == False:
+            return f"{self.slot}-{self.course_dist.offered.course.course_code}"
+        else:
+            return f"{self.slot}-{self.course_dist}"

@@ -9,10 +9,17 @@
             <div class="page-header-content pt-4">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-auto mt-4">
+                        {% if offers %}
+                        <h1 class="page-header-title">
+                            <div class="page-header-icon"><i data-feather="plus"></i></div>
+                            Upadte Offer New Course
+                        </h1>
+                        {% else %}
                         <h1 class="page-header-title">
                             <div class="page-header-icon"><i data-feather="plus"></i></div>
                             Offer New Course
                         </h1>
+                        {% endif %}
                     </div>
                 </div>
             </div>
@@ -36,7 +43,7 @@
                                         <option>Chose One</option>
                                         {% for semester in semesters %}
                                             <option value="{{ semester.id }}"
-                                                    {% if offer.semester.id == semester.id %}
+                                                    {% if offers.semester.id == semester.id %}
                                                     selected
                                                     {% endif %}
                                             >{{ semester.name|title }}-{{ semester.year }}
@@ -50,7 +57,7 @@
                                         <option>Chose One</option>
                                         {% for batch in batches %}
                                             <option value="{{ batch.id }}"
-                                                    {% if offer.batch.id == batch.id %}
+                                                    {% if offers.batch.id == batch.id %}
                                                     selected
                                                     {% endif %}
                                             >{{ batch.curriculum.program.department.department_id|upper}}-{{ batch.batch|upper }}

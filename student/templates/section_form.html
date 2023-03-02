@@ -38,13 +38,20 @@
                                 <div class="mb-3">
                                     <label for="batch">Batch</label>
                                     <select class="form-control form-control-solid" id="batch" name="batch">
+                                        {% if sections %}
+                                        <option value="{{ sections.batch.id }}">{{ sections.batch.program.department.department_id }} {{ sections.batch.batch }}</option>
+                                        {% else %}
                                         <option>Chose One</option>
+                                        {% endif %}
+                                        
                                         {% for batch in batches %}
+                                        {% if sections.batch.id != batch.id %}
                                             <option value="{{ batch.id }}"
                                                     {% if section.batch.id == batch.id %}
                                                     selected
                                                     {% endif %}
                                             >{{ batch.program.department.department_id }} {{ batch.batch }}</option>
+                                        {% endif %}
                                         {% endfor %}
                                     </select>
                                 </div>
@@ -62,7 +69,7 @@
 
                                 <div class="mb-3 d-flex justify-content-end">
                                     <button class="btn btn-primary">
-                                        {% if program %}
+                                        {% if sections %}
                                             Update
                                         {% else %}
                                             Submit

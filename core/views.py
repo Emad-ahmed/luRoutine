@@ -30,6 +30,10 @@ class HomeView(ListView):
         try:
             context['teachername'] = Teacher.objects.get(
                 email=self.request.user)
+            context['gen_routine'] = generateRoutine(
+            self.request.GET.get('day') if self.request.GET.get('day') else 'sunday', self.request.user)
+            context['sc'] = [0, 1, 2, 3, 4, 5, 6]
+           
         except:
             context['teachername'] = "None"
             context['gen_routine'] = generateRoutine(
@@ -40,14 +44,13 @@ class HomeView(ListView):
 
 
 def generateRoutine(day_of_week, user):
-
     final = {}
     slots = SlotDetail.objects.all()
     rt = Routine.objects.filter(
-        course_dist__offered__semester=True,
+        course_dist__offered__semester__isnull=False,
         day_of_week=day_of_week,
         course_dist__teacher__email=user)
-
+    
     for sec in Section.objects.all():
         temp = rt.filter(course_dist__section=sec).order_by('slot__start_time')
         if temp:

@@ -51,7 +51,7 @@
                             <td>{{ offer.course.title }}</td>
                             <td>{{ offer.batch.program.department.department_id }}-{{ offer.batch.batch }}</td>
                             <td class="text-center">
-                                <a href="#?id={{ offer.id }}" class="btn btn-datatable btn-icon btn-transparent-dark me-2"><i
+                                <a href="{% url 'semester:offer_update' %}?id={{ offer.id }}" class="btn btn-datatable btn-icon btn-transparent-dark me-2"><i
                                         data-feather="edit"></i></a>
                             </td>
                         </tr>

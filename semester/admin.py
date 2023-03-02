@@ -8,8 +8,6 @@ class SemesterAdmin(admin.ModelAdmin):
 
 
 
-
-
 @admin.register(CourseOffered)
 class CourseAdmin(ImportExportModelAdmin):
     pass
