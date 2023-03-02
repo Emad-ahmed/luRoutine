@@ -21102,3 +21102,26 @@ table,th,td,tr{
 {
   overflow-x: auto !important;
 }
+
+.messages
+{
+  list-style: none !important;
+  background: red;
+}
+
+.messages li{
+  color: white;
+  text-align: center;
+  padding: 0.7rem;
+  font-weight: bolder;
+}
+
+.edit
+{
+  color: #0049b6;
+}
+
+.delete
+{
+  color: red;
+}

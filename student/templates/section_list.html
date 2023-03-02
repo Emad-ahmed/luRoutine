@@ -52,7 +52,13 @@
                                 - {{ section.batch.curriculum.end_effect_date|date:"Y" }})</td>
                             <td class="text-center">
                                 <a href="{% url 'student:section_update' %}?id={{ section.id }}" class="btn btn-datatable btn-icon btn-transparent-dark me-2"><i
-                                        data-feather="edit"></i></a>
+                                        data-feather="edit"></i>
+                                </a>
+
+                                <a href="{% url 'student:section_delete' section.id %}"
+                                        class="btn btn-datatable btn-icon btn-transparent-dark me-2">
+                                        <i class="fa fa-trash delete" aria-hidden="true"></i>
+                                </a>
                             </td>
                         </tr>
                     {% endfor %}

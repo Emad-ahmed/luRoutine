@@ -1,7 +1,15 @@
 {% extends 'base.html' %}
 
+
 {% block body_header %}
     <header class="page-header page-header-dark bg-gradient-primary-to-secondary pb-10">
+        {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                    <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
         <div class="container-xl px-4">
             <div class="page-header-content pt-4">
                 <div class="d-flex justify-content-between">
@@ -66,10 +74,12 @@
                             <td class="text-center">
                                 <a href="{% url 'faculty:curriculum_update' %}?id={{cur.id}}"
                                    class="btn btn-datatable btn-icon btn-transparent-dark me-2"><i
-                                        data-feather="edit"></i></a>
-                                    <a href="{% url 'faculty:curriculum_delete' %}?id={{cur.id}}"
-                                        class="btn btn-datatable btn-icon btn-transparent-dark me-2"><i
-                                             data-feather="edit"></i></a>
+                                        data-feather="edit" class='edit'></i></a>
+                                
+                                <a href="{% url 'faculty:curriculum_delete' cur.id %}"
+                                   class="btn btn-datatable btn-icon btn-transparent-dark me-2">
+                                   <i class="fa fa-trash delete" aria-hidden="true"></i>
+                                </a>
                             </td>
                         </tr>
                     {% endfor %}

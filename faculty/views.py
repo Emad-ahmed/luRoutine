@@ -13,7 +13,9 @@ from accounts.models import BindAccount
 from faculty.models import Faculty, Department, Program, Teacher, Course, Curriculum, FacultyDean
 from .forms import FacultyForm, DepartmentForm, ProgramForm, TeacherForm, CourseForm, CurriculumForm
 from django.utils.decorators import method_decorator
-
+from django.shortcuts import redirect
+from django.contrib import messages
+from django.shortcuts import render
 
 @method_decorator(login_required, name='dispatch')
 class FacultyListView(ListView):
@@ -238,6 +240,20 @@ class CurriculumUpdateView(UpdateView):
 
 
 
+def CurriculumDeleteView(request, pk):
+    try:
+        parent = Curriculum.objects.get(id=pk)
+        parent.delete()
+        messages.success(request, 'Successfully Deleted')
+    except:
+        messages.success(request, 'Please First Delete The Child Model')
+        return redirect('/curriculums')
+
+    return redirect('/curriculums')
+    
+
+
+
 @method_decorator(login_required, name='dispatch')
 class TeacherListView(ListView):
     model = Teacher
@@ -248,6 +264,8 @@ class TeacherListView(ListView):
         context = super().get_context_data(**kwargs)
         context['user'] = self.request.user
         return context
+
+
 
 
 @method_decorator(login_required, name='dispatch')
@@ -291,6 +309,18 @@ class TeacherUpdateView(UpdateView):
 
     def get_success_url(self):
         return reverse('faculty:teacher_list')
+
+
+def TeacherDeleteView(request, pk):
+    try:
+        parent = Teacher.objects.get(id=pk)
+        parent.delete()
+        messages.success(request, 'Successfully Deleted')
+    except:
+        messages.success(request, 'Please First Delete The Child Model')
+        return redirect('/teachers')
+    return redirect('/teachers')
+
 
 
 @method_decorator(login_required, name='dispatch')
@@ -352,6 +382,20 @@ class CourseUpdateView(UpdateView):
 
     def get_success_url(self):
         return reverse('faculty:course_list')
+    
+
+def CourseDeleteView(request, pk):
+    try:
+        parent = Course.objects.get(id=pk)
+        parent.delete()
+        messages.success(request, 'Successfully Deleted')
+    except:
+        messages.success(request, 'Please First Delete The Child Model')
+        return redirect('/courses')
+
+    return redirect('/courses')
+
+
 
 @login_required
 def teacher_account_reset(request):

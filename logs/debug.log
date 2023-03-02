@@ -20524,3 +20524,1543 @@ AttributeError: 'NoneType' object has no attribute 'offered'
 [02/Mar/2023 19:45:24] Watching for file changes with StatReloader
 [02/Mar/2023 19:45:27] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
 [02/Mar/2023 19:45:28] Watching for file changes with StatReloader
+[02/Mar/2023 19:45:58] Watching for file changes with StatReloader
+[02/Mar/2023 19:46:08] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 19:46:09] Watching for file changes with StatReloader
+[02/Mar/2023 19:46:24] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 19:46:26] Watching for file changes with StatReloader
+[02/Mar/2023 19:46:33] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 19:46:34] Watching for file changes with StatReloader
+[02/Mar/2023 19:46:42] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:46:44] Watching for file changes with StatReloader
+[02/Mar/2023 19:46:46] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:46:48] Watching for file changes with StatReloader
+[02/Mar/2023 19:46:51] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:46:53] Watching for file changes with StatReloader
+[02/Mar/2023 19:46:59] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:47:00] Watching for file changes with StatReloader
+[02/Mar/2023 19:47:02] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:47:03] Watching for file changes with StatReloader
+[02/Mar/2023 19:47:13] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:47:14] Watching for file changes with StatReloader
+[02/Mar/2023 19:47:29] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:47:31] Watching for file changes with StatReloader
+[02/Mar/2023 19:47:33] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:47:34] Watching for file changes with StatReloader
+[02/Mar/2023 19:48:05] Watching for file changes with StatReloader
+[02/Mar/2023 19:48:10] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:48:11] Watching for file changes with StatReloader
+[02/Mar/2023 19:48:18] "GET /programs/ HTTP/1.1" 200 21180
+[02/Mar/2023 19:48:18] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 19:48:19] "GET /curriculums/ HTTP/1.1" 200 23288
+[02/Mar/2023 19:48:21] Internal Server Error: /curriculum/delete/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\generic\detail.py", line 106, in get
+    self.object = self.get_object()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\generic\detail.py", line 45, in get_object
+    raise AttributeError(
+AttributeError: Generic detail view CurriculumDeleteView must be called with either an object pk or a slug in the URLconf.
+[02/Mar/2023 19:48:21] "GET /curriculum/delete/?id=2 HTTP/1.1" 500 109600
+[02/Mar/2023 19:49:50] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 19:49:51] Watching for file changes with StatReloader
+[02/Mar/2023 19:49:54] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 19:49:56] Watching for file changes with StatReloader
+[02/Mar/2023 19:50:00] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:50:02] Watching for file changes with StatReloader
+[02/Mar/2023 19:50:04] Not Found: /curriculum/delete/
+[02/Mar/2023 19:50:04] "GET /curriculum/delete/?id=2 HTTP/1.1" 404 23925
+[02/Mar/2023 19:50:34] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 19:50:36] Watching for file changes with StatReloader
+[02/Mar/2023 19:50:40] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 19:50:41] Watching for file changes with StatReloader
+[02/Mar/2023 19:50:43] Not Found: /curriculum/delete/
+[02/Mar/2023 19:50:43] "GET /curriculum/delete/?id=2 HTTP/1.1" 404 23924
+[02/Mar/2023 19:50:49] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 19:50:51] Watching for file changes with StatReloader
+[02/Mar/2023 19:51:33] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 19:51:35] Watching for file changes with StatReloader
+[02/Mar/2023 19:51:42] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 19:51:43] Watching for file changes with StatReloader
+[02/Mar/2023 19:51:46] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 19:51:47] Watching for file changes with StatReloader
+[02/Mar/2023 19:51:52] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 19:51:53] Watching for file changes with StatReloader
+[02/Mar/2023 19:51:57] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 19:51:59] Watching for file changes with StatReloader
+[02/Mar/2023 19:52:20] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 19:52:22] Watching for file changes with StatReloader
+[02/Mar/2023 19:52:24] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 19:52:26] Watching for file changes with StatReloader
+[02/Mar/2023 19:52:34] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 19:52:35] Watching for file changes with StatReloader
+[02/Mar/2023 19:52:39] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 19:52:40] Watching for file changes with StatReloader
+[02/Mar/2023 19:52:44] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:52:45] Watching for file changes with StatReloader
+[02/Mar/2023 19:52:51] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:52:53] Watching for file changes with StatReloader
+[02/Mar/2023 19:52:57] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:52:58] Watching for file changes with StatReloader
+[02/Mar/2023 19:53:03] Internal Server Error: /curriculum/delete/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: faculty/curriculum_confirm_delete.html
+[02/Mar/2023 19:53:03] "GET /curriculum/delete/?id=2 HTTP/1.1" 500 103783
+[02/Mar/2023 19:53:21] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:53:22] Watching for file changes with StatReloader
+[02/Mar/2023 19:53:30] Internal Server Error: /curriculum/delete/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: faculty/curriculum_confirm_delete.html
+[02/Mar/2023 19:53:30] "GET /curriculum/delete/?id=1 HTTP/1.1" 500 103783
+[02/Mar/2023 19:53:44] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:53:45] Watching for file changes with StatReloader
+[02/Mar/2023 19:53:48] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:53:50] Watching for file changes with StatReloader
+[02/Mar/2023 19:53:52] "GET /curriculum/delete/?id=2 HTTP/1.1" 200 22561
+[02/Mar/2023 19:53:52] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 19:53:57] "GET /curriculum/delete/?id=1 HTTP/1.1" 200 22561
+[02/Mar/2023 19:55:01] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:55:02] Watching for file changes with StatReloader
+[02/Mar/2023 19:55:29] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:55:30] Watching for file changes with StatReloader
+[02/Mar/2023 19:55:33] "GET /curriculums/ HTTP/1.1" 200 23288
+[02/Mar/2023 19:55:34] "GET /curriculum/delete/?id=1 HTTP/1.1" 200 22561
+[02/Mar/2023 19:55:41] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:55:42] Watching for file changes with StatReloader
+[02/Mar/2023 19:55:45] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 19:55:46] Watching for file changes with StatReloader
+[02/Mar/2023 19:55:51] "GET /curriculums/ HTTP/1.1" 200 23288
+[02/Mar/2023 19:55:52] Internal Server Error: /curriculum/delete/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\generic\detail.py", line 106, in get
+    self.object = self.get_object()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\generic\detail.py", line 45, in get_object
+    raise AttributeError(
+AttributeError: Generic detail view CurriculumDeleteView must be called with either an object pk or a slug in the URLconf.
+[02/Mar/2023 19:55:52] "GET /curriculum/delete/?id=1 HTTP/1.1" 500 109600
+[02/Mar/2023 19:56:13] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:56:14] Watching for file changes with StatReloader
+[02/Mar/2023 19:56:18] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:56:19] Watching for file changes with StatReloader
+[02/Mar/2023 19:56:36] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:56:38] Watching for file changes with StatReloader
+[02/Mar/2023 19:56:44] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:56:45] Watching for file changes with StatReloader
+[02/Mar/2023 19:56:49] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:56:50] Watching for file changes with StatReloader
+[02/Mar/2023 19:57:00] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:57:01] Watching for file changes with StatReloader
+[02/Mar/2023 19:57:04] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:57:05] Watching for file changes with StatReloader
+[02/Mar/2023 19:57:08] "GET /curriculums/ HTTP/1.1" 200 23288
+[02/Mar/2023 19:57:09] Internal Server Error: /curriculum/delete/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\generic\detail.py", line 106, in get
+    self.object = self.get_object()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\generic\detail.py", line 45, in get_object
+    raise AttributeError(
+AttributeError: Generic detail view CurriculumDeleteView must be called with either an object pk or a slug in the URLconf.
+[02/Mar/2023 19:57:09] "GET /curriculum/delete/?id=1 HTTP/1.1" 500 109600
+[02/Mar/2023 19:57:14] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:57:15] Watching for file changes with StatReloader
+[02/Mar/2023 19:57:27] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:57:28] Watching for file changes with StatReloader
+[02/Mar/2023 19:57:32] Internal Server Error: /curriculum/delete/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\generic\detail.py", line 106, in get
+    self.object = self.get_object()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\generic\detail.py", line 45, in get_object
+    raise AttributeError(
+AttributeError: Generic detail view CurriculumDeleteView must be called with either an object pk or a slug in the URLconf.
+[02/Mar/2023 19:57:32] "GET /curriculum/delete/?id=2 HTTP/1.1" 500 109600
+[02/Mar/2023 19:57:52] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:57:54] Watching for file changes with StatReloader
+[02/Mar/2023 19:57:57] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:57:58] Watching for file changes with StatReloader
+[02/Mar/2023 19:58:05] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:58:06] Watching for file changes with StatReloader
+[02/Mar/2023 19:58:09] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:58:11] Watching for file changes with StatReloader
+[02/Mar/2023 19:58:13] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:58:15] Watching for file changes with StatReloader
+[02/Mar/2023 19:58:18] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:58:19] Watching for file changes with StatReloader
+[02/Mar/2023 19:58:22] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:58:23] Watching for file changes with StatReloader
+[02/Mar/2023 19:58:30] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:58:31] Watching for file changes with StatReloader
+[02/Mar/2023 19:58:34] Internal Server Error: /curriculum/delete/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: faculty/curriculum_confirm_delete.html
+[02/Mar/2023 19:58:34] "GET /curriculum/delete/?id=2 HTTP/1.1" 500 103783
+[02/Mar/2023 19:58:55] "GET /curriculums/ HTTP/1.1" 200 23288
+[02/Mar/2023 19:58:55] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 19:59:01] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 19:59:03] Watching for file changes with StatReloader
+[02/Mar/2023 20:06:02] "GET /curriculums/ HTTP/1.1" 200 23288
+[02/Mar/2023 20:06:02] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 20:06:03] Internal Server Error: /curriculum/delete/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: faculty/curriculum_confirm_delete.html
+[02/Mar/2023 20:06:03] "GET /curriculum/delete/?id=2 HTTP/1.1" 500 103783
+[02/Mar/2023 20:06:28] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:06:30] Watching for file changes with StatReloader
+[02/Mar/2023 20:06:33] Internal Server Error: /curriculum/delete/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: faculty/curriculum_confirm_delete.html
+[02/Mar/2023 20:06:34] "GET /curriculum/delete/?id=2 HTTP/1.1" 500 103783
+[02/Mar/2023 20:06:46] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:06:48] Watching for file changes with StatReloader
+[02/Mar/2023 20:06:51] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:06:53] Watching for file changes with StatReloader
+[02/Mar/2023 20:07:13] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:07:15] Watching for file changes with StatReloader
+[02/Mar/2023 20:07:16] "GET /curriculum/delete/?id=2 HTTP/1.1" 200 18839
+[02/Mar/2023 20:07:19] "GET /programs/ HTTP/1.1" 200 21180
+[02/Mar/2023 20:07:21] "GET /curriculums/ HTTP/1.1" 200 23288
+[02/Mar/2023 20:07:23] "GET /curriculum/delete/?id=1 HTTP/1.1" 200 18839
+[02/Mar/2023 20:07:35] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:07:37] Watching for file changes with StatReloader
+[02/Mar/2023 20:07:50] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:07:52] Watching for file changes with StatReloader
+[02/Mar/2023 20:07:56] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 20:07:58] Watching for file changes with StatReloader
+[02/Mar/2023 20:08:51] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 20:08:53] Watching for file changes with StatReloader
+[02/Mar/2023 20:08:54] Not Found: /curriculum/delete/
+[02/Mar/2023 20:08:54] "GET /curriculum/delete/?id=1 HTTP/1.1" 404 23719
+[02/Mar/2023 20:11:44] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 20:11:48] Watching for file changes with StatReloader
+[02/Mar/2023 20:12:02] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 20:12:04] Watching for file changes with StatReloader
+[02/Mar/2023 20:12:06] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 20:12:08] Watching for file changes with StatReloader
+[02/Mar/2023 20:12:09] "GET /curriculums/ HTTP/1.1" 200 22864
+[02/Mar/2023 20:12:09] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 20:12:52] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 20:12:53] Watching for file changes with StatReloader
+[02/Mar/2023 20:12:55] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 20:12:56] Watching for file changes with StatReloader
+[02/Mar/2023 20:12:58] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 20:13:00] Watching for file changes with StatReloader
+[02/Mar/2023 20:13:05] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 20:13:06] Watching for file changes with StatReloader
+[02/Mar/2023 20:13:13] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 20:13:14] Watching for file changes with StatReloader
+[02/Mar/2023 20:13:20] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 20:13:22] Watching for file changes with StatReloader
+[02/Mar/2023 20:13:27] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 20:13:29] Watching for file changes with StatReloader
+[02/Mar/2023 20:13:44] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:13:45] Watching for file changes with StatReloader
+[02/Mar/2023 20:13:48] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:13:50] Watching for file changes with StatReloader
+[02/Mar/2023 20:14:01] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:14:02] Watching for file changes with StatReloader
+[02/Mar/2023 20:14:04] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:14:06] Watching for file changes with StatReloader
+[02/Mar/2023 20:15:01] Watching for file changes with StatReloader
+[02/Mar/2023 20:15:04] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:15:06] Watching for file changes with StatReloader
+[02/Mar/2023 20:15:11] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:15:12] Watching for file changes with StatReloader
+[02/Mar/2023 20:15:34] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 20:15:35] Watching for file changes with StatReloader
+[02/Mar/2023 20:15:38] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 20:15:39] Watching for file changes with StatReloader
+[02/Mar/2023 20:15:43] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:15:45] Watching for file changes with StatReloader
+[02/Mar/2023 20:16:17] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 20:16:18] Watching for file changes with StatReloader
+[02/Mar/2023 20:16:21] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 20:16:23] Watching for file changes with StatReloader
+[02/Mar/2023 20:17:46] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:17:47] Watching for file changes with StatReloader
+[02/Mar/2023 20:18:25] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:18:26] Watching for file changes with StatReloader
+[02/Mar/2023 20:18:48] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:18:50] Watching for file changes with StatReloader
+[02/Mar/2023 20:19:07] Internal Server Error: /curriculums/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\test\utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\test\utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'curriculum_list' with arguments '(2,)' not found. 1 pattern(s) tried: ['curriculums/$']
+[02/Mar/2023 20:19:07] "GET /curriculums/ HTTP/1.1" 500 193475
+[02/Mar/2023 20:19:16] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 20:19:18] Watching for file changes with StatReloader
+[02/Mar/2023 20:19:20] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 20:19:22] Watching for file changes with StatReloader
+[02/Mar/2023 20:19:25] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:19:26] Watching for file changes with StatReloader
+[02/Mar/2023 20:19:28] - Broken pipe from ('127.0.0.1', 53478)
+
+[02/Mar/2023 20:19:28] Internal Server Error: /curriculums/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\test\utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\test\utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'curriculum_list' with arguments '(2,)' not found. 1 pattern(s) tried: ['curriculums/$']
+[02/Mar/2023 20:19:28] "GET /curriculums/ HTTP/1.1" 500 193335
+[02/Mar/2023 20:20:04] Internal Server Error: /curriculums/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\test\utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\test\utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'curriculum_list' with arguments '(2,)' not found. 1 pattern(s) tried: ['curriculums/$']
+[02/Mar/2023 20:20:04] "GET /curriculums/ HTTP/1.1" 500 193475
+[02/Mar/2023 20:20:06] "GET /programs/ HTTP/1.1" 200 21180
+[02/Mar/2023 20:20:08] Internal Server Error: /curriculums/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\test\utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\test\utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'curriculum_list' with arguments '(2,)' not found. 1 pattern(s) tried: ['curriculums/$']
+[02/Mar/2023 20:20:08] "GET /curriculums/ HTTP/1.1" 500 193338
+[02/Mar/2023 20:21:51] "GET /curriculums/ HTTP/1.1" 200 23320
+[02/Mar/2023 20:21:51] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 20:21:52] Internal Server Error: /curriculum/2/delete/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: faculty/curriculum_confirm_delete.html
+[02/Mar/2023 20:21:52] "GET /curriculum/2/delete/ HTTP/1.1" 500 103507
+[02/Mar/2023 20:22:28] Internal Server Error: /curriculum/2/delete/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: faculty/curriculum_confirm_delete.html
+[02/Mar/2023 20:22:28] "GET /curriculum/2/delete/ HTTP/1.1" 500 103507
+[02/Mar/2023 20:22:42] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:22:44] Watching for file changes with StatReloader
+[02/Mar/2023 20:22:49] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:22:50] Watching for file changes with StatReloader
+[02/Mar/2023 20:22:52] "GET /curriculum/2/delete/ HTTP/1.1" 200 18836
+[02/Mar/2023 20:22:54] "GET /curriculums/ HTTP/1.1" 200 23320
+[02/Mar/2023 20:22:56] "GET /curriculum/1/delete/ HTTP/1.1" 200 18836
+[02/Mar/2023 20:24:08] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:24:10] Watching for file changes with StatReloader
+[02/Mar/2023 20:24:13] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:24:14] Watching for file changes with StatReloader
+[02/Mar/2023 20:24:19] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:24:20] Watching for file changes with StatReloader
+[02/Mar/2023 20:24:22] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:24:24] Watching for file changes with StatReloader
+[02/Mar/2023 20:24:29] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 20:24:30] Watching for file changes with StatReloader
+[02/Mar/2023 20:24:40] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 20:24:42] Watching for file changes with StatReloader
+[02/Mar/2023 20:24:46] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 20:24:48] Watching for file changes with StatReloader
+[02/Mar/2023 20:24:51] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:24:53] Watching for file changes with StatReloader
+[02/Mar/2023 20:24:57] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 20:24:58] Watching for file changes with StatReloader
+[02/Mar/2023 20:25:04] "GET /curriculums/ HTTP/1.1" 200 23320
+[02/Mar/2023 20:25:05] Internal Server Error: /curriculum/2/delete/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+TypeError: user_passes_test.<locals>.decorator.<locals>._wrapped_view() missing 1 required positional argument: 'request'
+[02/Mar/2023 20:25:05] "GET /curriculum/2/delete/ HTTP/1.1" 500 86103
+[02/Mar/2023 20:25:16] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:25:17] Watching for file changes with StatReloader
+[02/Mar/2023 20:25:21] Internal Server Error: /curriculum/2/delete/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view faculty.views.CurriculumDeleteView didn't return an HttpResponse object. It returned None instead.
+[02/Mar/2023 20:25:21] "GET /curriculum/2/delete/ HTTP/1.1" 500 85475
+[02/Mar/2023 20:26:44] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:26:46] Watching for file changes with StatReloader
+[02/Mar/2023 20:26:48] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:26:49] Watching for file changes with StatReloader
+[02/Mar/2023 20:26:52] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:26:54] Watching for file changes with StatReloader
+[02/Mar/2023 20:26:58] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:27:00] Watching for file changes with StatReloader
+[02/Mar/2023 20:27:03] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:27:04] Watching for file changes with StatReloader
+[02/Mar/2023 20:27:10] Internal Server Error: /curriculum/2/delete/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+[02/Mar/2023 20:27:10] "GET /curriculum/2/delete/ HTTP/1.1" 500 83861
+[02/Mar/2023 20:27:23] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:27:24] Watching for file changes with StatReloader
+[02/Mar/2023 20:27:42] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:27:44] Watching for file changes with StatReloader
+[02/Mar/2023 20:27:46] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:27:48] Watching for file changes with StatReloader
+[02/Mar/2023 20:27:53] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:27:54] Watching for file changes with StatReloader
+[02/Mar/2023 20:27:57] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:27:59] Watching for file changes with StatReloader
+[02/Mar/2023 20:28:03] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:28:04] Watching for file changes with StatReloader
+[02/Mar/2023 20:28:07] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:28:08] Watching for file changes with StatReloader
+[02/Mar/2023 20:28:11] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:28:12] Watching for file changes with StatReloader
+[02/Mar/2023 20:28:18] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:28:19] Watching for file changes with StatReloader
+[02/Mar/2023 20:28:30] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:28:32] Watching for file changes with StatReloader
+[02/Mar/2023 20:28:37] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:28:38] Watching for file changes with StatReloader
+[02/Mar/2023 20:28:40] "GET /curriculum/2/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 20:28:40] Not Found: /curriculum/2/delete/curriculum_list
+[02/Mar/2023 20:28:40] "GET /curriculum/2/delete/curriculum_list HTTP/1.1" 404 23983
+[02/Mar/2023 20:28:45] "GET /curriculum/2/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 20:28:45] Not Found: /curriculum/2/delete/curriculum_list
+[02/Mar/2023 20:28:45] "GET /curriculum/2/delete/curriculum_list HTTP/1.1" 404 23983
+[02/Mar/2023 20:30:50] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:30:51] Watching for file changes with StatReloader
+[02/Mar/2023 20:31:01] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:31:02] Watching for file changes with StatReloader
+[02/Mar/2023 20:31:43] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:31:44] Watching for file changes with StatReloader
+[02/Mar/2023 20:31:47] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:31:49] Watching for file changes with StatReloader
+[02/Mar/2023 20:31:52] Internal Server Error: /curriculum/2/delete/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py", line 243, in CurriculumDeleteView
+    return redirect("curriculum_list")
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 41, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 130, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'curriculum_list' not found. 'curriculum_list' is not a valid view function or pattern name.
+[02/Mar/2023 20:31:52] "GET /curriculum/2/delete/ HTTP/1.1" 500 103119
+[02/Mar/2023 20:32:03] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:32:05] Watching for file changes with StatReloader
+[02/Mar/2023 20:32:16] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:32:18] Watching for file changes with StatReloader
+[02/Mar/2023 20:32:20] "GET /curriculum/2/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 20:32:20] "GET /curriculums HTTP/1.1" 301 0
+[02/Mar/2023 20:32:21] "GET /curriculums/ HTTP/1.1" 200 23320
+[02/Mar/2023 20:32:21] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 20:32:30] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:32:32] Watching for file changes with StatReloader
+[02/Mar/2023 20:35:49] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:35:50] Watching for file changes with StatReloader
+[02/Mar/2023 20:35:57] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:35:58] Watching for file changes with StatReloader
+[02/Mar/2023 20:36:03] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:36:05] Watching for file changes with StatReloader
+[02/Mar/2023 20:36:10] "GET /curriculums/ HTTP/1.1" 200 23320
+[02/Mar/2023 20:36:12] Internal Server Error: /curriculum/1/delete/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\fields\__init__.py", line 1823, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'builtin_function_or_method'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py", line 242, in CurriculumDeleteView
+    cur = Curriculum.objects.get(id=id)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 424, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1393, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1412, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1347, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1193, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\lookups.py", line 25, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\lookups.py", line 77, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\fields\__init__.py", line 1825, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <built-in function id>.
+[02/Mar/2023 20:36:13] "GET /curriculum/1/delete/ HTTP/1.1" 500 146365
+[02/Mar/2023 20:36:24] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:36:26] Watching for file changes with StatReloader
+[02/Mar/2023 20:36:28] Internal Server Error: /curriculum/1/delete/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\base\base.py", line 242, in _commit
+    return self.connection.commit()
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py", line 243, in CurriculumDeleteView
+    cur.delete()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 954, in delete
+    return collector.delete()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\deletion.py", line 400, in delete
+    with transaction.atomic(using=self.using, savepoint=False):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\transaction.py", line 246, in __exit__
+    connection.commit()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\base\base.py", line 266, in commit
+    self._commit()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\base\base.py", line 241, in _commit
+    with self.wrap_database_errors:
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\base\base.py", line 242, in _commit
+    return self.connection.commit()
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+[02/Mar/2023 20:36:28] "GET /curriculum/1/delete/ HTTP/1.1" 500 123727
+[02/Mar/2023 20:36:38] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:36:40] Watching for file changes with StatReloader
+[02/Mar/2023 20:36:44] Internal Server Error: /curriculum/1/delete/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\base\base.py", line 242, in _commit
+    return self.connection.commit()
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py", line 243, in CurriculumDeleteView
+    cur.delete()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 954, in delete
+    return collector.delete()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\deletion.py", line 400, in delete
+    with transaction.atomic(using=self.using, savepoint=False):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\transaction.py", line 246, in __exit__
+    connection.commit()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\asyncio.py", line 33, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\base\base.py", line 266, in commit
+    self._commit()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\base\base.py", line 241, in _commit
+    with self.wrap_database_errors:
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\base\base.py", line 242, in _commit
+    return self.connection.commit()
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+[02/Mar/2023 20:36:44] "GET /curriculum/1/delete/ HTTP/1.1" 500 123727
+[02/Mar/2023 20:38:47] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:38:49] Watching for file changes with StatReloader
+[02/Mar/2023 20:38:55] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:38:56] Watching for file changes with StatReloader
+[02/Mar/2023 20:39:02] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:39:04] Watching for file changes with StatReloader
+[02/Mar/2023 20:39:34] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:39:35] Watching for file changes with StatReloader
+[02/Mar/2023 20:39:37] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:39:39] Watching for file changes with StatReloader
+[02/Mar/2023 20:39:42] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:39:43] Watching for file changes with StatReloader
+[02/Mar/2023 20:41:05] Internal Server Error: /curriculum/1/delete/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py", line 244, in CurriculumDeleteView
+    parent = Curriculum.objects.get(id=parent_id)
+NameError: name 'parent_id' is not defined
+[02/Mar/2023 20:41:05] "GET /curriculum/1/delete/ HTTP/1.1" 500 84167
+[02/Mar/2023 20:41:09] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:41:11] Watching for file changes with StatReloader
+[02/Mar/2023 20:41:13] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:41:15] Watching for file changes with StatReloader
+[02/Mar/2023 20:41:32] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:41:34] Watching for file changes with StatReloader
+[02/Mar/2023 20:41:37] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:41:38] Watching for file changes with StatReloader
+[02/Mar/2023 20:42:26] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:42:28] Watching for file changes with StatReloader
+[02/Mar/2023 20:42:31] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:42:32] Watching for file changes with StatReloader
+[02/Mar/2023 20:42:35] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:42:36] Watching for file changes with StatReloader
+[02/Mar/2023 20:42:38] Internal Server Error: /curriculum/1/delete/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py", line 249, in CurriculumDeleteView
+    Course.objects.filter(parent=parent).delete()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1393, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1412, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1286, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1112, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1539, in names_to_path
+    raise FieldError("Cannot resolve keyword '%s' into field. "
+django.core.exceptions.FieldError: Cannot resolve keyword 'parent' into field. Choices are: contact_hour, course_code, created_date, credit, curriculum, dependents, id, modified_date, offered, pre_req, pre_req_id, title, type
+[02/Mar/2023 20:42:39] "GET /curriculum/1/delete/ HTTP/1.1" 500 129039
+[02/Mar/2023 20:42:51] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:42:52] Watching for file changes with StatReloader
+[02/Mar/2023 20:43:05] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:43:06] Watching for file changes with StatReloader
+[02/Mar/2023 20:43:20] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:43:21] Watching for file changes with StatReloader
+[02/Mar/2023 20:43:27] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:43:29] Watching for file changes with StatReloader
+[02/Mar/2023 20:43:38] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:43:39] Watching for file changes with StatReloader
+[02/Mar/2023 20:43:44] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:43:46] Watching for file changes with StatReloader
+[02/Mar/2023 20:43:49] "GET /curriculum/1/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 20:43:49] "GET /curriculums HTTP/1.1" 301 0
+[02/Mar/2023 20:43:49] "GET /curriculums/ HTTP/1.1" 200 23320
+[02/Mar/2023 20:43:49] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 20:43:51] "GET /curriculum/1/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 20:43:52] "GET /curriculums/ HTTP/1.1" 200 23320
+[02/Mar/2023 20:49:21] "GET /curriculums/ HTTP/1.1" 200 23320
+[02/Mar/2023 20:50:24] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:50:25] Watching for file changes with StatReloader
+[02/Mar/2023 20:50:41] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:50:43] Watching for file changes with StatReloader
+[02/Mar/2023 20:51:02] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:51:04] Watching for file changes with StatReloader
+[02/Mar/2023 20:52:48] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:52:50] Watching for file changes with StatReloader
+[02/Mar/2023 20:53:02] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:53:03] Watching for file changes with StatReloader
+[02/Mar/2023 20:53:09] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:53:11] Watching for file changes with StatReloader
+[02/Mar/2023 20:53:36] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:53:37] Watching for file changes with StatReloader
+[02/Mar/2023 20:53:40] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:53:41] Watching for file changes with StatReloader
+[02/Mar/2023 20:53:44] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:53:45] Watching for file changes with StatReloader
+[02/Mar/2023 20:53:52] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:53:54] Watching for file changes with StatReloader
+[02/Mar/2023 20:53:57] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:53:58] Watching for file changes with StatReloader
+[02/Mar/2023 20:54:03] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:54:05] Watching for file changes with StatReloader
+[02/Mar/2023 20:54:07] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:54:09] Watching for file changes with StatReloader
+[02/Mar/2023 20:54:15] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:54:16] Watching for file changes with StatReloader
+[02/Mar/2023 20:54:18] "GET /curriculums/ HTTP/1.1" 200 23320
+[02/Mar/2023 20:54:18] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 20:54:21] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:54:22] Watching for file changes with StatReloader
+[02/Mar/2023 20:54:25] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:54:27] Watching for file changes with StatReloader
+[02/Mar/2023 20:54:58] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:55:00] Watching for file changes with StatReloader
+[02/Mar/2023 20:55:03] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:55:04] Watching for file changes with StatReloader
+[02/Mar/2023 20:55:06] "GET /curriculums/ HTTP/1.1" 200 23329
+[02/Mar/2023 20:55:08] "GET /curriculum/1/delete/ HTTP/1.1" 200 21360
+[02/Mar/2023 20:55:14] "GET /curriculums/ HTTP/1.1" 200 23329
+[02/Mar/2023 20:55:17] "GET /curriculum/1/delete/ HTTP/1.1" 200 21360
+[02/Mar/2023 20:55:23] "GET /curriculum/1/delete/ HTTP/1.1" 200 21360
+[02/Mar/2023 20:55:39] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 20:55:40] Watching for file changes with StatReloader
+[02/Mar/2023 20:55:44] "GET /curriculum/1/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 20:55:45] "GET /curriculums/ HTTP/1.1" 200 23493
+[02/Mar/2023 20:58:17] "GET /curriculums/ HTTP/1.1" 200 23329
+[02/Mar/2023 20:58:19] "GET /curriculum/1/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 20:58:19] "GET /curriculums/ HTTP/1.1" 200 23494
+[02/Mar/2023 20:58:48] "GET /curriculums/ HTTP/1.1" 200 23329
+[02/Mar/2023 20:58:48] "GET /static/js/scripts.js HTTP/1.1" 200 3366
+[02/Mar/2023 20:58:48] "GET /static/css/styles.css HTTP/1.1" 200 429057
+[02/Mar/2023 20:58:48] "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11479
+[02/Mar/2023 20:58:50] "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 11275
+[02/Mar/2023 20:58:50] "GET /static/assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 200 23664
+[02/Mar/2023 20:58:50] "GET /static/assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 200 23124
+[02/Mar/2023 20:58:50] "GET /static/assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 200 24236
+[02/Mar/2023 20:58:50] "GET /static/assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 200 23240
+[02/Mar/2023 20:58:50] "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+[02/Mar/2023 20:58:50] "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 3531
+[02/Mar/2023 20:58:51] Not Found: /favicon.ico
+[02/Mar/2023 20:58:51] "GET /favicon.ico HTTP/1.1" 404 23887
+[02/Mar/2023 20:58:53] "GET /curriculum/2/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 20:58:53] "GET /curriculums/ HTTP/1.1" 200 22258
+[02/Mar/2023 20:58:53] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 20:59:53] "GET /curriculum/1/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 20:59:53] "GET /curriculums/ HTTP/1.1" 200 22423
+[02/Mar/2023 20:59:53] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 20:59:58] "GET /curriculum/1/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 20:59:58] "GET /curriculums/ HTTP/1.1" 200 22423
+[02/Mar/2023 21:00:57] "GET /curriculums/ HTTP/1.1" 200 22258
+[02/Mar/2023 21:00:57] "GET /static/css/styles.css HTTP/1.1" 200 429102
+[02/Mar/2023 21:01:00] "GET /curriculums/ HTTP/1.1" 200 22258
+[02/Mar/2023 21:01:00] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 21:01:05] "GET /curriculum/1/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 21:01:05] "GET /curriculums/ HTTP/1.1" 200 22423
+[02/Mar/2023 21:01:06] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 21:01:33] "GET /curriculums/ HTTP/1.1" 200 22258
+[02/Mar/2023 21:01:33] "GET /static/css/styles.css HTTP/1.1" 200 429116
+[02/Mar/2023 21:01:35] "GET /curriculum/1/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 21:01:35] "GET /curriculums/ HTTP/1.1" 200 22423
+[02/Mar/2023 21:01:35] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 21:03:37] "GET /curriculums/ HTTP/1.1" 200 22258
+[02/Mar/2023 21:03:37] "GET /static/css/styles.css HTTP/1.1" 200 429138
+[02/Mar/2023 21:03:39] "GET /curriculum/1/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 21:03:39] "GET /curriculums/ HTTP/1.1" 200 22423
+[02/Mar/2023 21:03:39] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 21:03:50] "GET /curriculums/ HTTP/1.1" 200 22258
+[02/Mar/2023 21:03:50] "GET /static/css/styles.css HTTP/1.1" 200 429155
+[02/Mar/2023 21:03:53] "GET /curriculum/1/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 21:03:53] "GET /curriculums/ HTTP/1.1" 200 22423
+[02/Mar/2023 21:03:53] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 21:04:07] "GET /curriculums/ HTTP/1.1" 200 22258
+[02/Mar/2023 21:04:07] "GET /static/css/styles.css HTTP/1.1" 200 429157
+[02/Mar/2023 21:04:09] "GET /curriculum/1/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 21:04:09] "GET /curriculums/ HTTP/1.1" 200 22423
+[02/Mar/2023 21:04:09] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 21:05:31] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 21:05:33] Watching for file changes with StatReloader
+[02/Mar/2023 21:06:23] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 21:06:25] Watching for file changes with StatReloader
+[02/Mar/2023 21:06:29] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 21:06:30] Watching for file changes with StatReloader
+[02/Mar/2023 21:06:34] "GET /curriculums/ HTTP/1.1" 200 22258
+[02/Mar/2023 21:06:34] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 21:06:35] "GET /curriculum/1/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 21:06:35] "GET /curriculums/ HTTP/1.1" 200 22435
+[02/Mar/2023 21:06:56] "GET /curriculums/ HTTP/1.1" 200 22258
+[02/Mar/2023 21:06:56] "GET /static/css/styles.css HTTP/1.1" 200 429180
+[02/Mar/2023 21:06:58] "GET /curriculum/1/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 21:06:59] "GET /curriculums/ HTTP/1.1" 200 22435
+[02/Mar/2023 21:06:59] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 21:07:08] "GET /curriculum/1/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 21:07:09] "GET /curriculums/ HTTP/1.1" 200 22435
+[02/Mar/2023 21:07:09] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 21:07:10] "GET /curriculums/ HTTP/1.1" 200 22258
+[02/Mar/2023 21:07:10] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 21:07:12] "GET /curriculum/1/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 21:07:12] "GET /curriculums/ HTTP/1.1" 200 22435
+[02/Mar/2023 21:07:13] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 21:07:20] "GET /teachers/ HTTP/1.1" 200 45039
+[02/Mar/2023 21:07:20] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 21:07:25] "GET /curriculums/ HTTP/1.1" 200 22258
+[02/Mar/2023 21:07:25] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 21:10:32] "GET /curriculums/ HTTP/1.1" 200 22191
+[02/Mar/2023 21:10:32] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 21:10:37] "GET /curriculum/update/?id=1 HTTP/1.1" 200 25390
+[02/Mar/2023 21:10:41] "GET /curriculum/1/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 21:10:41] "GET /curriculums/ HTTP/1.1" 200 22368
+[02/Mar/2023 21:12:38] "GET /curriculums/ HTTP/1.1" 200 22313
+[02/Mar/2023 21:12:38] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 21:13:41] "GET /curriculums/ HTTP/1.1" 200 22311
+[02/Mar/2023 21:13:41] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 21:14:56] "GET /curriculums/ HTTP/1.1" 200 22339
+[02/Mar/2023 21:14:56] "GET /static/css/styles.css HTTP/1.1" 200 429236
+[02/Mar/2023 21:14:58] "GET /curriculums/ HTTP/1.1" 200 22339
+[02/Mar/2023 21:14:58] "GET /static/js/scripts.js HTTP/1.1" 200 3366
+[02/Mar/2023 21:14:58] "GET /static/css/styles.css HTTP/1.1" 200 429236
+[02/Mar/2023 21:14:58] "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11479
+[02/Mar/2023 21:14:59] "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 11275
+[02/Mar/2023 21:14:59] "GET /static/assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 200 23124
+[02/Mar/2023 21:14:59] "GET /static/assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 200 24236
+[02/Mar/2023 21:14:59] "GET /static/assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 200 23664
+[02/Mar/2023 21:14:59] "GET /static/assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 200 23240
+[02/Mar/2023 21:15:00] "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+[02/Mar/2023 21:15:00] "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 3531
+[02/Mar/2023 21:15:01] Not Found: /favicon.ico
+[02/Mar/2023 21:15:01] "GET /favicon.ico HTTP/1.1" 404 23887
+[02/Mar/2023 21:15:19] "GET /curriculums/ HTTP/1.1" 200 22331
+[02/Mar/2023 21:15:19] "GET /static/css/styles.css HTTP/1.1" 200 429236
+[02/Mar/2023 21:15:23] "GET /curriculum/update/?id=1 HTTP/1.1" 200 25395
+[02/Mar/2023 21:15:23] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 21:15:27] "GET /teachers/ HTTP/1.1" 200 45044
+[02/Mar/2023 21:15:27] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 21:15:59] "GET /teachers/ HTTP/1.1" 200 45044
+[02/Mar/2023 21:15:59] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 21:17:04] "POST /teacher/reset/ HTTP/1.1" 200 95
+[02/Mar/2023 21:17:06] "GET /teacher/update/?id=5 HTTP/1.1" 200 28922
+[02/Mar/2023 21:17:06] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 21:17:45] "POST /teacher/reset/ HTTP/1.1" 200 96
+[02/Mar/2023 21:17:47] "GET /teacher/update/?id=12 HTTP/1.1" 200 28812
+[02/Mar/2023 21:17:47] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 21:20:15] Internal Server Error: /teachers/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\test\utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\test\utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'curriculum_delete' with arguments '('',)' not found. 1 pattern(s) tried: ['curriculum/(?P<pk>[0-9]+)/delete/$']
+[02/Mar/2023 21:20:15] "GET /teachers/ HTTP/1.1" 500 218615
+[02/Mar/2023 21:21:52] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 21:21:54] Watching for file changes with StatReloader
+[02/Mar/2023 21:21:57] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 21:21:58] Watching for file changes with StatReloader
+[02/Mar/2023 21:22:12] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 21:22:14] Watching for file changes with StatReloader
+[02/Mar/2023 21:22:20] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 21:22:22] Watching for file changes with StatReloader
+[02/Mar/2023 21:22:25] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 21:22:26] Watching for file changes with StatReloader
+[02/Mar/2023 21:24:22] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 21:24:24] Watching for file changes with StatReloader
+[02/Mar/2023 21:25:02] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 21:25:04] Watching for file changes with StatReloader
+[02/Mar/2023 21:25:06] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 21:25:08] Watching for file changes with StatReloader
+[02/Mar/2023 21:25:15] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 21:25:17] Watching for file changes with StatReloader
+[02/Mar/2023 21:25:34] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\models.py changed, reloading.
+[02/Mar/2023 21:25:36] Watching for file changes with StatReloader
+[02/Mar/2023 21:25:52] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 21:25:54] Watching for file changes with StatReloader
+[02/Mar/2023 21:27:49] Internal Server Error: /teachers/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\test\utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\test\utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'teacher_delete' not found. 'teacher_delete' is not a valid view function or pattern name.
+[02/Mar/2023 21:27:49] "GET /teachers/ HTTP/1.1" 500 215396
+[02/Mar/2023 21:28:01] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 21:28:03] Watching for file changes with StatReloader
+[02/Mar/2023 21:28:06] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 21:28:08] Watching for file changes with StatReloader
+[02/Mar/2023 21:28:11] Internal Server Error: /teachers/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\test\utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\test\utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'teacher_delete' with arguments '('',)' not found. 1 pattern(s) tried: ['teacher/delete/$']
+[02/Mar/2023 21:28:11] "GET /teachers/ HTTP/1.1" 500 216882
+[02/Mar/2023 21:28:17] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 21:28:18] Watching for file changes with StatReloader
+[02/Mar/2023 21:28:24] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 21:28:26] Watching for file changes with StatReloader
+[02/Mar/2023 21:28:28] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 21:28:30] Watching for file changes with StatReloader
+[02/Mar/2023 21:28:34] Internal Server Error: /teachers/
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\test\utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\test\utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'teacher_delete' with arguments '('',)' not found. 1 pattern(s) tried: ['teacher/(?P<pk>[0-9]+)/delete/$']
+[02/Mar/2023 21:28:34] "GET /teachers/ HTTP/1.1" 500 218403
+[02/Mar/2023 21:28:40] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 21:28:41] Watching for file changes with StatReloader
+[02/Mar/2023 21:28:54] "GET /teachers/ HTTP/1.1" 200 55684
+[02/Mar/2023 21:28:54] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 21:29:29] "GET /teachers/ HTTP/1.1" 200 50099
+[02/Mar/2023 21:29:42] "GET /teachers/ HTTP/1.1" 200 51480
+[02/Mar/2023 21:29:48] "GET /teacher/5/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 21:29:48] "GET /teachers HTTP/1.1" 301 0
+[02/Mar/2023 21:29:49] "GET /teachers/ HTTP/1.1" 200 50223
+[02/Mar/2023 21:29:52] "GET /teacher/15/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 21:29:53] "GET /teachers/ HTTP/1.1" 200 48957
+[02/Mar/2023 21:30:39] "GET /teachers/ HTTP/1.1" 200 48957
+[02/Mar/2023 21:30:39] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 21:30:41] "GET /curriculums/ HTTP/1.1" 200 22331
+[02/Mar/2023 21:30:43] "GET /curriculum/1/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 21:30:43] "GET /curriculums/ HTTP/1.1" 200 22331
+[02/Mar/2023 21:30:45] "GET /curriculum/1/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 21:30:45] "GET /curriculums/ HTTP/1.1" 200 22331
+[02/Mar/2023 21:31:03] "GET /curriculums/ HTTP/1.1" 200 22607
+[02/Mar/2023 21:31:05] "GET /curriculums/ HTTP/1.1" 200 22331
+[02/Mar/2023 21:31:07] "GET /curriculum/1/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 21:31:07] "GET /curriculums/ HTTP/1.1" 200 22508
+[02/Mar/2023 21:31:09] "GET /curriculum/1/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 21:31:09] "GET /curriculums/ HTTP/1.1" 200 22508
+[02/Mar/2023 21:31:10] "GET /curriculum/1/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 21:31:10] "GET /curriculums/ HTTP/1.1" 200 22508
+[02/Mar/2023 21:31:24] "GET /curriculums/ HTTP/1.1" 200 22331
+[02/Mar/2023 21:31:27] "GET /teachers/ HTTP/1.1" 200 48959
+[02/Mar/2023 21:31:36] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 21:31:37] Watching for file changes with StatReloader
+[02/Mar/2023 21:31:45] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 21:31:47] Watching for file changes with StatReloader
+[02/Mar/2023 21:31:54] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 21:31:55] Watching for file changes with StatReloader
+[02/Mar/2023 21:31:59] "GET /teachers/ HTTP/1.1" 200 48958
+[02/Mar/2023 21:32:01] "GET /teacher/8/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 21:32:03] "GET /teachers/ HTTP/1.1" 200 47842
+[02/Mar/2023 21:32:05] "GET /teacher/18/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 21:32:06] "GET /teachers/ HTTP/1.1" 200 47858
+[02/Mar/2023 21:32:22] "GET /teacher/17/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 21:32:23] "GET /teachers/ HTTP/1.1" 200 46582
+[02/Mar/2023 21:32:23] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 21:32:27] "GET /teachers/ HTTP/1.1" 200 46420
+[02/Mar/2023 21:32:29] "GET /teacher/13/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 21:32:30] "GET /teachers/ HTTP/1.1" 200 45306
+[02/Mar/2023 21:32:36] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 21:32:38] Watching for file changes with StatReloader
+[02/Mar/2023 21:33:11] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 21:33:12] Watching for file changes with StatReloader
+[02/Mar/2023 21:33:16] "GET /teachers/ HTTP/1.1" 200 45145
+[02/Mar/2023 21:33:45] "GET /teachers/ HTTP/1.1" 200 45234
+[02/Mar/2023 21:33:49] "GET /teachers/ HTTP/1.1" 200 45234
+[02/Mar/2023 21:33:49] "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11479
+[02/Mar/2023 21:33:49] "GET /static/js/scripts.js HTTP/1.1" 200 3366
+[02/Mar/2023 21:33:49] "GET /static/css/styles.css HTTP/1.1" 200 429236
+[02/Mar/2023 21:33:49] "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 11275
+[02/Mar/2023 21:33:49] "GET /static/assets/fonts/metropolis/Metropolis-Bold.otf HTTP/1.1" 200 23664
+[02/Mar/2023 21:33:49] "GET /static/assets/fonts/metropolis/Metropolis-Regular.otf HTTP/1.1" 200 23124
+[02/Mar/2023 21:33:49] "GET /static/assets/fonts/metropolis/Metropolis-Medium.otf HTTP/1.1" 200 23240
+[02/Mar/2023 21:33:49] "GET /static/assets/fonts/metropolis/Metropolis-RegularItalic.otf HTTP/1.1" 200 24236
+[02/Mar/2023 21:33:49] "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+[02/Mar/2023 21:33:49] "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 3531
+[02/Mar/2023 21:33:49] Not Found: /favicon.ico
+[02/Mar/2023 21:33:49] "GET /favicon.ico HTTP/1.1" 404 24087
+[02/Mar/2023 21:34:04] "GET /teachers/ HTTP/1.1" 200 45378
+[02/Mar/2023 21:34:26] "GET /curriculums/ HTTP/1.1" 200 22331
+[02/Mar/2023 21:34:29] "GET /teachers/ HTTP/1.1" 200 45378
+[02/Mar/2023 21:34:36] "GET /courses/ HTTP/1.1" 200 22237
+[02/Mar/2023 21:34:39] "GET /courses/ HTTP/1.1" 200 22237
+[02/Mar/2023 21:34:40] "GET /course/update/?id=114 HTTP/1.1" 200 26952
+[02/Mar/2023 21:35:23] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 21:35:25] Watching for file changes with StatReloader
+[02/Mar/2023 21:35:31] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 21:35:32] Watching for file changes with StatReloader
+[02/Mar/2023 21:35:39] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 21:35:40] Watching for file changes with StatReloader
+[02/Mar/2023 21:35:43] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 21:35:45] Watching for file changes with StatReloader
+[02/Mar/2023 21:35:49] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 21:35:50] Watching for file changes with StatReloader
+[02/Mar/2023 21:36:06] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 21:36:08] Watching for file changes with StatReloader
+[02/Mar/2023 21:36:10] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 21:36:12] Watching for file changes with StatReloader
+[02/Mar/2023 21:36:19] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 21:36:21] Watching for file changes with StatReloader
+[02/Mar/2023 21:36:23] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 21:36:25] Watching for file changes with StatReloader
+[02/Mar/2023 21:36:38] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 21:36:39] Watching for file changes with StatReloader
+[02/Mar/2023 21:36:46] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 21:36:47] Watching for file changes with StatReloader
+[02/Mar/2023 21:37:15] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\models.py changed, reloading.
+[02/Mar/2023 21:37:17] Watching for file changes with StatReloader
+[02/Mar/2023 21:37:21] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 21:37:23] Watching for file changes with StatReloader
+[02/Mar/2023 21:37:28] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 21:37:29] Watching for file changes with StatReloader
+[02/Mar/2023 21:37:37] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\views.py changed, reloading.
+[02/Mar/2023 21:37:39] Watching for file changes with StatReloader
+[02/Mar/2023 21:37:47] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 21:37:48] Watching for file changes with StatReloader
+[02/Mar/2023 21:37:52] E:\All Web Designing\My All Project\lu_routineMaker-dev\faculty\urls.py changed, reloading.
+[02/Mar/2023 21:37:53] Watching for file changes with StatReloader
+[02/Mar/2023 21:38:04] "GET /courses/ HTTP/1.1" 200 22544
+[02/Mar/2023 21:38:04] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 21:38:09] "GET /course/114/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 21:38:09] "GET /courses HTTP/1.1" 301 0
+[02/Mar/2023 21:38:10] "GET /courses/ HTTP/1.1" 200 21180
+[02/Mar/2023 21:38:12] "GET /courses/ HTTP/1.1" 200 21180
+[02/Mar/2023 21:38:14] "GET /courses/ HTTP/1.1" 200 21180
+[02/Mar/2023 21:39:13] "GET /courses/ HTTP/1.1" 200 21180
+[02/Mar/2023 21:39:37] "GET /courses/ HTTP/1.1" 200 21351
+[02/Mar/2023 21:39:40] "GET /courses/ HTTP/1.1" 200 21189
+[02/Mar/2023 21:39:42] "GET /courses/ HTTP/1.1" 200 21189
+[02/Mar/2023 21:40:58] "GET / HTTP/1.1" 200 21675
+[02/Mar/2023 21:40:58] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 21:40:59] Not Found: /favicon.ico
+[02/Mar/2023 21:40:59] "GET /favicon.ico HTTP/1.1" 404 24285
+[02/Mar/2023 21:41:03] "GET /offers/ HTTP/1.1" 200 20939
+[02/Mar/2023 21:41:08] "GET /courses/ HTTP/1.1" 200 21189
+[02/Mar/2023 21:41:10] "GET /batches/ HTTP/1.1" 200 21512
+[02/Mar/2023 21:43:16] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\urls.py changed, reloading.
+[02/Mar/2023 21:43:18] Watching for file changes with StatReloader
+[02/Mar/2023 21:43:21] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\urls.py changed, reloading.
+[02/Mar/2023 21:43:22] Watching for file changes with StatReloader
+[02/Mar/2023 21:43:31] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\views.py changed, reloading.
+[02/Mar/2023 21:43:33] Watching for file changes with StatReloader
+[02/Mar/2023 21:43:54] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\views.py changed, reloading.
+[02/Mar/2023 21:43:56] Watching for file changes with StatReloader
+[02/Mar/2023 21:44:03] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\views.py changed, reloading.
+[02/Mar/2023 21:44:04] Watching for file changes with StatReloader
+[02/Mar/2023 21:44:17] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\views.py changed, reloading.
+[02/Mar/2023 21:44:19] Watching for file changes with StatReloader
+[02/Mar/2023 21:44:25] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\views.py changed, reloading.
+[02/Mar/2023 21:44:26] Watching for file changes with StatReloader
+[02/Mar/2023 21:44:31] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\views.py changed, reloading.
+[02/Mar/2023 21:44:33] Watching for file changes with StatReloader
+[02/Mar/2023 21:44:44] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\views.py changed, reloading.
+[02/Mar/2023 21:44:45] Watching for file changes with StatReloader
+[02/Mar/2023 21:44:53] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\views.py changed, reloading.
+[02/Mar/2023 21:44:55] Watching for file changes with StatReloader
+[02/Mar/2023 21:44:57] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\views.py changed, reloading.
+[02/Mar/2023 21:44:58] Watching for file changes with StatReloader
+[02/Mar/2023 21:45:04] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\views.py changed, reloading.
+[02/Mar/2023 21:45:05] Watching for file changes with StatReloader
+[02/Mar/2023 21:45:08] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\views.py changed, reloading.
+[02/Mar/2023 21:45:10] Watching for file changes with StatReloader
+[02/Mar/2023 21:45:31] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\views.py changed, reloading.
+[02/Mar/2023 21:45:33] Watching for file changes with StatReloader
+[02/Mar/2023 21:45:38] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\views.py changed, reloading.
+[02/Mar/2023 21:45:39] Watching for file changes with StatReloader
+[02/Mar/2023 21:45:47] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\views.py changed, reloading.
+[02/Mar/2023 21:45:48] Watching for file changes with StatReloader
+[02/Mar/2023 21:45:51] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\views.py changed, reloading.
+[02/Mar/2023 21:45:52] Watching for file changes with StatReloader
+[02/Mar/2023 21:45:58] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\views.py changed, reloading.
+[02/Mar/2023 21:45:59] Watching for file changes with StatReloader
+[02/Mar/2023 21:46:06] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\urls.py changed, reloading.
+[02/Mar/2023 21:46:08] Watching for file changes with StatReloader
+[02/Mar/2023 21:46:12] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\urls.py changed, reloading.
+[02/Mar/2023 21:46:13] Watching for file changes with StatReloader
+[02/Mar/2023 21:46:18] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\urls.py changed, reloading.
+[02/Mar/2023 21:46:20] Watching for file changes with StatReloader
+[02/Mar/2023 21:46:32] "GET /batches/ HTTP/1.1" 200 21825
+[02/Mar/2023 21:46:32] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 21:46:34] "GET /batch/13/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 21:46:34] "GET /batches HTTP/1.1" 301 0
+[02/Mar/2023 21:46:34] "GET /batches/ HTTP/1.1" 200 21825
+[02/Mar/2023 21:46:36] "GET /batch/13/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 21:46:37] "GET /batches/ HTTP/1.1" 200 21825
+[02/Mar/2023 21:46:53] "GET /batches/ HTTP/1.1" 200 22110
+[02/Mar/2023 21:46:55] "GET /batches/ HTTP/1.1" 200 21834
+[02/Mar/2023 21:46:57] "GET /batch/13/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 21:46:57] "GET /batches/ HTTP/1.1" 200 22011
+[02/Mar/2023 21:47:33] "GET /programs/ HTTP/1.1" 200 21185
+[02/Mar/2023 21:47:35] "GET /curriculums/ HTTP/1.1" 200 22331
+[02/Mar/2023 21:47:37] "GET /teachers/ HTTP/1.1" 200 45378
+[02/Mar/2023 21:47:40] "GET /courses/ HTTP/1.1" 200 21189
+[02/Mar/2023 21:47:42] - Broken pipe from ('127.0.0.1', 54759)
+
+[02/Mar/2023 21:47:42] "GET /batches/ HTTP/1.1" 200 21834
+[02/Mar/2023 21:47:45] "GET /sections/ HTTP/1.1" 200 21437
+[02/Mar/2023 21:47:50] "GET /batches/ HTTP/1.1" 200 21834
+[02/Mar/2023 21:47:51] "GET /batch/13/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 21:47:52] "GET /batches/ HTTP/1.1" 200 22011
+[02/Mar/2023 22:06:29] "GET /sections/ HTTP/1.1" 200 21437
+[02/Mar/2023 22:06:29] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 22:07:47] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\urls.py changed, reloading.
+[02/Mar/2023 22:07:49] Watching for file changes with StatReloader
+[02/Mar/2023 22:07:55] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\urls.py changed, reloading.
+[02/Mar/2023 22:07:56] Watching for file changes with StatReloader
+[02/Mar/2023 22:08:07] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\urls.py changed, reloading.
+[02/Mar/2023 22:08:09] Watching for file changes with StatReloader
+[02/Mar/2023 22:08:14] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\urls.py changed, reloading.
+[02/Mar/2023 22:08:16] Watching for file changes with StatReloader
+[02/Mar/2023 22:08:24] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\urls.py changed, reloading.
+[02/Mar/2023 22:08:26] Watching for file changes with StatReloader
+[02/Mar/2023 22:08:29] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\urls.py changed, reloading.
+[02/Mar/2023 22:08:30] Watching for file changes with StatReloader
+[02/Mar/2023 22:08:57] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\urls.py changed, reloading.
+[02/Mar/2023 22:08:58] Watching for file changes with StatReloader
+[02/Mar/2023 22:09:06] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\views.py changed, reloading.
+[02/Mar/2023 22:09:07] Watching for file changes with StatReloader
+[02/Mar/2023 22:09:10] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\views.py changed, reloading.
+[02/Mar/2023 22:09:12] Watching for file changes with StatReloader
+[02/Mar/2023 22:09:16] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\views.py changed, reloading.
+[02/Mar/2023 22:09:17] Watching for file changes with StatReloader
+[02/Mar/2023 22:09:23] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\views.py changed, reloading.
+[02/Mar/2023 22:09:24] Watching for file changes with StatReloader
+[02/Mar/2023 22:09:37] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\views.py changed, reloading.
+[02/Mar/2023 22:09:38] Watching for file changes with StatReloader
+[02/Mar/2023 22:09:42] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\urls.py changed, reloading.
+[02/Mar/2023 22:09:43] Watching for file changes with StatReloader
+[02/Mar/2023 22:09:58] "GET /sections/ HTTP/1.1" 200 21766
+[02/Mar/2023 22:11:28] "GET /sections/ HTTP/1.1" 200 21766
+[02/Mar/2023 22:11:30] "GET /section/24/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 22:11:30] "GET /batches/ HTTP/1.1" 200 21996
+[02/Mar/2023 22:11:33] "GET /batches/ HTTP/1.1" 200 21834
+[02/Mar/2023 22:11:35] "GET /batch/13/delete/ HTTP/1.1" 302 0
+[02/Mar/2023 22:11:35] "GET /batches/ HTTP/1.1" 200 21018
+[02/Mar/2023 22:11:59] "GET /sections/ HTTP/1.1" 200 20830
+[02/Mar/2023 22:11:59] "GET /static/css/styles.css HTTP/1.1" 304 0
+[02/Mar/2023 22:12:05] "GET /section/create/ HTTP/1.1" 200 21521
+[02/Mar/2023 22:12:24] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\views.py changed, reloading.
+[02/Mar/2023 22:12:26] Watching for file changes with StatReloader
+[02/Mar/2023 22:12:28] "GET /sections/ HTTP/1.1" 200 20830
+[02/Mar/2023 22:12:37] "GET /sections/ HTTP/1.1" 200 20830
+[02/Mar/2023 22:12:39] "GET /semesters/ HTTP/1.1" 200 21510
+[02/Mar/2023 22:12:41] "GET /curriculums/ HTTP/1.1" 200 22331
+[02/Mar/2023 22:12:43] "GET /programs/ HTTP/1.1" 200 21185
+[02/Mar/2023 22:12:45] "GET /teachers/ HTTP/1.1" 200 45378
+[02/Mar/2023 22:16:28] "GET /semesters/ HTTP/1.1" 200 21510
+[02/Mar/2023 22:16:30] "GET /offers/ HTTP/1.1" 200 20939
+[02/Mar/2023 22:16:32] "GET /distributions/ HTTP/1.1" 200 21015
+[02/Mar/2023 22:16:34] "GET /semesters/ HTTP/1.1" 200 21510
+[02/Mar/2023 22:17:12] E:\All Web Designing\My All Project\lu_routineMaker-dev\student\views.py changed, reloading.
+[02/Mar/2023 22:17:16] Watching for file changes with StatReloader

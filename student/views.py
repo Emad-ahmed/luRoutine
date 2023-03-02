@@ -3,6 +3,9 @@ from django.utils.decorators import method_decorator
 from django.views.generic import ListView, CreateView, UpdateView
 from student.models import Batch, Section
 from faculty.models import Program, Curriculum
+from django.contrib import messages
+
+from django.shortcuts import redirect
 
 from .forms import BatchForm, SectionForm
 from django.urls import reverse
@@ -65,6 +68,17 @@ class BatchUpdateView(UpdateView):
         return self.render_to_response(self.get_context_data(**({'form': form})))
 
 
+def BatchDeleteView(request, pk):
+    try:
+        parent = Batch.objects.get(id=pk)
+        parent.delete()
+        messages.success(request, 'Successfully Deleted')
+    except:
+        messages.success(request, 'Please First Delete The Child Model')
+        return redirect('/batches')
+
+    return redirect('/batches')
+
 
 @method_decorator(login_required, name='dispatch')
 class SectionListView(ListView):
@@ -96,6 +110,17 @@ class SectionCreateView(CreateView):
     def form_invalid(self, form):
         return self.render_to_response(self.get_context_data(**({'form': form})))
 
+
+def SectionDeleteView(request, pk):
+    try:
+        parent = Section.objects.get(id=pk)
+        parent.delete()
+        messages.success(request, 'Successfully Deleted')
+    except:
+        messages.success(request, 'Please First Delete The Child Model')
+        return redirect('/sections')
+
+    return redirect('/sections')
 
 @method_decorator(login_required, name='dispatch')
 class SectionUpdateView(UpdateView):
