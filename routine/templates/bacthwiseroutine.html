@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+
+
+{% block body_header %}
+<h1 class="page-header-title text-center mt-3 fw-bolder" style="font-size:2.5rem;">
+   All Routines
+</h1>
+
+{% endblock body_header %}
+
+{% block body %}
+   <div class="container mt-5">
+        <div class="row">
+            {% for section in sections %}
+            <div class="col-lg-2">
+                <a href="{% url 'routine:my_list_view' section.batch.batch section.section %}">
+                <div class="card text-center p-4">
+                    <h1 class='fw-bolder'>{{section.batch.batch}}</h1>
+                    <h6>{{section.section}}</h6>
+                </div>
+            </a>
+            </div>
+            {% endfor %}
+        </div>
+   </div>
+{% endblock %}
+
+{% block js_here %}
+    
+
+{% endblock js_here %}

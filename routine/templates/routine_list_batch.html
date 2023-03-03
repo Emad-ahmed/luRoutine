@@ -1,0 +1,151 @@
+{% extends 'base.html' %}
+
+{% block body_header %}
+    <header class="page-header page-header-dark bg-gradient-primary-to-secondary pb-10">
+        {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                    <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        <div class="container-xl px-4">
+            <div class="page-header-content pt-4">
+                <div class="d-flex justify-content-between">
+                    <div class="col-auto mt-4">
+                        <h1 class="page-header-title">
+                            <div class="page-header-icon"><i data-feather="filter"></i></div>
+                           {{batchmy}} Batch Section {{sectionmy}}  Routine
+                        </h1>
+
+                       
+                    </div>
+                    <div class="mt-4 d-flex">
+                        <div class="pr-2">
+                            <div class="form-group" style="width:128px;">
+                                <select class="form-control" id="day_filter">
+                                    <option value="sunday">Sunday</option>
+                                    <option value="monday">Monday</option>
+                                    <option value="tuesday">Tuesday</option>
+                                    <option value="wednesday">Wednesday</option>
+                                    <option value="thursday">Thursday</option>
+                                    <option value="friday">Friday</option>
+                                    <option value="saturday">Saturday</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="ms-3">
+                            <a href="{% url 'routine:gen_routine_batch' batchmy sectionmy %}" class="btn btn-light">Export&nbsp;<i
+                                    class="fas fa-download"></i> </a>
+                        </div>
+
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+{% endblock body_header %}
+
+{% block body %}
+    <div class="container-xl px-4 mt-n10">
+        <div class="card mb-4">
+            <div class="card-body">
+                <table id="datatablesSimple">
+                    <thead>
+                    <tr>
+                        <th>Batch</th>
+                        {% for slot in slots %}
+                            <th>{{ slot.start_time }}</th>
+                        {% endfor %}
+                    </tr>
+                    </thead>
+                    <tfoot>
+                    <tr>
+                        <th>Batch</th>
+                        {% for slot in slots %}
+                            <th>{{ slot.start_time }}</th>
+                        {% endfor %}
+                    </tr>
+                    </tfoot>
+                    <tbody>
+                    {% for batch, routine in gen_routine.items %}
+                        <tr>
+                            <td>
+                                {{ batch }}
+                            </td>
+                            {% for rt in routine %}
+                                {% if rt %}
+                               
+                                    <td class="text-center">
+                                        <a href="{% url 'routine:routine-update' %}?id={{ rt.id }}">
+                                        {{ rt.course_dist.offered.course.course_code }}
+                                        <p class="text-muted m-0">{{ rt.room.room_number }}
+                                            | {{ rt.course_dist.teacher.name_initials }}</p>
+                                        </a>
+                                    </td>
+                                    
+                                {% else %}
+                                    <td class="text-center">---</td>
+                                {% endif %}
+                            {% endfor %}
+
+                        </tr>
+                    {% endfor %}
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js_here %}
+    <script>
+        $(document).ready(function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const day = urlParams.get('day');
+            if (day) {
+                $('#day_filter option[value=' + day + ']').attr('selected', 'selected');
+            }
+
+            $(".dataTable-dropdown").append(
+                `<input class="ms-4" type="checkbox" id="dummy" name="dummy" value="true">
+             <label for="dummy"> Dummies Only</label><br>`
+            );
+
+            const dummy = urlParams.get('dummy');
+            if (dummy=='true'){
+                $('#dummy').attr('checked', 'checked');
+            }
+
+            $('#dummy').change(function () {
+                let path = window.location.href.split('?')[0]
+                window.location.href = path + "?day=" + $("#day_filter").val();
+                if (this.checked) {
+                    window.location.href = path + "?dummy=true";
+                }else{
+                    window.location.href = path;
+                }
+            });
+
+        });
+
+        window.addEventListener('DOMContentLoaded', event => {
+
+            const datatablesSimple = document.getElementById('datatablesSimple');
+            if (datatablesSimple) {
+                new simpleDatatables.DataTable(datatablesSimple);
+            }
+        });
+
+
+        $("#day_filter").change(function () {
+            let path = window.location.href.split('?')[0]
+            window.location.href = path + "?day=" + $("#day_filter").val();
+        });
+
+
+    </script>
+{% endblock js_here %}

@@ -8,7 +8,8 @@ from faculty.models import Course, Teacher
 from semester.models import Semester, CourseOffered, CourseDistribution
 from student.models import Batch, Section
 from .forms import SemesterForm, CourseOfferingForm, CourseDistributionForm, CourseDistributionUpdateForm
-
+from django.contrib import messages
+from django.shortcuts import redirect
 
 # from django.shortcuts import get_object_or_404
 @method_decorator(login_required, name='dispatch')
@@ -61,6 +62,19 @@ class SemesterUpdateView(UpdateView):
     
     def form_invalid(self, form):
         return self.render_to_response(self.get_context_data(**({'form': form})))
+
+
+
+def SemesterDeleteView(request, pk):
+    try:
+        parent = Section.objects.get(id=pk)
+        parent.delete()
+        messages.success(request, 'Successfully Deleted')
+    except:
+        messages.success(request, 'Please First Delete The Child Model')
+        return redirect('/semesters')
+
+    return redirect('/semesters')
 
 
 
@@ -121,6 +135,19 @@ class CourseOfferUpdateView(UpdateView):
     def form_invalid(self, form):
         return self.render_to_response(self.get_context_data(**({'form': form})))
 
+
+
+
+def CourseOfferDeleteView(request, pk):
+    try:
+        parent = CourseOffered.objects.get(id=pk)
+        parent.delete()
+        messages.success(request, 'Successfully Deleted')
+    except:
+        messages.success(request, 'Please First Delete The Child Model')
+        return redirect('/offers')
+
+    return redirect('/offers')
 
 
 
@@ -185,6 +212,18 @@ class CourseDistributionUpdateView(UpdateView):
 
 
 
+def  CourseDistributionDeleteView(request, pk):
+    try:
+        parent = CourseDistribution.objects.get(id=pk)
+        parent.delete()
+        messages.success(request, 'Successfully Deleted')
+    except:
+        messages.success(request, 'Please First Delete The Child Model')
+        return redirect('/offers')
+
+    return redirect('/offers')
+
+    
    
 
 def getBatchCourses(request):

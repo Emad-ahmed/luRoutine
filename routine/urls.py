@@ -10,6 +10,7 @@ urlpatterns = [
     path('rooms/', views.RoomListView.as_view(), name='room_list'),
     path('room/create/', views.RoomCreateView.as_view(), name='room_create'),
     path('room/update/', views.RoomUpdateView.as_view(), name='room_update'),
+    path('room/<int:pk>/delete/', views.RoomDeleteView, name='room_delete'),
 
     path('slots/', views.SlotListView.as_view(), name='slot_list'),
 
@@ -18,14 +19,24 @@ urlpatterns = [
 
     path('slot/create/', views.SlotDetailCreateView.as_view(), name='slot_create'),
     path('slot/update/', views.SlotDetailUpdateView.as_view(), name='slot_update'),
+    path('slot/<int:pk>/delete/', views.SlotDeleteView, name='slot_delete'),
+
 
     path('routines/', views.RoutineListView.as_view(), name='routine_list'),
     path('routine/create/', views.RoutineCreateView.as_view(), name='routine-create'),
     path('routine/update/', views.RoutineUpdateView.as_view(), name='routine-update'),
+    path('routine/<int:pk>/delete/', views.RoutineDeleteView, name='routine-delete'),
+    
 
     path('routine/check/', views.getRoutineSuggestion, name='routine-check'),
     path('routine/getRoom/', views.getRoom, name='room-check'),
     path('routine/checkCourse/', views.getCourseContactHour, name='course-check'),
 
     path('routine/pdf/', views.render_pdf_view, name='gen_routine'),
+    path('routine_batch/pdf/<int:batch>/<slug:section>/', views.render_pdf_view_batchwise, name='gen_routine_batch'),
+
+
+    path('batchwiseroutine', views.BatchwiseRoutine.as_view(), name='batchwiseroutine'),
+
+    path('my_list_view/<int:batch>/<slug:section>/', views.MyListView.as_view(), name='my_list_view'),
 ]

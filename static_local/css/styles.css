@@ -21125,3 +21125,22 @@ table,th,td,tr{
 {
   color: red;
 }
+
+.card
+{
+  border: 1px solid navy;
+}
+
+
+.card a
+{
+  text-decoration: none;
+}
+
+
+
+.card:hover, .card a:hover{
+  background: white !important;
+  
+  box-shadow: 5px 5px 5px 5px;
+}

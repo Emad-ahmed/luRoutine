@@ -6,6 +6,8 @@ from django.urls import reverse
 from django.utils.decorators import method_decorator
 from django.views.generic import ListView, CreateView, UpdateView
 from xhtml2pdf import pisa
+from django.contrib import messages
+from django.shortcuts import render
 
 from faculty.models import Department
 from routine.models import Room, Building, SlotMaster, SlotDetail, Routine
@@ -90,6 +92,19 @@ class RoomUpdateView(UpdateView):
         return reverse('routine:room_list')
 
 
+
+def RoomDeleteView(request, pk):
+    try:
+        parent = Room.objects.get(id=pk)
+        parent.delete()
+        messages.success(request, 'Successfully Deleted')
+    except:
+        messages.success(request, 'Please First Delete The Child Model')
+        return redirect('/rooms')
+
+    return redirect('/rooms')
+
+
 @method_decorator(login_required, name='dispatch')
 class SlotListView(ListView):
     model = SlotDetail
@@ -147,6 +162,18 @@ class SlotMasterUpdateView(UpdateView):
         return reverse('routine:slot_create')
 
 
+def SlotDeleteView(request, pk):
+    try:
+        parent = SlotDetail.objects.get(id=pk)
+        parent.delete()
+        messages.success(request, 'Successfully Deleted')
+    except:
+        messages.success(request, 'Please First Delete The Child Model')
+        return redirect('/slots')
+    return redirect('/slots')
+
+
+
 @method_decorator(login_required, name='dispatch')
 class SlotDetailCreateView(CreateView):
     model = SlotDetail
@@ -193,9 +220,7 @@ class RoutineListView(ListView):
     template_name = 'routine_list.html'
     context_object_name = 'routines'
 
-    
 
-    
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['user'] = self.request.user
@@ -206,6 +231,24 @@ class RoutineListView(ListView):
         return context
 
 
+
+class MyListView(ListView):
+    model = Routine
+    template_name = 'routine_list_batch.html'
+    context_object_name = 'routines'
+
+    def get_context_data(self, **kwargs):
+        batch = self.kwargs.get('batch')
+        section = self.kwargs.get('section')
+        context = super().get_context_data(**kwargs)
+        context['user'] = self.request.user
+        context['slots'] = SlotDetail.objects.all()
+        context['batchmy'] = batch
+        context['sectionmy'] = section
+        context['gen_routine'] = generateBatchRoutine(
+            self.request.GET.get('day') if self.request.GET.get('day') else 'sunday', batch, section)
+        print(context['gen_routine'])
+        return context
 
 
 @method_decorator(login_required, name='dispatch')
@@ -266,6 +309,16 @@ class RoutineUpdateView(UpdateView):
     def get_success_url(self):
         return reverse('routine:routine_list')
 
+
+def RoutineDeleteView(request, pk):
+    try:
+        parent = Routine.objects.get(id=pk)
+        parent.delete()
+        messages.success(request, f'Successfully Deleted {parent.course_dist.offered.course.course_code} in {parent.day_of_week}')
+    except:
+        messages.success(request, 'Please First Delete The Child Model')
+        return redirect('/routines')
+    return redirect('/routines')
 
 
 def getRoutineSuggestion(request):
@@ -355,7 +408,8 @@ def generateRoutine(day_of_week):
     rt = Routine.objects.filter(
         course_dist__offered__semester__isnull=False,
         day_of_week=day_of_week,
-        dummy_department__isnull=True
+        dummy_department__isnull=True,
+        # course_dist__section__batch__batch = 60
     )
     print(rt)
     for sec in Section.objects.all():
@@ -381,7 +435,6 @@ def render_pdf_view(request):
     days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
     for day in days:
         context['routine'][day] = generateRoutine(day)
-
     template_path = 'routine_generated.html'
     # Create a Django response object, and specify content_type as pdf
     response = HttpResponse(content_type='application/pdf')
@@ -397,3 +450,68 @@ def render_pdf_view(request):
     if pisa_status.err:
         return HttpResponse('We had some errors <pre>' + html + '</pre>')
     return response
+
+
+
+def generateBatchRoutine(day_of_week, batch, section):
+    final = {}
+    slots = SlotDetail.objects.all()
+    rt = Routine.objects.filter(
+        course_dist__offered__semester__isnull=False,
+        day_of_week=day_of_week,
+        dummy_department__isnull=True,
+        course_dist__section__batch__batch = batch,
+        course_dist__section__section = section,
+    )
+    print(rt)
+    for sec in Section.objects.all():
+        temp = rt.filter(course_dist__section=sec).order_by('slot__start_time')
+        if temp:
+            data = []
+            i = 0
+            print(len(temp))
+            for slot in slots:
+                if i < len(temp) and temp[i].slot == slot:
+                    data.append(temp[i])
+                    i += 1
+                else:
+                    data.append(None)
+            final[f'{sec.batch.batch} - {sec.section}'] = data
+    return final
+
+
+
+def render_pdf_view_batchwise(request, batch, section):
+    context = {}
+    context['slots'] = SlotDetail.objects.all()
+    context['routine'] = {}
+    days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
+    for day in days:
+        context['routine'][day] = generateBatchRoutine(day,batch,section)
+    template_path = 'routine_generated.html'
+    # Create a Django response object, and specify content_type as pdf
+    response = HttpResponse(content_type='application/pdf')
+    response['Content-Disposition'] = 'attachment; filename="routine.pdf"'
+    # find the template and render it.
+    template = get_template(template_path)
+    html = template.render(context)
+
+    # create a pdf
+    pisa_status = pisa.CreatePDF(
+        html, dest=response, link_callback=link_callback)
+    # if error then show some funy view
+    if pisa_status.err:
+        return HttpResponse('We had some errors <pre>' + html + '</pre>')
+    return response
+
+
+@method_decorator(login_required, name='dispatch')
+class BatchwiseRoutine(ListView):
+    model = Section
+    template_name = 'bacthwiseroutine.html'
+    context_object_name = 'sections'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['sections'] = Section.objects.all()
+        return context

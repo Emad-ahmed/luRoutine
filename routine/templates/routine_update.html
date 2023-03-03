@@ -23,11 +23,16 @@
     <div class="page-header-content pt-4">
       <div class="row align-items-center justify-content-between">
         <div class="col-auto mt-4">
+          <div></div>
           <h1 class="page-header-title">
             <div class="page-header-icon"><i data-feather="plus"></i></div>
             Update Entry
           </h1>
         </div>
+        <div class="w-50 m-auto mt-4">
+            <a href="{% url 'routine:routine-delete' routines.id %}" class='btn btn-danger'>Delete</a>
+        </div>
+        
       </div>
     </div>
   </div>
