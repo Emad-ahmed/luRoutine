@@ -35,8 +35,11 @@ urlpatterns = [
     path('routine/pdf/', views.render_pdf_view, name='gen_routine'),
     path('routine_batch/pdf/<int:batch>/<slug:section>/', views.render_pdf_view_batchwise, name='gen_routine_batch'),
 
+    path('routine_teacher/pdf/<int:teacher_id>/', views.render_pdf_view_teacher, name='gen_routine_teacher'),
 
     path('batchwiseroutine', views.BatchwiseRoutine.as_view(), name='batchwiseroutine'),
 
     path('my_list_view/<int:batch>/<slug:section>/', views.MyListView.as_view(), name='my_list_view'),
+
+    path('teacherlist_view/<int:teacher_id>', views.TeacherListView.as_view(), name='teacher_routine_list'),
 ]

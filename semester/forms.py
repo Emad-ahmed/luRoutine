@@ -3,7 +3,8 @@ from django.core.exceptions import ValidationError
 
 from semester.models import Semester, CourseOffered, CourseDistribution, DistributedSectionDetail
 from tempus_dominus.widgets import TimePicker, DatePicker
-
+from django.contrib import messages
+from django.shortcuts import redirect
 
 class SemesterForm(forms.ModelForm):
     start_effect_date = forms.DateField(
@@ -64,14 +65,18 @@ class CourseDistributionForm(forms.ModelForm):
         qs = CourseDistribution.objects.filter(offered=cd.get('offered'), section=cd.get('section'))
         if qs:
             for obj in qs:
-                ms = DistributedSectionDetail.objects.get(distribution=obj)
-                if ms.starting_id == "*" or cd.get('starting_id') == "*":
-                    raise ValidationError("Course already distributed to Section.")
-                else:
-                    if not (cd.get('ending_id') < ms.starting_id or cd.get('starting_id') > ms.ending_id):
+                try:
+                    ms = DistributedSectionDetail.objects.get(distribution=obj)
+                    if ms.starting_id == "*" or cd.get('starting_id') == "*":
                         raise ValidationError("Course already distributed to Section.")
-            # raise ValidationError("Course already distributed to Section.")
-
+                    else:
+                        if not (cd.get('ending_id') < ms.starting_id or cd.get('starting_id') > ms.ending_id):
+                            raise ValidationError("Course already distributed to Section.")
+                # raise ValidationError("Course already distributed to Section.")
+                except:
+                    return redirect("/distribution/create/")
+                    
+                    
         parent = cd.get('parent_dist')
         if parent:
             while parent.parent_dist != parent:
@@ -97,6 +102,7 @@ class CourseDistributionForm(forms.ModelForm):
         )
 
         return instance
+
 
 
 

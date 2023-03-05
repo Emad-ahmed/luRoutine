@@ -177,12 +177,14 @@ class CourseDistributionCreateView(CreateView):
         context['teachers'] = Teacher.objects.all()
         context['offers'] = CourseOffered.objects.all()
         return context
+        
+           
 
     def get_success_url(self):
         return reverse('semester:dist_list')
 
     def form_invalid(self, form):
-        print(form.errors)
+       
         return self.render_to_response(self.get_context_data(**({'form': form})))
 
 
@@ -219,9 +221,9 @@ def  CourseDistributionDeleteView(request, pk):
         messages.success(request, 'Successfully Deleted')
     except:
         messages.success(request, 'Please First Delete The Child Model')
-        return redirect('/offers')
+        return redirect('/distributions')
 
-    return redirect('/offers')
+    return redirect('/distributions')
 
     
    

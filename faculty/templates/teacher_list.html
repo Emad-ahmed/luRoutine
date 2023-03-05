@@ -50,7 +50,7 @@
         <div class="col-auto mt-4">
           <h1 class="page-header-title">
             <div class="page-header-icon"><i data-feather="filter"></i></div>
-            Program List
+            Teacher List
           </h1>
         </div>
         <div class="mt-4">
@@ -97,8 +97,9 @@
             <td>{{teacher.id}}</td>
             <td>{{teacher.teacher_id}}</td>
             <td>
-              {{ teacher.first_name }} {{teacher.last_name}}
+             <a href="{% url 'routine:teacher_routine_list' teacher.teacher_id %}"> {{ teacher.first_name }} {{teacher.last_name}}
               <p class="text-muted m-0">{{teacher.name_initials}}</p>
+            </a>
             </td>
             <td>{{ teacher.department.department_id }}</td>
             <td>{{ teacher.designation }}</td>

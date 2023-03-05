@@ -112,7 +112,7 @@ class Curriculum(AbstractTimestampModel):
 
 
     def __str__(self) -> str:
-        return f"{self.program.title} - {self.id}"
+        return f"{self.id}{self.program.title} - {self.id}"
 
 class Teacher(AbstractTimestampModel):
     class FacultyType(models.TextChoices):

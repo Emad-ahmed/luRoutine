@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Django HTMLtoPDF Tutorial</title>
+    <style>
+        .text-center
+        {
+            text-align:center;
+            font-size:3rem;
+        }
+    </style>
 </head>
 <body>
+    {% if batchesname %}
+    <h1 class="text-center">{{batchesname}} {{sectionname}}</h1>
+    {% endif %}
+    {% if teachername %}
+        <h1 class="text-center">{{teachername.first_name}} {{teachername.last_name}}</h1>
+    {% endif %}
 {% for day, data in routine.items %}
+{% if data%}
     <h1>{{ day }}</h1>
     <table style="border: 1px solid black;">
         <thead>
@@ -40,6 +54,7 @@
 
                             </tbody>
     </table>
+    {% endif %}
 {% endfor %}
 </body>
 </html>

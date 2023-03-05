@@ -8,7 +8,7 @@ from django.views.generic import ListView, CreateView, UpdateView
 from xhtml2pdf import pisa
 from django.contrib import messages
 from django.shortcuts import render
-
+from faculty.models import Teacher
 from faculty.models import Department
 from routine.models import Room, Building, SlotMaster, SlotDetail, Routine
 from semester.models import CourseDistribution
@@ -251,6 +251,25 @@ class MyListView(ListView):
         return context
 
 
+
+class TeacherListView(ListView):
+    model = Routine
+    template_name = 'routine_list_teacher.html'
+    context_object_name = 'routines'
+
+    def get_context_data(self, **kwargs):
+        tecaher_id = self.kwargs.get('teacher_id')
+        
+        context = super().get_context_data(**kwargs)
+        context['user'] = self.request.user
+        context['slots'] = SlotDetail.objects.all()
+        context['teachername'] = Teacher.objects.get(teacher_id=tecaher_id)
+        print(context['teachername'])
+        context['gen_routine'] = generateTeacherRoutine(
+            self.request.GET.get('day') if self.request.GET.get('day') else 'sunday', tecaher_id)
+        print(context['gen_routine'])
+        return context
+
 @method_decorator(login_required, name='dispatch')
 class RoutineCreateView(CreateView):
     model = Routine
@@ -481,13 +500,70 @@ def generateBatchRoutine(day_of_week, batch, section):
 
 
 
-def render_pdf_view_batchwise(request, batch, section):
+def generateTeacherRoutine(day_of_week, tecaher_id):
+    final = {}
+    slots = SlotDetail.objects.all()
+    rt = Routine.objects.filter(
+        course_dist__offered__semester__isnull=False,
+        day_of_week=day_of_week,
+        dummy_department__isnull=True,
+        course_dist__teacher__teacher_id = tecaher_id
+    )
+    print(rt)
+    for sec in Section.objects.all():
+        temp = rt.filter(course_dist__section=sec).order_by('slot__start_time')
+        if temp:
+            data = []
+            i = 0
+            print(len(temp))
+            for slot in slots:
+                if i < len(temp) and temp[i].slot == slot:
+                    data.append(temp[i])
+                    i += 1
+                else:
+                    data.append(None)
+            final[f'{sec.batch.batch} - {sec.section}'] = data
+    return final
+
+
+
+def render_pdf_view_batchwise(request,  batch,section):
     context = {}
     context['slots'] = SlotDetail.objects.all()
     context['routine'] = {}
+    context['batchesname'] = batch
+    context['sectionname'] = section
     days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
     for day in days:
         context['routine'][day] = generateBatchRoutine(day,batch,section)
+        
+    template_path = 'routine_generated.html'
+    # Create a Django response object, and specify content_type as pdf
+    response = HttpResponse(content_type='application/pdf')
+    response['Content-Disposition'] = 'attachment; filename="routine.pdf"'
+    # find the template and render it.
+    template = get_template(template_path)
+    html = template.render(context)
+
+    # create a pdf
+    pisa_status = pisa.CreatePDF(
+        html, dest=response, link_callback=link_callback)
+    # if error then show some funy view
+    if pisa_status.err:
+        return HttpResponse('We had some errors <pre>' + html + '</pre>')
+    return response
+
+
+def render_pdf_view_teacher(request,  teacher_id):
+    context = {}
+    context['slots'] = SlotDetail.objects.all()
+    context['routine'] = {}
+    context['teacher_id'] = teacher_id
+    context['teachername'] = Teacher.objects.get(teacher_id=teacher_id)
+    days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
+    for day in days:
+        context['routine'][day] = generateTeacherRoutine(day,teacher_id)
+        
     template_path = 'routine_generated.html'
     # Create a Django response object, and specify content_type as pdf
     response = HttpResponse(content_type='application/pdf')
