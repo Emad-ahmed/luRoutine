@@ -16,6 +16,10 @@ from django.utils.decorators import method_decorator
 from django.shortcuts import redirect
 from django.contrib import messages
 from django.shortcuts import render
+from django.http import JsonResponse, HttpResponse
+from .utils import link_callback
+from xhtml2pdf import pisa
+from django.template.loader import get_template
 
 @method_decorator(login_required, name='dispatch')
 class FacultyListView(ListView):
@@ -418,3 +422,24 @@ def teacher_account_reset(request):
         })
 
     return None
+
+
+def render_pdf_teacher_view(request):
+    context = {}
+    context['teachers'] = Teacher.objects.all()
+    
+    template_path = 'generate_teacher.html'
+    # Create a Django response object, and specify content_type as pdf
+    response = HttpResponse(content_type='application/pdf')
+    response['Content-Disposition'] = 'attachment; filename="teacher.pdf"'
+    # find the template and render it.
+    template = get_template(template_path)
+    html = template.render(context)
+
+    # create a pdf
+    pisa_status = pisa.CreatePDF(
+        html, dest=response, link_callback=link_callback)
+    # if error then show some funy view
+    if pisa_status.err:
+        return HttpResponse('We had some errors <pre>' + html + '</pre>')
+    return response

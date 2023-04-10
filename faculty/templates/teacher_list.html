@@ -53,6 +53,11 @@
             Teacher List
           </h1>
         </div>
+        
+        <div class="ms-3">
+          <a href="{% url 'faculty:gen_teacher' %}" class="btn btn-light">Export&nbsp;<i
+                  class="fas fa-download"></i> </a>
+        </div>
         <div class="mt-4">
           <a href="{% url 'faculty:teacher_create' %}" class="btn btn-light"
             >Add New Teacher&nbsp;<i class="fas fa-plus"></i>
@@ -63,7 +68,7 @@
   </div>
 </header>
 {% endblock body_header %} {% block body %}
-<div class="container-xl px-4 mt-n10" >
+<div class="container-xl px-4 mt-n10 routine" >
   <div class="card mb-4">
     <div class="card-body">
       <table id="datatablesSimple">
@@ -104,7 +109,7 @@
             <td>{{ teacher.department.department_id }}</td>
             <td>{{ teacher.designation }}</td>
             <td>
-              {{ teacher.email }}
+             <a href="mailto:{{ teacher.email }}">{{ teacher.email }}</a> 
               <p class="text-muted m-0">{{teacher.contact_number}}</p>
             </td>
             <td>{{ teacher.contact_hour }}</td>

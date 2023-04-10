@@ -19,7 +19,7 @@
             {% for section in sections %}
             <div class="col-lg-2">
                 <a href="{% url 'routine:my_list_view' section.batch.batch section.section %}">
-                <div class="card text-center p-4">
+                <div class="card text-center p-4 mb-4">
                     <h1 class='fw-bolder'>{{section.batch.batch}}</h1>
                     <h6>{{section.section}}</h6>
                 </div>

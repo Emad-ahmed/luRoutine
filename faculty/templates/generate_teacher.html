@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django HTMLtoPDF Tutorial</title>
+    <style>
+        .text-center
+        {
+            text-align:center;
+            font-size:3rem;
+        }
+        th
+        {
+            padding:10px;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+   
+
+
+    <table style="border: 1px solid black;">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>name_initials</th>
+            <th>department</th>
+            <th>designation</th>
+            <th>contact_number</th>
+            <th>email</th>
+            
+        </tr>
+        </thead>
+                            <tbody>
+                                {% for teacher in teachers %}
+                                <tr>
+                                    <td style="width:5%;" align="center">
+                                        {{ teacher.teacher_id }}
+                                    </td>
+                                    <td style="padding: 8px;" align="center">
+                                        {{ teacher.first_name }} {{ teacher.last_name }}
+                                    </td>
+                                    
+                                    <td style="width:10%" align="center">
+                                        {{ teacher.name_initials }}
+                                    </td>
+                                    <td style="width:9%;" align="center">
+                                        {{ teacher.department }}
+                                    </td>
+                                    <td style="padding: 8px;" align="center">
+                                        {{ teacher.designation }}
+                                    </td>
+                                   
+                                    <td style="width:12%;" align="center">
+                                        0{{ teacher.contact_number }}
+                                    </td>
+                                    <td style="padding: 8px;" align="center">
+                                        {{ teacher.email }}
+                                    </td>
+                                    
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+    </table>
+  
+   
+
+</body>
+</html>

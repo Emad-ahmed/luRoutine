@@ -36,7 +36,8 @@
                     <tr>
                         <th>#</th>
                         <th>Semester</th>
-                        <th width="50%">Course</th>
+                        <th>Course Title</th>
+                        <th>Course Code</th>
                         <th>Batch</th>
                         <th>Actions</th>
                     </tr>
@@ -45,7 +46,8 @@
                     <tr>
                         <th>#</th>
                         <th>Semester</th>
-                        <th>Course</th>
+                        <th>Course Title</th>
+                        <th>Course Code</th>
                         <th>Batch</th>
                         <th>Actions</th>
                     </tr>
@@ -56,6 +58,7 @@
                             <td>{{ offer.id }}</td>
                             <td>{{ offer.semester.name | title }} - {{ offer.semester.year }}</td>
                             <td>{{ offer.course.title }}</td>
+                            <td>{{ offer.course.course_code }}</td>
                             <td>{{ offer.batch.program.department.department_id }}-{{ offer.batch.batch }}</td>
                             <td class="text-center">
                                 <a href="{% url 'semester:offer_update' %}?id={{ offer.id }}" class="btn btn-datatable btn-icon btn-transparent-dark me-2"><i

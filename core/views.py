@@ -73,6 +73,8 @@ def render_pdf_view_teacher(request):
     context['slots'] = SlotDetail.objects.all()
     context['routine'] = {}
     user = request.user.username
+    fname = request.user.first_name
+    lname = request.user.last_name
     myuser = Teacher.objects.get(email=user)
     context['first_name'] = myuser.first_name
     context['last_name'] = myuser.last_name
@@ -84,7 +86,7 @@ def render_pdf_view_teacher(request):
     template_path = 'routine_generated_teacher.html'
     # Create a Django response object, and specify content_type as pdf
     response = HttpResponse(content_type='application/pdf')
-    response['Content-Disposition'] = 'attachment; filename="routine_teacher.pdf"'
+    response['Content-Disposition'] = f'attachment; filename="{fname} {lname}.pdf"'
     # find the template and render it.
     template = get_template(template_path)
     html = template.render(context)

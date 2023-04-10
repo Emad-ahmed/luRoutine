@@ -340,6 +340,8 @@ def RoutineDeleteView(request, pk):
     return redirect('/routines')
 
 
+
+
 def getRoutineSuggestion(request):
     dist = request.GET.get('course_dist')
     slot = request.GET.get('slot')
@@ -420,6 +422,77 @@ def getCourseContactHour(request):
 
     return JsonResponse(response)
 
+
+def getCheckRoom(request):
+    dist = request.GET.get('course')
+    day_of_week = request.GET.get('day_of_week')
+    slot = request.GET.get('slot')
+    room = request.GET.get('room')
+    response = {}
+
+
+
+    slot = SlotDetail.objects.get(id= slot)
+    slotid = slot.id
+    room = Room.objects.get(id= room)
+    roomid = room.id
+    response = {}
+    
+    try:
+        routine = Routine.objects.get(slot__id = slotid, room__id = roomid,day_of_week =  day_of_week)
+        response["routine"] = routine.id
+    except:
+        response["routinemain"] = ""
+    
+
+    return JsonResponse(response)
+
+
+def getCheckTeacher(request):
+    dist = request.GET.get('course')
+    day_of_week = request.GET.get('day_of_week')
+    slot = request.GET.get('slot')
+    response = {}
+
+    course_distribution = CourseDistribution.objects.get(id=dist)
+    course_teacher = course_distribution.teacher.teacher_id
+
+    slot = SlotDetail.objects.get(id= slot)
+    slotid = slot.id
+   
+    
+    try:
+        routine = Routine.objects.get(course_dist__teacher__teacher_id =course_teacher,  slot__id = slotid,day_of_week =  day_of_week)
+        response["routine"] = routine.id
+    except:
+        response["routinemain"] = ""
+    
+
+    return JsonResponse(response)
+    
+
+def getCheckStudent(request):
+    dist = request.GET.get('course')
+    day_of_week = request.GET.get('day_of_week')
+    slot = request.GET.get('slot')
+    response = {}
+
+    course_distribution = CourseDistribution.objects.get(id=dist)
+    course_teacher = course_distribution.section.id
+
+    slot = SlotDetail.objects.get(id= slot)
+    slotid = slot.id
+   
+    
+    try:
+        routine = Routine.objects.get(course_dist__section__id =course_teacher,  slot__id = slotid,day_of_week =  day_of_week)
+        response["routine"] = routine.id
+    except:
+        response["routinemain"] = ""
+    
+
+    return JsonResponse(response)
+    
 
 def generateRoutine(day_of_week):
     final = {}
@@ -540,7 +613,7 @@ def render_pdf_view_batchwise(request,  batch,section):
     template_path = 'routine_generated.html'
     # Create a Django response object, and specify content_type as pdf
     response = HttpResponse(content_type='application/pdf')
-    response['Content-Disposition'] = 'attachment; filename="routine.pdf"'
+    response['Content-Disposition'] = f'attachment; filename="{batch} {section} routine.pdf"'
     # find the template and render it.
     template = get_template(template_path)
     html = template.render(context)
@@ -560,6 +633,7 @@ def render_pdf_view_teacher(request,  teacher_id):
     context['routine'] = {}
     context['teacher_id'] = teacher_id
     context['teachername'] = Teacher.objects.get(teacher_id=teacher_id)
+    myteacher = context['teachername']
     days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
     for day in days:
         context['routine'][day] = generateTeacherRoutine(day,teacher_id)
@@ -567,7 +641,7 @@ def render_pdf_view_teacher(request,  teacher_id):
     template_path = 'routine_generated.html'
     # Create a Django response object, and specify content_type as pdf
     response = HttpResponse(content_type='application/pdf')
-    response['Content-Disposition'] = 'attachment; filename="routine.pdf"'
+    response['Content-Disposition'] = f'attachment; filename={myteacher}_Routine.pdf'
     # find the template and render it.
     template = get_template(template_path)
     html = template.render(context)

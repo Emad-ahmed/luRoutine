@@ -47,7 +47,7 @@ class Room(AbstractTimestampModel):
         verbose_name_plural = _('Rooms')
 
     def __str__(self):
-        return self.room_number
+        return f"{self.id} {self.room_number}"
 
 
 class SlotMaster(AbstractTimestampModel):
@@ -72,7 +72,7 @@ class SlotMaster(AbstractTimestampModel):
 
 
     def __str__(self) -> str:
-        return self.type
+        return f"{self.id} {self.type}"
 
 class SlotDetail(AbstractTimestampModel):
     slot = models.ForeignKey(
@@ -91,7 +91,7 @@ class SlotDetail(AbstractTimestampModel):
     
 
     def __str__(self) -> str:
-        return f"Start:{self.start_time} End:{self.end_time}"
+        return f"{self.id} Start:{self.start_time} End:{self.end_time}"
 
 class Routine(AbstractTimestampModel):
     class DayOfWeek(models.TextChoices):

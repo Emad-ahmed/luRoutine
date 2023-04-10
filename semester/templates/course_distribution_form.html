@@ -99,7 +99,7 @@
                                                     {% if dist.teacher.id == teacher.id %}
                                                     selected
                                                     {% endif %}
-                                            >{{ teacher.first_name }} {{ teacher.last_name }}
+                                            >{{ teacher.name_initials }}-{{ teacher.first_name }} {{ teacher.last_name }}
                                             </option>
                                         {% endfor %}
                                     </select>

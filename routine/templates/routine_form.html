@@ -9,10 +9,11 @@
     font-size: small;
     color: #f4365c;
   }
-  #suggestionPanel
+  #suggestionPanel, #suggestionPanelroom
   {
     color:red;
   }
+
 </style>
 
 {% endblock css_here %} {% block body_header %}
@@ -46,6 +47,12 @@
       class="justify-content-start"
         id="suggestionPanel"
       ></div>
+
+      <div
+      class="justify-content-start"
+        id="suggestionPanelView"
+      ></div>
+
           <div class="sbp-preview-content">
             <form method="POST" id="courseForm">
               {% csrf_token %} <br />
@@ -160,6 +167,11 @@
                 <div
                   class="col-md-6 d-flex justify-content-start"
                   id="suggestionPanel"
+                ></div>
+
+                <div
+                  class="col-md-6 text-center"
+                  id="suggestionPanelroom"
                 ></div>
                 
                 <div class="col-md-6 d-flex justify-content-end">
@@ -316,11 +328,7 @@
           request = $.ajax({
               url: '/routine/getRoom',
               type: "get",
-              data: {
-                  'course_dist': $("#course_dist").val(),
-                  'day': $("#day_of_week").val(),
-                  'slot': $("#slot").val()
-              },
+              
               success: function (resp) {
                   console.log(resp)
                   cnt = 0;
@@ -358,7 +366,80 @@
                 }
               }
           });
-      }
+      }         
+
+      if ($("#course_dist").val()) {
+        request = $.ajax({
+            url: "/routine/checkroom",
+            type: "get",
+            data:{
+                'course': $("#course_dist").val(),
+                'slot': $("#slot").val(),
+                'day_of_week': $("#day_of_week").val(),
+                'room': $("#room").val(),
+                
+            },
+            success: function (response) {
+              if(response.routine)
+                {
+                  
+                    $("#suggestionPanelroom").html("<b>Room is equipped already in the given day and time</b>")
+                    location.reload(true);
+                } else{
+                  $("#suggestionPanelroom").html("<b></b>")
+                }
+            },
+        });
+    }
+
+    if ($("#course_dist").val()) {
+      request = $.ajax({
+          url: "/routine/checkteacher",
+          type: "get",
+          data:{
+              'course': $("#course_dist").val(),
+              'slot': $("#slot").val(),
+              'day_of_week': $("#day_of_week").val(),
+             
+              
+          },
+          success: function (response) {
+            if(response.routine)
+              {
+                
+                  $("#suggestionPanelroom").html("<b>Teacher is already engage in different classroom.</b>")
+                  location.reload(true);
+              } else{
+                $("#suggestionPanelroom").html("<b></b>")
+              }
+          },
+      });
+  }
+
+  if ($("#course_dist").val()) {
+    request = $.ajax({
+        url: "/routine/checkstudent",
+        type: "get",
+        data:{
+            'course': $("#course_dist").val(),
+            'slot': $("#slot").val(),
+            'day_of_week': $("#day_of_week").val(),
+           
+            
+        },
+        success: function (response) {
+          if(response.routine)
+            {
+              
+                $("#suggestionPanelroom").html("<b>Students is already engage in different classroom.</b>")
+                location.reload(true);
+            } else{
+              $("#suggestionPanelroom").html("<b></b>")
+            }
+        },
+    });
+}
+
   }
 </script>
 {% endblock %}

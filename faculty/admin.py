@@ -4,32 +4,32 @@ from import_export.admin import ImportExportModelAdmin
 
 
 @admin.register(Faculty)
-class FacultyAdmin(admin.ModelAdmin):
+class FacultyAdmin(ImportExportModelAdmin):
     pass
 
 
 @admin.register(FacultyDean)
-class FacultyDeanAdmin(admin.ModelAdmin):
+class FacultyDeanAdmin(ImportExportModelAdmin):
     pass
 
 
 @admin.register(Department)
-class DepartmentAdmin(admin.ModelAdmin):
+class DepartmentAdmin(ImportExportModelAdmin):
     pass
 
 
 @admin.register(DepartmentHead)
-class DepartmentHeadAdmin(admin.ModelAdmin):
+class DepartmentHeadAdmin(ImportExportModelAdmin):
     pass
 
 
 @admin.register(Program)
-class ProgramAdmin(admin.ModelAdmin):
+class ProgramAdmin(ImportExportModelAdmin):
     pass
 
 
 @admin.register(Curriculum)
-class CurriculumAdmin(admin.ModelAdmin):
+class CurriculumAdmin(ImportExportModelAdmin):
     pass
 
 

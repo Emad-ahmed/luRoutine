@@ -31,7 +31,6 @@ INSTALLED_APPS = [
     'tempus_dominus',
     'crispy_forms',
     'import_export',
-
 ]
 
 MIDDLEWARE = [

@@ -3,7 +3,7 @@ from .models import Semester, CourseOffered, CourseDistribution, DistributedSect
 from import_export.admin import ImportExportModelAdmin
 
 @admin.register(Semester)
-class SemesterAdmin(admin.ModelAdmin):
+class SemesterAdmin(ImportExportModelAdmin):
     pass
 
 
@@ -15,10 +15,10 @@ class CourseAdmin(ImportExportModelAdmin):
 
 
 @admin.register(CourseDistribution)
-class CourseDistributionAdmin(admin.ModelAdmin):
+class CourseDistributionAdmin(ImportExportModelAdmin):
     pass
 
 
 @admin.register(DistributedSectionDetail)
-class MergedSectionDetailsAdmin(admin.ModelAdmin):
+class MergedSectionDetailsAdmin(ImportExportModelAdmin):
     pass

@@ -35,4 +35,6 @@ urlpatterns = [
     path('course/update/', views.CourseUpdateView.as_view(), name='course_update'),
     path('course/<int:pk>/delete/', views.CourseDeleteView, name='course_delete'),
     
+    path('teacher/pdf/', views.render_pdf_teacher_view, name='gen_teacher'),
+    
 ]
